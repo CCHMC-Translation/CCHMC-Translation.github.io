@@ -7,7 +7,7 @@ General
 
     a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
-      i.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it in English.
+        i.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it in English.
 
     b.  On first mention, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
@@ -15,11 +15,11 @@ General
 
 2.  For languages which do not use Latin script:
 
-    a.  On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+    a. On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-      i.	Note that many campus names, e.g. *Burnet Campus, Mason Campus, Liberty Campus, College Hill Campus,* and *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+        i.	Note that many campus names, e.g. *Burnet Campus, Mason Campus, Liberty Campus, College Hill Campus,* and *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
 
-      ii.	If space permits, replace *CCHMC* with the translation of *Cincinnati Children's*. Otherwise leave it in English.
+        ii.	If space permits, replace *CCHMC* with the translation of *Cincinnati Children's*. Otherwise leave it in English.
 
 
 3.  Location letters (e.g. *D* in *Location D*), building names, and addresses in the United States remain in English.
@@ -42,7 +42,7 @@ General
 
 7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
 
-8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
+8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
 
@@ -50,13 +50,13 @@ General
 
     a.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
 
-    b.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation, right justified (left justified for right-to- left languages), 8 pt. Arial, regular.
+    b.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
 
-11.  When translating *Health Topics* (*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.):
+11. When translating *Health Topics* (*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.):
 
-    a.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
+     a.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
 
-    b.	Keep the revision date exactly as it is written in English, i.e. month/year.
+     b.	Keep the revision date exactly as it is written in English, i.e. month/year.
 
 
 12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
@@ -66,6 +66,14 @@ General
 14.	Leave sections labeled *For office use only* in English. Make the label *For office use only* bilingual.
 
 15.	Only convert measurements when they are used as approximations in prose, e.g. “ten feet away,” “a couple miles,” “a few pounds,” etc.
+
+16. When clearly referring to a location, translate *Base* as *Main Campus*.
+
+17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL.
+
+18. Do not translate Cincinnati Children's letterhead.
+
+19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
 
 
 Specific Languages
@@ -119,6 +127,12 @@ Concourse
 
 Welcome Center
  ~ ﻣﺮﻛﺰ اﻻﺳﺘﻘﺒﺎل
+
+Bowel Management Program
+ ~ برنامج علاج التحكم في الأمعاء
+
+blood cell
+ ~ كرات كريات
 
 2.  For times, rather than using only AM (ﺻﺑﺎﺣﺎ) and PM (ًء ﻣﺳﺎ), use ظﮭراً, ﻟﯾﻼً and ﻋﺻرا when appropriate.
 
@@ -216,4 +230,4 @@ Day Hospital
 
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
-4.	Use double (“ ”) and singe (‘ ’) quotation marks only, never angular quotation marks (« »).
+4.	Use double (“ ”) and single (‘ ’) quotation marks only, never angular quotation marks (« »).
