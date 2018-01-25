@@ -5,13 +5,22 @@ General
 
 1.  For languages which use Latin script:
 
-    a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital,* and *Cincinnati Children's Hospital Medical Center* in English.
+    a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
+
+      i.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it in English.
 
     b.  On first mention, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
+    c.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet Campus, Mason Campus, Liberty Campus, College Hill Campus,* and *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
+
 2.  For languages which do not use Latin script:
 
-    a.  On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center*, departments, and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+    a.  On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+
+      i.	Note that many campus names, e.g. *Burnet Campus, Mason Campus, Liberty Campus, College Hill Campus,* and *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+
+      ii.	If space permits, replace *CCHMC* with the translation of *Cincinnati Children's*. Otherwise leave it in English.
+
 
 3.  Location letters (e.g. *D* in *Location D*), building names, and addresses in the United States remain in English.
 
@@ -43,13 +52,21 @@ General
 
     b.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation, right justified (left justified for right-to- left languages), 8 pt. Arial, regular.
 
-11.  When translating *Health Topics*, add *Health Topic: Title* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss.*
+11.  When translating *Health Topics* (*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.):
 
-    a.   *Health Topics* usually include *HT* in the file name. If you are unsure if a documents is a *Health Topic* or not, ask.
+    a.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
+
+    b.	Keep the revision date exactly as it is written in English, i.e. month/year.
+
 
 12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
 13. For citations on References pages at the end of documents, keep everything as-is, but add a translation of the title in \[brackets\] after the English title.
+
+14.	Leave sections labeled *For office use only* in English. Make the label *For office use only* bilingual.
+
+15.	Only convert measurements when they are used as approximations in prose, e.g. “ten feet away,” “a couple miles,” “a few pounds,” etc.
+
 
 Specific Languages
 ==================
@@ -89,7 +106,7 @@ Best Upon Request
  ~  اﻷﻓﻀﻞ ﻋﻨﺪ اﻟﻄﻠﺐ
 
 Destination Excellence
- ~  ﺟﮭﺔ اﻟﺘﻤﯿّﺰ
+ ~  المكتب الدولي
 
 Family Resource Center
  ~  ﻣﺮﻛﺰ ﻣﻮارد اﻷﺳﺮة
@@ -121,6 +138,8 @@ Welcome Center
 
     b.  For this list of doctors at the bottom of page 2, use the female version of the title for females.
 
+9.	When translating from Arabic to English, any Hijri dates should be converted to Gregorian dates followed by the Hijri date in parentheses.
+
 Chinese (Simplified)
 --------------------
 
@@ -128,12 +147,16 @@ Chinese (Simplified)
 
 2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
+3. Write language code as ZHS.
+
 Chinese (Traditional)
 ---------------------
 
 1.  Translate *Cincinnati Children's Hospital Medical Center* as 辛辛那提兒童醫院醫療中心.
 
 2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
+
+3. Write language code as ZHT.
 
 Hebrew
 ------
@@ -166,3 +189,31 @@ Concourse
 
 Location *(e.g. Location D)*
  ~ Área
+
+Emergency Room
+ ~ Sala de Emergencia
+
+Emergency Department
+ ~ Sala de Emergencia
+
+Destination Excellence
+ ~ Programa para Pacientes Internacionales
+
+Child Life Specialist
+ ~ Especialista en Vida Infantil
+
+Chile Life
+ ~ Vida Infantil
+
+DDBP (Division of Developmental and Behavioral Pediatrics)
+ ~ División de Pediatría del Desarrollo y Comportamiento
+
+BMCP (Division of Behavioral Medicine and Clinical Psychology)
+ ~ División de Medicina del Comportamiento y Psicología Clinica
+
+Day Hospital
+ ~ Hospital de Día
+
+3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
+
+4.	Use double (“ ”) and singe (‘ ’) quotation marks only, never angular quotation marks (« »).
