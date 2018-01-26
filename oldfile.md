@@ -45,7 +45,7 @@ General
 
 11.  When translating *Health Topics*, add *Health Topic: Title* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss.*
 
-    a.   *Health Topics* usually include *HT* in the file name. If you are unsure if a documents is a *Health Topic* or not, ask.
+        a.   *Health Topics* usually include *HT* in the file name. If you are unsure if a documents is a *Health Topic* or not, ask.
 
 12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
