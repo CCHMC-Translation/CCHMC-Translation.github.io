@@ -1,4 +1,10 @@
-% Cincinnati Children's Translation Style Guide
+% DRAFT Cincinnati Children's Translation Style Guide
+%
+% 2018-01-26
+
+[Download as PDF](/CCHMC_Style_Guide.pdf)
+
+[Changes From Previous Version](/diff.html)
 
 General
 =======
@@ -122,7 +128,7 @@ Family Resource Center
 Location *(e.g. Location D)*
  ~  ﻣﺒﻨﻰ
 
-Concourse
+concourse
  ~  اﻟﺒﺎﺣﺔ اﻟﺮﺋﯿﺴﯿﺔ
 
 Welcome Center
