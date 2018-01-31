@@ -183,6 +183,10 @@ Hebrew
 
 Translate *Cincinnati Children's Hospital Medical Center* as החולים בית של הרפואי המרכז בסינסינטי לילדים.
 
+Italian
+------
+Use angular quotation marks (« »), reserving double (“ ”) quotation marks for nested quotes and single (‘ ’) quotation marks for twice-nested quotes. 
+
 Nepali
 ------
 
