@@ -1,6 +1,6 @@
 % DRAFT Cincinnati Children's Translation Style Guide
 %
-% 2018-01-29
+% 2018-01-31
 
 [Download as PDF](/CCHMC_Style_Guide.pdf)
 
@@ -75,7 +75,7 @@ General
 
 16. When clearly referring to a location, translate *Base* as *Main Campus*.
 
-17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL.
+17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
 
 18. Do not translate Cincinnati Children's letterhead.
 
@@ -185,7 +185,7 @@ Translate *Cincinnati Children's Hospital Medical Center* as החולים בית
 
 Italian
 ------
-Use angular quotation marks («\ »), reserving double (“\ ”) quotation marks for nested quotes and single (‘\ ’) quotation marks for twice-nested quotes. 
+Use angular quotation marks («\ »), reserving double (“\ ”) quotation marks for nested quotes and single (‘\ ’) quotation marks for twice-nested quotes.
 
 Nepali
 ------
