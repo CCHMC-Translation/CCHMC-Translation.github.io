@@ -19,6 +19,8 @@ General
 
     c.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
 
+    d.  Use established equivalents of English acronyms unless no such equivalent exists. If no such equivalent exists, use the English acronym followed by a translation of the full term in parentheses.
+
 2.  For languages which do not use Latin script:
 
     a. On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
@@ -26,6 +28,8 @@ General
         i.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
 
         ii.	If space permits, replace *CCHMC* with the translation of *Cincinnati Children's*. Otherwise leave it in English.
+
+    b.  Use established equivalents of English acronyms unless no such equivalent exists. If no such equivalent exists, translate the full term followed by the English acronym in parentheses.
 
 
 3.  Location letters (e.g. *D* in *Location D*), building names, and addresses in the United States remain in English.
