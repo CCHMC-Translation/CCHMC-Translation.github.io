@@ -2,7 +2,7 @@
 %
 % 2018-02-02
 
-[Download as PDF](http://docdro.id/HKg3b9z)
+[Download as PDF](http://docdro.id/B3wVvGx)
 
 [Changes From Previous Version](/diff.html)
 
@@ -168,6 +168,8 @@ Chinese (Simplified)
 
 3. Write language code as ZHS.
 
+4. Use established equivalents of English acronyms unless no such equivalent exists. If no such equivalent exists, translate the full term followed by the English acronym in parentheses. Subsequent mentions use the translation only.
+
 Chinese (Traditional)
 ---------------------
 
@@ -176,6 +178,8 @@ Chinese (Traditional)
 2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
 3. Write language code as ZHT.
+
+4. Use established equivalents of English acronyms unless no such equivalent exists. If no such equivalent exists, translate the full term followed by the English acronym in parentheses. Subsequent mentions use the translation only.
 
 Hebrew
 ------
