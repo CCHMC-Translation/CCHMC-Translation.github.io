@@ -2,7 +2,7 @@
 %
 % 2018-02-02
 
-[Download as PDF](/pdfs/CCHMC_Style_Guide.pdf)
+[Download as PDF](http://docdro.id/HKg3b9z)
 
 [Changes From Previous Version](/diff.html)
 
