@@ -1,6 +1,4 @@
 % Cincinnati Children's Translation Style Guide
-%
-% 2018-02-02
 
 [Download as PDF](http://docdro.id/B3wVvGx)
 
