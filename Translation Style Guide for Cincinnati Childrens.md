@@ -1,6 +1,6 @@
 % Cincinnati Children's Translation Style Guide
 
-[Download as PDF](http://docdro.id/B3wVvGx)
+[Download as PDF](https://www.dropbox.com/s/mn6pb3fzqvyhmmo/CCHMC_Style_Guide.pdf?dl=0)
 
 [Changes From Previous Version](/diff.html)
 
@@ -35,7 +35,7 @@ General
 
     b.  Add *THE ENGLISH VERSION OF THIS DOCUMENT IS FOR REFERENCE PURPOSES AND MUST BE INCLUDED IN THE MEDICAL RECORD* above the header on the first page in English only, centered, 8 pt. Times New Roman, regular.
 
-    c.  Add the ISO 639-1 Code of the target language after the form ID in the left side of the footer, e.g. J1194-AR for the Arabic translation of form J1194.
+    c.  Add the ISO 639-1 Code of the target language and language name in parentheses after the form ID in the left side of the footer, e.g. *J1194-AR (Arabic)* for the Arabic translation of form J1194.
 
     d.  Ensure the HIC date below the form ID matches the source document, even when using a template with a different date.
 
