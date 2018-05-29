@@ -84,6 +84,11 @@ Specific Languages
 
 At the moment, there are specific style guidelines for the following languages:
 
+Amharic
+---------
+
+Translate *Cincinnati Children's Hospital Medical Center* as የሲንሲናቲ የህፃናት ሆስፒታል ህክምና ማዕከል.
+
 Arabic
 ------
 
@@ -178,19 +183,49 @@ Chinese (Traditional)
 
 3. Write language code as ZHT.
 
+Greek
+-------
+
+Translate *Cincinnati Children's Hospital Medical Center* as Ιατρικό Κέντρο του Νοσοκομείου Παίδων του Σινσινάτι.
+
+Gujarati
+----------
+
+Translate *Cincinnati Children's Hospital Medical Center* as સિનસિનાટી ચિલ્ડ્રન્સ હૉસ્પિટલ મેડિકલ સેન્ટર.
+
 Hebrew
 ------
 
 Translate *Cincinnati Children's Hospital Medical Center* as החולים בית של הרפואי המרכז בסינסינטי לילדים.
 
+Hindi
+-----
+
+Translate *Cincinnati Children's Hospital Medical Center* as सिनसिनाटी चिल्ड्रन्स हास्पिटल मेडिकल सेंटर.
+
 Italian
 ------
 Use angular quotation marks («\ »), reserving double (“\ ”) quotation marks for nested quotes and single (‘\ ’) quotation marks for twice-nested quotes.
+
+Japanese
+----------
+
+Translate *Cincinnati Children's Hospital Medical Center* as シンシナティ小児病院医療センター.
+
+Korean
+-------
+
+Translate *Cincinnati Children's Hospital Medical Center* as 신시내티 아동병원 메디컬 센터.
 
 Nepali
 ------
 
 Translate *Cincinnati Children's Hospital Medical Center* as सिन्सिनाटि बाल अस्पताल मेडिकल सेन्टर.
+
+Punjabi
+--------
+
+Translate *Cincinnati Children's Hospital Medical Center* as ਸਿਨਸਿਨਾਟੀ ਬੱਚਿਆਂ ਦਾ ਹਸਪਤਾਲ ਚਿਕਿਤਸਕ ਕੇਂਦਰ.
 
 Russian
 -------
@@ -241,3 +276,8 @@ Day Hospital
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
 4.	Use double (“\ ”) and single (‘\ ’) quotation marks only, never angular quotation marks («\ »).
+
+Tigrinya
+----------
+
+Translate *Cincinnati Children's Hospital Medical Center* as ሕክምናዊ ማእከል ናይ ሆስፒታል ህጻናት ሲንሲናቲ.
