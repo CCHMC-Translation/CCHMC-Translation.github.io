@@ -137,6 +137,9 @@ Bowel Management Program
 blood cell
  ~ كرات كريات
 
+Day Hospital
+ ~ المستشفى النهاري
+
 2.  For times, rather than using only AM (ﺻﺑﺎﺣﺎ) and PM (ًء ﻣﺳﺎ), use ظﮭراً, ﻟﯾﻼً and ﻋﺻرا when appropriate.
 
 3.  Unless instructed otherwise, use Western Arabic (European) numerals instead of Arabic-Indic (Eastern Arabic/Indian) numerals in translations.
