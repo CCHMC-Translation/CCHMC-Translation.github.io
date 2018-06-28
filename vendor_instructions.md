@@ -1,6 +1,6 @@
----
-title: 'Translation Vendor Instructions from Cincinnati Children''s'
----
+% Translation Vendor Instructions from Cincinnati Children's
+
+[Download as PDF](https://www.dropbox.com/s/ypw3r6vrpteluu5/CCHMC_Vendor_Instructions.pdf?dl=0)
 
 All Projects
 ============
