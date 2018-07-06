@@ -164,7 +164,7 @@ Chinese (Simplified)
 
 2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
-3. Write language code as ZHS.
+3.  Write language code as ZHS.
 
 Chinese (Traditional)
 ---------------------
@@ -173,7 +173,7 @@ Chinese (Traditional)
 
 2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
-3. Write language code as ZHT.
+3.  Write language code as ZHT.
 
 Hebrew
 ------
