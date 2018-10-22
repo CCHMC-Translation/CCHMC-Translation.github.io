@@ -1,34 +1,9 @@
-<!--
-    Winhweel.js basic code wheel example by Douglas McKechie @ www.dougtesting.net
-    See website for tutorials and other documentation.
-
-    The MIT License (MIT)
-
-    Copyright (c) 2016 Douglas McKechie
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in all
-    copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-    SOFTWARE.
--->
 <html>
     <head>
-        <title>HTML5 Canvas Winning Wheel</title>
+        <title>Language Access Question Wheel</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta charset="UTF-8">
         <script type="text/javascript" src="Winwheel.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<style>
@@ -66,15 +41,12 @@
                 <tr>
                     <td>
                         <div class="power_controls">
-                            <br />
-                            <br />
-                            <br />
                             <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />
                             <br /><br />
                         </div>
                     </td>
                     <td width="438" height="582" class="the_wheel" align="center" valign="center">
-                        <canvas id="canvas" width="434" height="434">
+                        <canvas id="canvas" width="800" height="824">
                             <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
                         </canvas>
                     </td>
@@ -85,16 +57,16 @@
             // Create new wheel object specifying the parameters at creation time.
             var theWheel = new Winwheel({
                 'numSegments'  : 6,     // Specify number of segments.
-                'outerRadius'  : 212,   // Set outer radius so wheel fits inside the background.
+                'outerRadius'  : 338,   // Set outer radius so wheel fits inside the background.
                 'textFontSize' : 28,    // Set font size as desired.
                 'segments'     :        // Define segments including colour and text.
                 [
-                   {'fillStyle' : '#eae56f', 'text' : 'Video'},
-                   {'fillStyle' : '#89f26e', 'text' : 'Phone'},
-                   {'fillStyle' : '#7de6ef', 'text' : 'Translation'},
-                   {'fillStyle' : '#e7706f', 'text' : 'Families'},
-                   {'fillStyle' : '#eae56f', 'text' : 'Employees'},
-                   {'fillStyle' : '#89f26e', 'text' : 'Language ID'},
+                   {'fillStyle' : '#00aec7', 'text' : 'Video'},
+                   {'fillStyle' : '#c6579a', 'text' : 'Phone'},
+                   {'fillStyle' : '#78be20', 'text' : 'Translation'},
+                   {'fillStyle' : '#00aec7', 'text' : 'Families'},
+                   {'fillStyle' : '#c6579a', 'text' : 'Qualifications'},
+                   {'fillStyle' : '#78be20', 'text' : 'Language ID'},
                 ],
                 'animation' :           // Specify the animation to use.
                 {
@@ -104,10 +76,21 @@
                     'callbackFinished' : alertPrize
                 }
             });
-
+			
+			
+			var loop_variable;
+			for (loop_variable = 1; loop_variable < 7; loop_variable++) {
+				theWheel.segments[loop_variable].textFillStyle = 'rgba(0, 0, 0, 0.8)';
+				}
+			theWheel.draw();
+			
             // Vars used by the code in this page to do power controls.
             var wheelPower    = 1;
             var wheelSpinning = false;
+			
+			// Vars used by the code in this page to do random questions
+			var questions = [];
+			var question = "";
 
             // -------------------------------------------------------
             // Function to handle the onClick on the power buttons.
@@ -201,22 +184,27 @@
             function alertPrize(indicatedSegment)
             {
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-                var questions = [];
 				switch (indicatedSegment.text) {
 					case "Video":
 						questions.push("How do you call an interpreter on ALVIN?");
+						break;
 					case "Phone":
 						questions.push("What's the difference between DIAL and 3-TALK?");
+						break;
 					case "Translation":
 						questions.push("How do you get discharge instructions in the family's preferred written language?");
+						break;
 					case "Families":
 						questions.push("Who should you look at when talking to a family with a face-to-face interpreter?");
-					case "Employees":
+						break;
+					case "Qualifications":
 						questions.push("Can family members interpret?");
+						break;
 					case "Language ID":
 						questions.push("How do you identify the preferred spoken language of an individual with limited English proficiency?");
+						break;
 					}
-				var question = questions[Math.floor(Math.random()*questions.length)];
+				question = questions[Math.floor(Math.random()*questions.length)];
 				document.getElementById("text").innerHTML = question;
 				sleep(3000);
 				overlay_on();
@@ -231,6 +219,7 @@
 				resetWheel();
 				document.getElementById('spin_button').src = "spin_on.png";
                 document.getElementById('spin_button').className = "clickable";
+				questions = [];
 			}
 			const sleep = (milliseconds) => {
 			  return new Promise(resolve => setTimeout(resolve, milliseconds))
