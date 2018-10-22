@@ -187,21 +187,29 @@
 				switch (indicatedSegment.text) {
 					case "Video":
 						questions.push("How do you call an interpreter on ALVIN?");
+						questions.push("How do you call an interpreter on a Cincinnati Children's iPad?");
 						break;
 					case "Phone":
 						questions.push("What's the difference between DIAL and 3-TALK?");
+						questions.push("Where are the DIAL numbers posted?");
+						questions.push("What do you do when a phone interpreter isn't available for the language you need?");
 						break;
 					case "Translation":
 						questions.push("How do you get discharge instructions in the family's preferred written language?");
 						break;
 					case "Families":
-						questions.push("Who should you look at when talking to a family with a face-to-face interpreter?");
+						questions.push("Who should you look at when talking to a family with an interpreter?");
+						questions.push("What should you do while an interpreter is relaying your message to the family?");
+						questions.push("How do you request a face-to-face interpreter?");
 						break;
 					case "Qualifications":
 						questions.push("Can family members interpret?");
+						questions.push("Can employees interpret?");
+						questions.push("What are QBS and QBS-C?");
 						break;
 					case "Language ID":
 						questions.push("How do you identify the preferred spoken language of an individual with limited English proficiency?");
+						questions.push("What's an \"I Speak\" card?");
 						break;
 					}
 				question = questions[Math.floor(Math.random()*questions.length)];
