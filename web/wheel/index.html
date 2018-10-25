@@ -5,6 +5,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta charset="UTF-8">
         <script type="text/javascript" src="Winwheel.js"></script>
+		<script type="text/javascript" src="NoSleep.min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 		<style>
 			#overlay {
@@ -41,7 +42,7 @@
                 <tr>
                     <td>
                         <div class="power_controls">
-                            <img id="spin_button" src="spin_on.png" alt="Spin" onClick="startSpin();" />
+                            <img id="spin_button" src="spin_on.png" alt="Spin" />
                             <br /><br />
                         </div>
                     </td>
@@ -92,6 +93,10 @@
 			var questions = [];
 			var question = "";
 
+			//prevent screen lock on iOS
+			var noSleep = new NoSleep();
+			document.getElementById("spin_button").addEventListener('click', startSpin, false);
+
             // -------------------------------------------------------
             // Function to handle the onClick on the power buttons.
             // -------------------------------------------------------
@@ -135,7 +140,8 @@
             // -------------------------------------------------------
             function startSpin()
             {
-                // Ensure that spinning can't be clicked again while already running.
+                noSleep.enable();
+				// Ensure that spinning can't be clicked again while already running.
                 if (wheelSpinning == false)
                 {
                     // Based on the power level selected adjust the number of spins for the wheel, the more times is has
