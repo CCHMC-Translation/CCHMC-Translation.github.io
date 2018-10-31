@@ -183,6 +183,17 @@ Chinese (Traditional)
 
 3.  Write language code as ZHT.
 
+French
+-------
+
+The following terms must be translated as follows:
+
+email
+ ~ courriel
+
+fax
+ ~ fax
+
 Greek
 -------
 
