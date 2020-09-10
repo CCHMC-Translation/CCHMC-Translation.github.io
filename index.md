@@ -13,7 +13,7 @@ General
 
     a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
-        i.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
+        1.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
 
     b.  On first mention in the body of each document, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
@@ -25,19 +25,19 @@ General
 
     a. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-        i.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+        1.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
 
-        ii.  When clearly referring to a location, translate *Base* as *Main Campus*.
+        2.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-       iii. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
+        3. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
           
-            A. If this is the first mention of Cincinnati Children's, also make it bilingual per 2.a above.
+            a. If this is the first mention of Cincinnati Children's, also make it bilingual per 2.a above.
 
-       iv.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
+        4.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
 
-        v.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
+        5.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
 
-       vi. Patient name and MRN in calendars TK
+        6. Patient name and MRN in calendars TK
 
 
 3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
@@ -130,7 +130,7 @@ Arabic
 1.  The following terms must be translated as follows:
 
 Cancer and Blood Diseases Institute
- ~  ﻣﺮﻛﺰ أﻣﺮاض اﻟﺪم واﻟﺴﺮطﺎن
+: ﻣﺮﻛﺰ أﻣﺮاض اﻟﺪم واﻟﺴﺮطﺎن
 
 Munch & Mingle
  ~  ﺟﻠﺴﺔ إﺟﺘﻤﺎﻋﯿّﺔ
