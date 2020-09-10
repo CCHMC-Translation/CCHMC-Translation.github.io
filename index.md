@@ -14,15 +14,15 @@ General
 
 1.  For **languages which use Latin script**:
 
-    a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
+    1.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
         1.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
 
-    b.  On first mention in the body of each document, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+    2.  On first mention in the body of each document, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-    c.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
+    3.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
 
-    d.  When clearly referring to a location, translate *Base* as *Main Campus*.
+    4.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
 2.  For **languages which do not use Latin script**:
 
