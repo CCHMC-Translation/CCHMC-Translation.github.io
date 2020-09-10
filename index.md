@@ -1,4 +1,6 @@
-% Cincinnati Children's Translation Style Guide
+---
+title: Cincinnati Children's Translation Style Guide
+---
 
 [Download as PDF](https://www.dropbox.com/s/mn6pb3fzqvyhmmo/CCHMC_Style_Guide.pdf?dl=0)
 
