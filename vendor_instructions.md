@@ -15,25 +15,11 @@ All Projects
 
 5. If translating outside of Wordbee, use the XLIFF export/import. Do not further segment the XLIFF in your CAT tool.
 
-6. A linguist who specializes in the target language must review the final native files and PDF.
-
 7. Send official quote or order confirmation to <translations@cchmc.org> the same day that work on the project begins.
 
 8. Append or change the language code in the file name of target files to the corresponding ISO 639‑1 Code. For example, the source files "name\_EN.docx" and "title.docx" would become "name\_AR.docx" and "title\_AR.docx" when translated to Arabic, and "name\_ES.docx" and "title\_ES.docx" when translated to Spanish.
 
      a. When source files are named as clean or track-changes, usually abbreviated "cln" and "trk," use the clean filename as the base.
-
-9. For InDesign and Illustrator files deliver a package containing:
-
-     a. All native typefaces used in the piece (no outlines)
-
-     b. All linked art/photos
-
-     c. Print resolution PDF without crops/bleeds for our visual reference
-
-     d. An IDML conversion file (InDesign only)
-
-     e. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
 
 10. Follow the [Style Guide](http://cchmc-translation.surge.sh) for all projects.
 
@@ -45,15 +31,17 @@ All Projects
 
 14. If it appears that a document has already been translated (e.g. more than 85% of the document is a 95% TM match or better), ask the Translations Coordinator what should be done before proceeding.
 
+   a. Bilingual forms and documents explicitly described as updates are exceptions to this.
+
 15. Notify the Translations Coordinator immediately if a requested delivery date may not be feasible. We need as much time as possible to make alternate plans.
 
 16. If you need something to be done (adapted from [Cyrus Stoller](http://www.cyrusstoller.com/2014/01/08/stop-sending-emails-for-real-time-requests)):
 
-     -   In 30 minutes: call 513-803-6929
+     -   In 30 minutes: call 513-803-6929 or 513-803-2925
 
-     -   Today (unless it's already after 4:30 PM): Slack
+     -   Today (unless it's already after 4:30 PM): Slack or Asana
 
-     -   Tomorrow or later: email <translations@cchmc.org>
+     -   Tomorrow or later: email <translations@cchmc.org> or Asana
 
 17. When you receive a question or request from any Cincinnati Children's employee outside Language Access Services, redirect them to <translations@cchmc.org>. Do not answer their question or fulfill their request.
 
@@ -61,9 +49,7 @@ All Projects
 
 19. Triple check the accuracy of medication dosages and timing in any translation.
 
-20. Only consider a request a Rush if explicitly specified in the request. If you determine that the deadline of a non-rush request is too soon, and the request would need to be treated as a Rush, ask the Translations Coordinator if the deadline can be adjusted before proceeding.project therwise ask.
-
-21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic: use Frutiger Arabic).
+20. Only consider a request a Rush if explicitly specified in the request. If you determine that the deadline of a non-rush request is too soon, and the request would need to be treated as a Rush, ask the Translations Coordinator if the deadline can be adjusted before proceeding.
 
 22. Translate all non-editable text in source files. If there are more than 70 words of non-editable text in a source file, send it to the Translations Coordinator for addition to the Wordbee project as an additional source document so that it can be included in the TM.
 

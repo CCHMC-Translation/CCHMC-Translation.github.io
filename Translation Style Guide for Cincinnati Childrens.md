@@ -7,27 +7,42 @@
 General
 =======
 
-1.  For languages which use Latin script:
+1.  For **languages which use Latin script**:
 
     a.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
         i.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
 
-    b.  On first mention, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+    b.  On first mention in the body of each document, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
     c.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
 
-2.  For languages which do not use Latin script:
+    d.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-    a. On first mention, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+2.  For **languages which do not use Latin script**:
+
+    a. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
         i.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
 
-        ii.	If space permits, replace *CCHMC* with the translation of *Cincinnati Children's*. Otherwise leave it in English.
+        ii.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-3.  Location letters (e.g. *D* in *Location D*), building names, and addresses in the United States remain in English.
+       iii. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
+          
+            A. If this is the first mention of Cincinnati Children's, also make it bilingual per 2.a above.
+
+       iv.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
+
+        v.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
+
+       vi. Patient name and MRN in calendars TK
+
+
+3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
 
     a.  Many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
+
+8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
 4.  For all HIM and HIC barcoded documents (Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
 
@@ -45,8 +60,6 @@ General
 
 7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
 
-8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
-
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
 
 10. When translating *Knowing Notes*:
@@ -59,10 +72,11 @@ General
 
      a.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
 
-     b.	Keep the revision date exactly as it is written in English, i.e. month/year.
-
+     b.	Keep the revision date label exactly as it is written in English, i.e. *Last updated 02/20*.
 
 12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
+
+13. For book titles in the body of the document where no translation has been published, add a translation of the title in \[brackets\] after the English title. If a translation has been published, just use the title of the translated book.
 
 13. For citations on References pages at the end of documents, keep everything as-is, but add a translation of the title in \[brackets\] after the English title.
 
@@ -70,14 +84,33 @@ General
 
 15.	Only convert measurements when they are used as approximations in prose, e.g. “ten feet away,” “a couple miles,” “a few pounds,” etc.
 
-16. When clearly referring to a location, translate *Base* as *Main Campus*.
-
 17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
 
 18. Do not translate Cincinnati Children's letterhead.
 
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
 
+9. For InDesign and Illustrator files deliver a package containing:
+
+     a. All native typefaces used in the piece (no outlines)
+
+     b. All linked art/photos
+
+     c. Print resolution PDF without crops/bleeds for our visual reference
+
+     d. An IDML conversion file (InDesign only)
+
+     e. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
+
+21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic: use Frutiger Arabic).
+
+
+22. WHOLE PHI SECTION FROM VENDOR INSTRUCTIONS TK
+
+
+24. change name of family resource center in Arabic TK
+
+20. Additional items from previous conversations: TK
 
 Specific Languages
 ==================
@@ -153,9 +186,7 @@ Day Hospital
 
 5.  In patient medication calendars, the name of the month should be bilingual with the English in parentheses.
 
-6.  Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
 
-7.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
 
 8.  When translating the *Cancer Program Family Update*:
 
@@ -170,7 +201,6 @@ Chinese (Simplified)
 
 1.  Translate *Cincinnati Children's Hospital Medical Center* as 辛辛那提儿童医院医疗中心.
 
-2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
 3.  Write language code as ZHS.
 
@@ -179,7 +209,6 @@ Chinese (Traditional)
 
 1.  Translate *Cincinnati Children's Hospital Medical Center* as 辛辛那提兒童醫院醫療中心.
 
-2.  Make names of states bilingual, e.g. 俄亥俄 (Ohio).
 
 3.  Write language code as ZHT.
 
@@ -272,7 +301,7 @@ Destination Excellence
 Child Life Specialist
  ~ Especialista en Vida Infantil
 
-Chile Life
+Child Life
  ~ Vida Infantil
 
 DDBP (Division of Developmental and Behavioral Pediatrics)
