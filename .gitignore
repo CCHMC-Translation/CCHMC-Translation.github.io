@@ -2,3 +2,7 @@
 Thumbs.db
 Archive/
 BrandGuidelines/
+_site
+.sass-cache
+.jekyll-metadata
+
