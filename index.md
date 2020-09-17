@@ -3,6 +3,7 @@ title: Style Guide
 toc: true
 toc_label: "My Table of Contents"
 toc_icon: "list"
+layout: single
 ---
 
 [Download as PDF](https://www.dropbox.com/s/mn6pb3fzqvyhmmo/CCHMC_Style_Guide.pdf?dl=0)
