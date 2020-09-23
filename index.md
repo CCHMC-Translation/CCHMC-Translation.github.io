@@ -231,8 +231,8 @@ Arabic
     :  المكتب الدولي
 
     Family Resource Center
-    :  ﻣﺮﻛﺰ ﻣﻮارد اﻷﺳﺮة
-
+    : مركز موارد العائلة 
+ 
     Location *(e.g. Location D)*
     :  ﻣﺒﻨﻰ
 
