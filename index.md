@@ -6,9 +6,7 @@ toc_icon: "list"
 layout: single
 ---
 
-[Download as PDF](https://www.dropbox.com/s/mn6pb3fzqvyhmmo/CCHMC_Style_Guide.pdf?dl=0)
-
-[Changes From Previous Version](/diff.html)
+[Version History](https://github.com/CCHMC-Translation/CCHMC-Translation.github.io/commits/master/index.md)
 
 General
 =======
