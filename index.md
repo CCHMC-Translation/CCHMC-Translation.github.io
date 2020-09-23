@@ -50,35 +50,11 @@ General
 
 8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
-4.  For all HIM and HIC barcoded documents (Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
-
-    1.  Make the titles bilingual.
-
-    2.  Add *THE ENGLISH VERSION OF THIS DOCUMENT IS FOR REFERENCE PURPOSES AND MUST BE INCLUDED IN THE MEDICAL RECORD* above the header on the first page in English only, centered, 8 pt. Times New Roman, regular.
-
-    3.  Add the ISO 639-1 Code of the target language and language name in parentheses after the form ID in the left side of the footer, e.g. *J1194-AR (Arabic)* for the Arabic translation of form J1194.
-
-    4.  Ensure the HIC date below the form ID matches the source document, even when using a template with a different date.
-
-5.  Ensure no essential elements are closer than one quarter inch to the edge of the page.
 
 6.  Whenever a form has a signature line labeled *Witness,* make that label and any additional corresponding labels (e.g. *Date)* bilingual. Witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
 
-7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
 
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
-
-10. When translating *Knowing Notes*:
-
-    1.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
-
-    2.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
-
-11. When translating *Health Topics* (*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.):
-
-     1.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
-
-     2.	Keep the revision date label exactly as it is written in English, i.e. *Last updated 02/20*.
 
 12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
@@ -92,21 +68,7 @@ General
 
 17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
 
-18. Do not translate Cincinnati Children's letterhead.
-
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
-
-9. For InDesign and Illustrator files deliver a package containing:
-
-     1. All native typefaces used in the piece (no outlines)
-
-     2. All linked art/photos
-
-     3. Print resolution PDF without crops/bleeds for our visual reference
-
-     4. An IDML conversion file (InDesign only)
-
-     5. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
 
 21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic: use Frutiger Arabic).
 
@@ -168,6 +130,60 @@ General
 24. change name of family resource center in Arabic TK
 
 20. Additional items from previous conversations: TK
+
+
+Formatting
+============
+
+5.  Ensure no essential elements are closer than one quarter inch to the edge of the page.
+
+7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
+
+18. Do not translate Cincinnati Children's letterhead.
+
+9. For InDesign and Illustrator files deliver a package containing:
+
+     1. All native typefaces used in the piece (no outlines)
+
+     2. All linked art/photos
+
+     3. Print resolution PDF without crops/bleeds for our visual reference
+
+     4. An IDML conversion file (InDesign only)
+
+     5. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
+
+Specific Document Types
+============================
+
+HIM and HIC barcoded documents
+-------------------------------------
+
+(Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
+
+1.  Make the titles bilingual.
+
+2.  Add *THE ENGLISH VERSION OF THIS DOCUMENT IS FOR REFERENCE PURPOSES AND MUST BE INCLUDED IN THE MEDICAL RECORD* above the header on the first page in English only, centered, 8 pt. Times New Roman, regular.
+
+3.  Add the ISO 639-1 Code of the target language and language name in parentheses after the form ID in the left side of the footer, e.g. *J1194-AR (Arabic)* for the Arabic translation of form J1194.
+
+4.  Ensure the HIC date below the form ID matches the source document, even when using a template with a different date.
+
+*Knowing Notes*
+------------------
+
+1.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
+
+2.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
+
+*Health Topics*
+------------------
+
+*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.
+
+1.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
+
+2.	Keep the revision date label exactly as it is written in English, i.e. *Last updated 02/20*.
 
 Specific Languages
 ==================
