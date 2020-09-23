@@ -127,8 +127,7 @@ General
 
 
 
-20. Additional items from previous conversations: TK
-
+20. Translate "Dr. No PCP" as "[No Primary Care Physician on file]" with "No Primary Care Physician on file" in the target language.
 
 Formatting
 ============
@@ -396,6 +395,8 @@ Breastfeeding Medicine Clinic
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
 4.	Use double (“\ ”) and single (‘\ ’) quotation marks only, never angular quotation marks («\ »).
+
+5. When times are written in the 12-hour format, use the abbreviations "a. m." and "p. m." 
 
 Tigrinya
 ----------
