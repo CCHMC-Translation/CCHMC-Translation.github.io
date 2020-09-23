@@ -127,8 +127,6 @@ General
 
 
 
-24. change name of family resource center in Arabic TK
-
 20. Additional items from previous conversations: TK
 
 
