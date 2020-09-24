@@ -83,7 +83,7 @@ General
 
         3.  the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
 
-    3. Once the translation is completed and delivered to us, remove the PHI from any and all files you retain for record keeping. Ask all vendors contracted for the project to do the same. Specifically, the following identifiers of all our patients, or of relatives, employers, or household members of patients, must be removed[^1]:
+    3. Once the translation is completed and delivered to us, remove the PHI from any and all files you retain for record keeping. Ask all vendors contracted for the project to do the same. Specifically, the following identifiers of all our patients, or of relatives, employers, or household members of patients, must be removed<sup>[1](#PHI)</sup>:
 
         1.  Names
 
@@ -400,3 +400,8 @@ Tigrinya
 ----------
 
 Translate *Cincinnati Children's Hospital Medical Center* as ሕክምናዊ ማእከል ናይ ሆስፒታል ህጻናት ሲንሲናቲ.
+
+
+Footnotes
+===========
+<a name="PHI">1</a>: [45 C.F.R. § 164.514](https://www.govinfo.gov/content/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-514.pdf)
