@@ -70,61 +70,6 @@ General
 
 21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic: use Frutiger Arabic).
 
-
-22. For documents with Protected Health Information (PHI):
-
-    1.  Always transmit documents through secure channels.
-
-    2.  PHI is information, including demographic information, which relates to:
-
-        1.  the individual's past, present, or future physical or mental health or condition,
-
-        2.  the provision of health care to the individual, or
-
-        3.  the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
-
-    3. Once the translation is completed and delivered to us, remove the PHI from any and all files you retain for record keeping. Ask all vendors contracted for the project to do the same. Specifically, the following identifiers of all our patients, or of relatives, employers, or household members of patients, must be removed<sup>[1](#PHI)</sup>:
-
-        1.  Names
-
-        2.  All geographic subdivisions smaller than a state, including street address, city, county, precinct, ZIP code, and their equivalent geocodes
-
-        3.  All elements of dates (except year) for dates that are directly related to an individual, including birth date, admission date, discharge date, death date, and all ages over 89 and all elements of dates (including year) indicative of such age, except that such ages and elements may be aggregated into a single category of age 90 or older
-
-        4.  Telephone numbers
-
-        5.  Fax numbers
-
-        6.  Email addresses
-
-        7.  Social security numbers
-
-        8.  Medical record numbers
-
-        9.  Health plan beneficiary numbers
-
-        10.  Account numbers
-
-        11.  Certificate/license numbers
-
-        12.  Vehicle identifiers and serial numbers, including license plate numbers
-
-        13.  Device identifiers and serial numbers
-
-        14.  Web Universal Resource Locators (URLs)
-
-        15.  Internet Protocol (IP) addresses
-
-        16.  Biometric identifiers, including finger and voice prints
-
-        17.  Full-face photographs and any comparable images
-
-        18.  Any other unique identifying number, characteristic, or code, except as permitted by 45 C.F.R. 164.514(c).
-
-    4. See our business associate agreement for more details on handling PHI.
-
-
-
 20. Translate "Dr. No PCP" as "[No Primary Care Physician on file]" with "No Primary Care Physician on file" in the target language.
 
 Formatting
@@ -150,6 +95,61 @@ Formatting
 
 Specific Document Types
 ============================
+
+Documents Containing Protected Health Information (PHI)
+--------------------------------------------------------------------
+
+1.  Always transmit documents through secure channels.
+
+2.  PHI is information, including demographic information, which relates to:
+
+    1.  the individual's past, present, or future physical or mental health or condition,
+
+    2.  the provision of health care to the individual, or
+
+    3.  the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above.
+
+3. Once the translation is completed and delivered to us, remove the PHI from any and all files you retain for record keeping. Ask all vendors contracted for the project to do the same. Specifically, the following identifiers of all our patients, or of relatives, employers, or household members of patients, must be removed<sup>[1](#PHI)</sup>:
+
+   1.  Names
+
+   2.  All geographic subdivisions smaller than a state, including street address, city, county, precinct, ZIP code, and their equivalent geocodes
+
+   3.  All elements of dates (except year) for dates that are directly related to an individual, including birth date, admission date, discharge date, death date, and all ages over 89 and all elements of dates (including year) indicative of such age, except that such ages and elements may be aggregated into a single category of age 90 or older
+
+   4.  Telephone numbers
+
+   5.  Fax numbers
+
+   6.  Email addresses
+
+   7.  Social security numbers
+
+   8.  Medical record numbers
+
+   9.  Health plan beneficiary numbers
+
+   10.  Account numbers
+
+   11.  Certificate/license numbers
+
+   12.  Vehicle identifiers and serial numbers, including license plate numbers
+
+   13.  Device identifiers and serial numbers
+
+   14.  Web Universal Resource Locators (URLs)
+
+   15.  Internet Protocol (IP) addresses
+
+   16.  Biometric identifiers, including finger and voice prints
+
+   17.  Full-face photographs and any comparable images
+
+   18.  Any other unique identifying number, characteristic, or code, except as permitted by 45 C.F.R. 164.514(c).
+
+4. See our business associate agreement for more details on handling PHI.
+
+
 
 HIM and HIC barcoded documents
 -------------------------------------
