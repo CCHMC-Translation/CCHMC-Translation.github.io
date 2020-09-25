@@ -264,6 +264,11 @@ Arabic
 
 9.	When translating from Arabic to English, any Hijri dates should be converted to Gregorian dates followed by the Hijri date in parentheses.
 
+Burmese
+--------
+
+1. Use *Zawgyi-One* font for all translations.
+
 Chinese (Simplified)
 --------------------
 
