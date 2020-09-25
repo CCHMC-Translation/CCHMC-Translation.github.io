@@ -269,6 +269,8 @@ Burmese
 
 1. Use *Zawgyi-One* font for all translations.
 
+2. Translate *Cincinnati Children's Hospital Medical Center* as စင္စီနတီ ကေလးေဆး႐ုံ ၏ ေဆးပညာစင္တာ သည္.
+
 Chinese (Simplified)
 --------------------
 
