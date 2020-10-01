@@ -35,11 +35,7 @@ General
           
             1. If this is the first mention of Cincinnati Children's, also make it bilingual per 2.a above.
 
-        4.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
 
-        5.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
-
-        6. When patient calendars contain the patient name and/or MRN in the source, include them in English in the target document.
 
 
 3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
@@ -68,8 +64,6 @@ General
 
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
 
-21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic: use Frutiger Arabic).
-
 20. Translate "Dr. No PCP" as "[No Primary Care Physician on file]" with "No Primary Care Physician on file" in the target language.
 
 Formatting
@@ -80,6 +74,12 @@ Formatting
 7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
 
 18. Do not translate Cincinnati Children's letterhead.
+
+21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic (use *Frutiger Arabic*) and Burmese (use *Zawgyi-One*)).
+2.  For **languages which do not use Latin script**:
+    1.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
+
+    2.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
 
 9. For InDesign and Illustrator files deliver a package containing:
 
@@ -95,6 +95,40 @@ Formatting
 
 Specific Document Types
 ============================
+
+HIM and HIC barcoded documents
+-------------------------------------
+
+(Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
+
+1.  Make the titles bilingual.
+
+2.  Add *THE ENGLISH VERSION OF THIS DOCUMENT IS FOR REFERENCE PURPOSES AND MUST BE INCLUDED IN THE MEDICAL RECORD* above the header on the first page in English only, centered, 8 pt. Times New Roman, regular.
+
+3.  Add the ISO 639-1 Code of the target language and language name in parentheses after the form ID in the left side of the footer, e.g. *J1194-AR (Arabic)* for the Arabic translation of form J1194.
+
+4.  Ensure the HIC date below the form ID matches the source document, even when using a template with a different date.
+
+*Knowing Notes*
+------------------
+
+1.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
+
+2.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
+
+*Health Topics*
+------------------
+
+*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.
+
+1.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
+
+2.	Keep the revision date label exactly as it is written in English, i.e. *Last updated 02/20*.
+
+Patient Calendars
+---------------------
+
+1.  When patient calendars contain the patient name and/or MRN in the source, include them in English in the target document.
 
 Documents Containing Protected Health Information (PHI)
 --------------------------------------------------------------------
@@ -148,37 +182,6 @@ Documents Containing Protected Health Information (PHI)
    18.  Any other unique identifying number, characteristic, or code, except as permitted by 45 C.F.R. 164.514(c).
 
 4. See our business associate agreement for more details on handling PHI.
-
-
-
-HIM and HIC barcoded documents
--------------------------------------
-
-(Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
-
-1.  Make the titles bilingual.
-
-2.  Add *THE ENGLISH VERSION OF THIS DOCUMENT IS FOR REFERENCE PURPOSES AND MUST BE INCLUDED IN THE MEDICAL RECORD* above the header on the first page in English only, centered, 8 pt. Times New Roman, regular.
-
-3.  Add the ISO 639-1 Code of the target language and language name in parentheses after the form ID in the left side of the footer, e.g. *J1194-AR (Arabic)* for the Arabic translation of form J1194.
-
-4.  Ensure the HIC date below the form ID matches the source document, even when using a template with a different date.
-
-*Knowing Notes*
-------------------
-
-1.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
-
-2.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
-
-*Health Topics*
-------------------
-
-*Health Topics* usually include *HT* in the file name. If you are unsure if a document is a *Health Topic* or not, ask.
-
-1.	Add *Health Topic: Title - Language* in English to the footer of the translation, right justified (left justified for right-to-left languages), 8 pt. Arial, regular, e.g. *Health Topic: Hearing Loss - Spanish*.
-
-2.	Keep the revision date label exactly as it is written in English, i.e. *Last updated 02/20*.
 
 Specific Languages
 ==================
@@ -267,9 +270,7 @@ Arabic
 Burmese
 --------
 
-1. Use *Zawgyi-One* font for all translations.
-
-2. Translate *Cincinnati Children's Hospital Medical Center* as စင်စီနတီ ကလေးဆေးရုံ ၏ ဆေးပညာစင်တာ သည်.
+1. Translate *Cincinnati Children's Hospital Medical Center* as စင်စီနတီ ကလေးဆေးရုံ ၏ ဆေးပညာစင်တာ သည်.
 
 Chinese (Simplified)
 --------------------
