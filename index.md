@@ -77,6 +77,7 @@ Formatting
 
 21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic (use *Frutiger Arabic*) and Burmese (use *Zawgyi-One*)).
 2.  For **languages which do not use Latin script**:
+
     1.   Do not use optical kerning in Adobe InDesign, Adobe Illustrator or any other desktop publishing software.
 
     2.  Replace Microsoft Office form field checkboxes with the Unicode ballot box character: ☐ (U+2610) or ☑ (U+2611).
