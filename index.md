@@ -11,46 +11,47 @@ layout: single
 General
 =======
 
-1.  For **languages which use Latin script**:
+For **languages which use Latin script
+-----------------------------------------------
 
-    1.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
+1.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
-        1.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
+    1.  If space permits, replace *CCHMC* with *Cincinnati Children's*. Otherwise leave it as *CCHMC*.
 
-    2.  On first mention in the body of each document, medication names and Cincinnati Children's departments and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+2.  On first mention in the body of each document, medication names, departments, department abbreviations, and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-    3.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
+3.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
 
-    4.  When clearly referring to a location, translate *Base* as *Main Campus*.
+4.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-2.  For **languages which do not use Latin script**:
+For **languages which do not use Latin script**
+----------------------------------------------------------------
 
-    1. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
+1. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, department abbreviations, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-        1.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+    1.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
 
-        2.  When clearly referring to a location, translate *Base* as *Main Campus*.
+    2.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-        3. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
+    3. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
           
-            1. If this is the first mention of Cincinnati Children's, also make it bilingual per 2.a above.
+       1. If this is the first mention of Cincinnati Children's, also make it bilingual per XX above.
+       
+2. Replace letters in ordered lists with appropriate letters.
 
+For All Languages
+---------------------
 
-
-
-3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
-
-    1.  Many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
+3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English. Note: many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
 
 8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
 
-6.  Whenever a form has a signature line labeled *Witness,* make that label and any additional corresponding labels (e.g. *Date)* bilingual. Witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
+6.  Whenever a form has a signature line labeled *Witness,* make that label and any additional corresponding labels (e.g. *Date)* bilingual. Note: witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
 
 
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
 
-12. For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
 13. For book titles in the body of the document where no translation has been published, add a translation of the title in \[brackets\] after the English title. If a translation has been published, just use the title of the translated book.
 
@@ -65,6 +66,10 @@ General
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
 
 20. Translate "Dr. No PCP" as "[No Primary Care Physician on file]" with "No Primary Care Physician on file" in the target language.
+
+For Into English
+--------------------
+For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
 Formatting
 ============

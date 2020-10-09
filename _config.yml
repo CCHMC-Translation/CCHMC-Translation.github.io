@@ -29,6 +29,8 @@ remote_theme: "mmistakes/minimal-mistakes@4.20.2"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  
+search: true 
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
