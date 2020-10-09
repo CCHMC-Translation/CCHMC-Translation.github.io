@@ -39,8 +39,8 @@ Languages Which Do Not Use Latin Script
        
 2. Replace letters in ordered lists with appropriate letters.
 
-For All Languages
----------------------
+All Languages
+----------------
 
 3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English. Note: many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
 
@@ -67,8 +67,8 @@ For All Languages
 
 20. Translate "Dr. No PCP" as "[No Primary Care Physician on file]" with "No Primary Care Physician on file" in the target language.
 
-For Into English
---------------------
+Translations Into English
+-------------------------------
 For translations into English, add *Translated by Cincinnati Children's* to the footer of the translation, right justified, 8 pt. Arial, regular.
 
 Formatting
