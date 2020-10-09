@@ -35,12 +35,12 @@ Languages Which Do Not Use Latin Script
     Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
     {: .notice--info}
 
-    2.  When clearly referring to a location, translate *Base* as *Main Campus*.
+    2. When clearly referring to a location, translate *Base* as *Main Campus*.
 
     3. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
 
-    Note: If this is the first mention of Cincinnati Children's, also make it bilingual as indicated above.
-    {: .notice--info}      
+       Note: If this is the first mention of Cincinnati Children's, also make it bilingual as indicated above.
+       {: .notice--info}      
 
 2. Replace letters in ordered lists with appropriate letters.
 
