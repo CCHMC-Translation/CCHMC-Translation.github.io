@@ -11,8 +11,8 @@ layout: single
 General
 =======
 
-For **languages which use Latin script
------------------------------------------------
+Languages Which Use Latin Script
+----------------------------------------
 
 1.  Keep the names *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center,* and *GetWellNetwork* in English.
 
@@ -24,8 +24,8 @@ For **languages which use Latin script
 
 4.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
-For **languages which do not use Latin script**
-----------------------------------------------------------------
+Languages Which Do Not Use Latin Script
+-------------------------------------------------
 
 1. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, department abbreviations, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
