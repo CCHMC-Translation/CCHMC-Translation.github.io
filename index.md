@@ -20,7 +20,10 @@ Languages Which Use Latin Script
 
 2.  On first mention in the body of each document, medication names, departments, department abbreviations, and divisions are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-3.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*. Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
+3.  Translate campus names, e.g. *Main Campus* and *Liberty Campus*.
+
+    Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should remain as-is.
+    {: .notice--info}
 
 4.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
@@ -29,26 +32,33 @@ Languages Which Do Not Use Latin Script
 
 1. On first mention in the body of each document, medication names, *Cincinnati Children's, Cincinnati Children's Hospital, Cincinnati Children's Hospital Medical Center, GetWellNetwork*, departments, department abbreviations, divisions, building names, names of US states (e.g. Ohio, Kentucky, and Indiana), and campus names are translated, followed by the English name in parentheses. Subsequent mentions use the translation only.
 
-    1.	Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+    Note that many campus names, e.g. *Burnet* in *Burnet Campus,* *Mason* in *Mason Campus,* *Liberty* in *Liberty Campus,* *College Hill* in *College Hill Campus,* and *Oak* in *Oak Campus,* refer to neighborhoods or streets and therefore should be transliterated, not translated.
+    {: .notice--info}
 
     2.  When clearly referring to a location, translate *Base* as *Main Campus*.
 
     3. If space permits, replace CCHMC with the translation of Cincinnati Children’s. Otherwise leave it in English.
-          
-       1. If this is the first mention of Cincinnati Children's, also make it bilingual per XX above.
-       
+
+    Note: If this is the first mention of Cincinnati Children's, also make it bilingual as indicated above.
+    {: .notice--info}      
+
 2. Replace letters in ordered lists with appropriate letters.
 
 All Languages
 ----------------
 
-3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English. Note: many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
+3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
+
+    Note: many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
+    {: .notice--info}
 
 8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
 
-6.  Whenever a form has a signature line labeled *Witness,* make that label and any additional corresponding labels (e.g. *Date)* bilingual. Note: witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
+6.  Whenever a form has a signature line labeled *Witness,* make that label and any additional corresponding labels (e.g. *Date)* bilingual.
 
+    Note: witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
+    {: .notice--info}
 
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
 
@@ -105,7 +115,8 @@ Specific Document Types
 HIM and HIC barcoded documents
 -------------------------------------
 
-(Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.):
+Note: the barcode in the footer is not usually displayed in Word. Instead, something like *\*DTM1234\** is displayed.
+{: .notice--info}
 
 1.  Make the titles bilingual.
 
