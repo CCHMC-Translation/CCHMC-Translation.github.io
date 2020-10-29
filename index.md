@@ -44,13 +44,15 @@ Languages Which Do Not Use Latin Script
 
 2. Replace letters in ordered lists with appropriate letters.
 
-All Languages
-----------------
-
-3.  Location letters (e.g. *D* in *Location D*) and addresses in the United States remain in English.
+3.  Location letters (e.g. *D* in *Location D*) remain in English.
 
     Note: many Cincinnati Children's buildings are named with letters such as *Location D.* Specific floors in those buildings are referred to with the building letter and floor number, e.g. *D2.*
     {: .notice--info}
+
+All Languages
+----------------
+
+3.  Addresses in the United States remain in English.
 
 8.  Dates: In English source documents, dates will likely be written month/day/year. In translations, when not limited by space, spell out the month, e.g. *August 7, 2015* instead of *8/7/2015* or *7/8/2015*. Do not write *August/7/2015* or *7/August/2015*. When limited by space, use the ISO 8601 date format: year (four digits), month (two digits) and day (two digits), e.g. *2015-08-07*.
 
@@ -308,13 +310,15 @@ Chinese (Traditional)
 French
 -------
 
-The following terms must be translated as follows:
+1. The following terms must be translated as follows:
 
-email
-: courriel
+   email
+   : courriel
 
-fax
-: fax
+   fax
+   : fax
+   
+2. Bilingual *date (date)* looks silly. Don't do it.
 
 Greek
 -------
