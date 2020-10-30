@@ -61,6 +61,9 @@ All Languages
 
     Note: witnesses usually only speak English but are often asked to sign translated forms to indicate they were present when the form was signed by a limited English proficient person.
     {: .notice--info}
+    
+    Exception: In cases where the translation and English label are the same (e.g. *date* in French), the label may remain monolingual.
+    {: .notice--warning}
 
 9.  Whenever something isn't clear, or sounds potentially inappropriate when translated, ask for clarification.
 
@@ -148,6 +151,8 @@ Patient Calendars
 ---------------------
 
 1.  When patient calendars contain the patient name and/or MRN in the source, include them in English in the target document.
+
+2.  Make the name of the month bilingual with the English in parentheses.
 
 Documents Containing Protected Health Information (PHI)
 --------------------------------------------------------------------
@@ -274,7 +279,6 @@ Arabic
 
 4.  When space does not permit translating credentials into Arabic, use the English abbreviations.
 
-5.  In patient medication calendars, the name of the month should be bilingual with the English in parentheses.
 
 
 
@@ -318,8 +322,6 @@ French
    fax
    : fax
    
-2. Bilingual *date (date)* looks silly. Don't do it.
-
 Greek
 -------
 
