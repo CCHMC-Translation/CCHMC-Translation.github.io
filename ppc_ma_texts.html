@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta charset="UTF-8">
+
+        <style>
+         .submitbutton{
+             display:block;
+         }
+        </style>
+    </head>
+    <body>
+    <form action="javascript:void(0);">
+        <label for="staffname">Staff First Name:</label>
+        <input type="text" id="staffname" name="staffname" required><br><br>
+        <label for="ptname">Patient First Name:</label>
+        <input type="text" id="ptname" name="ptname" required>
+        <p>Location:</p>
+        <input type="radio" id="ppc" name="location" value="ppc" required>
+        <label for="ppc">PPC</label><br>
+        <input type="radio" id="hopple" name="location" value="hopple">
+        <label for="hopple">Hopple</label><br>
+        <input type="radio" id="fpc" name="location" value="fpc">
+        <label for="fpc">FPC</label><br><br>
+        <input type="button" onclick="showMessage()" value="Show Message" class="submitbutton" />
+    </form>
+
+
+    <p><span id = "display_message"></span></p>
+
+    <script type="text/JavaScript">
+     function showMessage(){
+         var staffname = document.getElementById("staffname").value;
+         switch(staffname){
+             case null:
+             case "":
+                 return;
+         }
+
+         var ptname = document.getElementById("ptname").value;
+         switch(ptname){
+             case null:
+             case "":
+                 return;
+         }
+         
+         var location = document.querySelector('input[name="location"]:checked').value;
+         switch(location){
+             case "ppc":
+                 var message = `Hola, habla ${staffname} de PPC. Es momento de programar un chequeo para ${ptname}. Llamaré en uno o dos días para ayudar a programar esa cita, o puede pasar por aquí hoy mismo para que veamos a su hijo(a). También puede llamar al 513-517-4652 para programar una cita.`;
+                 var message_en = `Hi, this is ${staffname} from PPC. ${ptname} is due for a check up. I’ll call in a day or two to help schedule that appointment or you can walk in today to have your child seen! You can also call 513-517-4652 to schedule.`
+                 break;
+             case "hopple":
+                 var message = `Hola, habla ${staffname} de Hopple Street Health Center. Es momento de programar un chequeo para ${ptname}. Llamaré en uno o dos días para ayudar a programar esa cita, o puede llamar al 513-517-4652 para programarla.`
+                 var message_en = `Hi, this is ${staffname} from Hopple St. Health Center. ${ptname} is due for a check up. I’ll call in a day or two to help schedule that appointment or you can call 513-517-4652 to schedule.`
+                 break;
+             case "fpc":
+                 var message = `Hola, habla ${staffname} de Fairfield. Es momento de programar un chequeo para ${ptname}. Llamaré en uno o dos días para ayudar a programar esa cita, o puede llamar al 513-517-4652 para programarla.`
+                 var message_en = `Hi, this is ${staffname} from Fairfield. ${ptname} is due for a check up. I’ll call in a day or two to help schedule that appointment or you can call 513-517-4652 to schedule.`
+                 break;
+         }
+         display_message.innerHTML= `<h2>Spanish Message</h2><span id="message">${message}</span><br><br> <button onclick="copyToClipboard('message')">Copy Spanish Message</button><br><br><h2>English Translation</h2>${message_en}`;
+     }
+    </script>
+
+    <script>
+     function copyToClipboard(elementId) {
+
+         // Create a "hidden" input
+         var aux = document.createElement("input");
+
+         // Assign it the value of the specified element
+         aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+         // Append it to the body
+         document.body.appendChild(aux);
+
+         // Highlight its content
+         aux.select();
+
+         // Copy the highlighted text
+         document.execCommand("copy");
+
+         // Remove it from the body
+         document.body.removeChild(aux);
+
+         // Show alert
+         alert("Copied the text: " +   document.getElementById(elementId).innerHTML);
+
+     }
+    </script>
+
+
+
+    </body>
+</html>
