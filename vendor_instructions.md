@@ -1,7 +1,5 @@
 % Translation Vendor Instructions from Cincinnati Children's
 
-[Download as PDF](https://www.dropbox.com/s/ypw3r6vrpteluu5/CCHMC_Vendor_Instructions.pdf?dl=0)
-
 All Projects
 ============
 
@@ -13,6 +11,9 @@ All Projects
 
 4. Submit completed translations in Wordbee with a press-quality PDF version as the Deliverable and the native file format as an Attachment.
 
+    - Secure the PDF with a unique password and the following settings:
+      - SCREENSHOT TK
+
 5. If translating outside of Wordbee, use the XLIFF export/import. Do not further segment the XLIFF in your CAT tool.
 
 7. Send official quote or order confirmation to <translations@cchmc.org> the same day that work on the project begins.
@@ -21,13 +22,15 @@ All Projects
 
      a. When source files are named as clean or track-changes, usually abbreviated "cln" and "trk," use the clean filename as the base.
 
-10. Follow the [Style Guide](http://cchmc-translation.surge.sh) for all projects.
+10. Follow the [Style Guide](http://cchmc-translation.github.com) for all projects.
 
 11. For any documents with known issues, do not mark the job as Completed. Once errors get out in the wild, it can be hard to ensure they\'re corrected. Let us know the document will be delivered late, the reason for the delay, and when you expect to have the corrected one for us. If we want the problematic document anyway because of time constraints, we\'ll let you know!
 
 12. If there are comments or tracked changes in a source document, ask the Translations Coordinator what should be done with them before proceeding.
 
 13. Foster open communication with translation teams. If a font is too small for the target language, there are errors in the source document, or something in the source document or project instructions is not clear, contact the Translations Coordinator.
+
+    - When delivering bilingual files, be sure to correct any confirmed errors in the source language.
 
 14. If it appears that a document has already been translated (e.g. more than 85% of the document is a 95% TM match or better), ask the Translations Coordinator what should be done before proceeding.
 
@@ -37,11 +40,9 @@ All Projects
 
 16. If you need something to be done (adapted from [Cyrus Stoller](http://www.cyrusstoller.com/2014/01/08/stop-sending-emails-for-real-time-requests)):
 
-     -   In 30 minutes: call 513-803-6929 or 513-803-2925
+     -   In 30 minutes or after 5:00 PM: call 859-250-5459
 
-     -   Today (unless it's already after 4:30 PM): Slack or Asana
-
-     -   Tomorrow or later: email <translations@cchmc.org> or Asana
+     -   Later: Slack or Asana
 
 17. When you receive a question or request from any Cincinnati Children's employee outside Language Access Services, redirect them to <translations@cchmc.org>. Do not answer their question or fulfill their request.
 
@@ -52,6 +53,9 @@ All Projects
 20. Only consider a request a Rush if explicitly specified in the request. If you determine that the deadline of a non-rush request is too soon, and the request would need to be treated as a Rush, ask the Translations Coordinator if the deadline can be adjusted before proceeding.
 
 22. Translate all non-editable text in source files. If there are more than 70 words of non-editable text in a source file, send it to the Translations Coordinator for addition to the Wordbee project as an additional source document so that it can be included in the TM.
+     - For screenshots, ask if the user will be accessing the content in English or another language. Recreate screenshot in the other language if necessary.
+     
+23. 
 
 Special Projects
 ================
