@@ -1,4 +1,12 @@
-% Translation Vendor Instructions from Cincinnati Children's
+---
+title: Cincinnati Children's Vendor Instructions
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "list"
+layout: single
+---
+
+[Version History](https://github.com/CCHMC-Translation/CCHMC-Translation.github.io/commits/master/vendor_instructions.md)
 
 All Projects
 ============
@@ -22,7 +30,7 @@ All Projects
 
      a. When source files are named as clean or track-changes, usually abbreviated "cln" and "trk," use the clean filename as the base.
 
-10. Follow the [Style Guide](http://cchmc-translation.github.com) for all projects.
+10. Follow the [Style Guide](https://cchmc-translation.github.io) for all projects.
 
 11. For any documents with known issues, do not mark the job as Completed. Once errors get out in the wild, it can be hard to ensure they\'re corrected. Let us know the document will be delivered late, the reason for the delay, and when you expect to have the corrected one for us. If we want the problematic document anyway because of time constraints, we\'ll let you know!
 
