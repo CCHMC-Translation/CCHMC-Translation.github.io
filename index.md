@@ -108,7 +108,7 @@ Formatting
 
      2. All linked art/photos
 
-     3. Print resolution PDF without crops/bleeds for our visual reference
+     3. "High-Quality Print" PDF without crops/bleeds for our visual reference
 
      4. An IDML conversion file (InDesign only)
 
@@ -314,7 +314,7 @@ Chinese (Traditional)
 French
 -------
 
-1. The following terms must be translated as follows:
+The following terms must be translated as follows:
 
    email
    : courriel
@@ -382,50 +382,50 @@ Spanish
 
 2.  The following terms must be translated as follows:
 
-Concourse
-: Pasillo principal
+	Concourse
+	: Pasillo principal
 
-Location *(e.g. Location D)*
-: Área
+	Location *(e.g. Location D)*
+	: Área
 
-Emergency Room
-: Sala de Emergencia
+	Emergency Room
+	: Sala de Emergencia
 
-Emergency Department
-: Sala de Emergencia
+	Emergency Department
+	: Sala de Emergencia
 
-Destination Excellence
-: Programa para Pacientes Internacionales
+	Destination Excellence
+	: Programa para Pacientes Internacionales
 
-Child Life Specialist
-: Especialista en Vida Infantil
+	Child Life Specialist
+	: Especialista en Vida Infantil
 
-Child Life
-: Vida Infantil
+	Child Life
+	: Vida Infantil
 
-DDBP (Division of Developmental and Behavioral Pediatrics)
-: División de Pediatría del Desarrollo y Comportamiento
+	DDBP (Division of Developmental and Behavioral Pediatrics)
+	: División de Pediatría del Desarrollo y Comportamiento
 
-BMCP (Division of Behavioral Medicine and Clinical Psychology)
-: División de Medicina del Comportamiento y Psicología Clinica
+	BMCP (Division of Behavioral Medicine and Clinical Psychology)
+	: División de Medicina del Comportamiento y Psicología Clinica
 
-Day Hospital
-: Hospital de Día
+	Day Hospital
+	: Hospital de Día
 
-referral
-: remisión
+	referral
+	: remisión
 
-Center for Breastfeeding Medicine
-: Centro de Medicina de  Lactancia Materna
+	Center for Breastfeeding Medicine
+	: Centro de Medicina de  Lactancia Materna
 
-Breastfeeding Medicine Clinic
-: Clínica de Medicina de Lactancia Materna
+	Breastfeeding Medicine Clinic
+	: Clínica de Medicina de Lactancia Materna
 
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
-4.	Use double (“\ ”) and single (‘\ ’) quotation marks only, never angular quotation marks («\ »).
+4.	Use double (“ ”) and single (‘ ’) quotation marks only, never angular quotation marks (« »).
 
-5. When times are written in the 12-hour format, use the abbreviations "a. m." and "p. m." 
+5.  When times are written in the 12-hour format, use the abbreviations "a. m." and "p. m." 
 
 Tigrinya
 ----------
