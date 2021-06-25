@@ -113,7 +113,7 @@
                  `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at PPC or walk in today. We have reserved a COVID vaccine for you & ${ptname}.`
              ];
 
-	           const ppc_messages_es = [
+	           var ppc_messages_es = [
                  `¡Hola! ¡En la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo.`,
                  `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita a la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) de ${ptname} o vengan al centro de atención hoy mismo.`,
                  `¡Hola! ¡En la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo. La vacuna contra COVID está disponible, si tienen interés.`,
@@ -139,7 +139,7 @@
                  `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at Hopple. We have reserved a COVID vaccine for you & ${ptname}.`
              ];
 
-	           const hopple_messages_es = [
+	           var hopple_messages_es = [
                  `¡Hola! ¡En Hopple los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible.`,
                  `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Hopple.`,
                  `¡Hola! ¡En Hopple los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID está disponible, si tienen interés.`,
@@ -165,7 +165,7 @@
                  `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at Fairfield. We have reserved a COVID vaccine for you & ${ptname}.`
              ];
 
-	           const fpc_messages_es = [
+	           var fpc_messages_es = [
                  `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible.`,
                  `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Fairfield.`,
                  `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID está disponible, si tienen interés.`,
@@ -177,6 +177,12 @@
                  `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control en salud. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
                  `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar el próximo control en salud de ${ptname} en Fairfield. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`
              ];
+
+             if (age == 1) {
+                 ppc_messages_es = ppc_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+                 hopple_messages_es = hopple_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+                 fpc_messages_es = fpc_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+             }
 
              message_number = message_number - 1;
 
