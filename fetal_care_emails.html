@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta charset="UTF-8">
+
+        <style>
+         .submitbutton{
+             display:block;
+         }
+         .required-field::after {
+             content: "*";
+             color: red;
+         }
+         #errorMsg{color: red;}
+         #errorMsg2{color: red;}
+        </style>
+    </head>
+    <body>
+        <form action="javascript:void(0);">
+            <p><label for="ptname"  class="required-field" >Patient First Name:</label>
+                <input type="text" id="ptname" name="ptname" required="required"></p>
+                <p><div id='errorMsg2'></div><label for="lastcheckupdate">Date of Last Checkup:</label>
+                    <input type="date" id="lastcheckupdate" name="lastcheckupdate"></p>
+                    <p><div id='errorMsg'></div><label for="age">Age for Checkup Needed:</label>
+                        <input type="number" id="age" name="age" min="1" max="17"></p>
+                        <p class="required-field" >Location:</p>
+                        <input type="radio" id="ppc" name="location" value="ppc" required="required">
+                        <label for="ppc">PPC</label><br>
+                        <input type="radio" id="hopple" name="location" value="hopple">
+                        <label for="hopple">Hopple</label><br>
+                        <input type="radio" id="fpc" name="location" value="fpc">
+                        <label for="fpc">FPC</label><br>
+                        <p class="required-field" >Message:</p>
+                        <input type="radio" id="1" name="message" value="1" required="required">
+                        <label for="1">1 - due for checkup</label><br>
+                        <input type="radio" id="2" name="message" value="2">
+                        <label for="2">2 - follow-up</label><br>
+                        <input type="radio" id="3" name="message" value="3">
+                        <label for="3">3 - due for checkup, offer COVID vaccine</label><br>
+    		                <input type="radio" id="4" name="message" value="4">
+                        <label for="4">4 - follow-up, offer COVID vaccine</label><br>
+    		                <input type="radio" id="5" name="message" value="5">
+                        <label for="5">5 - due for checkup with age and date of last checkup</label><br>
+    		                <input type="radio" id="6" name="message" value="6">
+                        <label for="6">6 - follow-up with age</label><br>
+    		                <input type="radio" id="7" name="message" value="7">
+                        <label for="7">7 - due for checkup with age and date of last checkup, offer COVID vaccine including parent</label><br>
+    		                <input type="radio" id="8" name="message" value="8">
+                        <label for="8">8 - follow-up with age, offer COVID vaccine including parent</label><br>
+    		                <input type="radio" id="9" name="message" value="9">
+                        <label for="9">9 - due for checkup, offer COVID vaccine including parent</label><br>
+    		                <input type="radio" id="10" name="message" value="10">
+                        <label for="10">10 - follow-up, offer COVID vaccine including parent</label><br><br>
+                        <input type="button" onclick="showMessage()" value="Show Message" class="submitbutton" />
+        </form>
+
+
+        <p><span id = "display_message"></span></p>
+
+        <script type="text/JavaScript">
+         function showMessage(){
+
+             display_message.innerHTML= "";
+             errorModal = document.getElementById("errorMsg");
+             errorModal.innerHTML = "";
+             document.getElementById("age").style.borderColor = "inherit";
+             errorModal = document.getElementById("errorMsg2");
+             errorModal.innerHTML = "";
+             document.getElementById("lastcheckupdate").style.borderColor = "inherit";
+
+             var ptname = document.getElementById("ptname").value;
+             switch(ptname){
+                 case null:
+                 case "":
+                     return;
+             }
+
+             var message_number = document.querySelector('input[name="message"]:checked').value;
+		         var location = document.querySelector('input[name="location"]:checked').value;
+             var lastcheckupdate = document.querySelector('input[name="lastcheckupdate"]').value;
+             var age = document.querySelector('input[name="age"]').value;
+
+             var error = false;
+             if (message_number > 4 & message_number < 8 & age == "") {
+                 errorModal = document.getElementById("errorMsg");
+                 errorModal.innerHTML = "Please enter an age for the checkup that's needed";
+                 document.getElementById("age").style.borderColor = "red";
+                 error = true;
+             }
+
+             if ((message_number == 5 | message_number == 7) & lastcheckupdate == "") {
+                 errorModal = document.getElementById("errorMsg2");
+                 errorModal.innerHTML = "Please enter the date of the last checkup";
+                 document.getElementById("lastcheckupdate").style.borderColor = "red";
+                 error = true;
+             }
+
+             if (error == true){
+                 return;
+             }
+
+             const ppc_messages_en = [
+                 `Hi! PPC misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit or walk in today.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at PPC or walk in today.`,
+                 `Hi! PPC misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit or walk in today. COVID vaccine is available if interested.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at PPC or walk in today. COVID vaccine is available if interested.`,
+                 `${ptname} was seen for a checkup at PPC on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652 to schedule or walk in today.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at PPC or walk in today. Stay up to date!`,
+                 `${ptname} was seen for a checkup at PPC on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652 to schedule or walk in today. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at PPC or walk in today. We have reserved a COVID vaccine for you & ${ptname}.`,
+                 `Hi! PPC misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit or walk in today. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at PPC or walk in today. We have reserved a COVID vaccine for you & ${ptname}.`
+             ];
+
+	           var ppc_messages_es = [
+                 `¡Hola! ¡En la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita a la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) de ${ptname} o vengan al centro de atención hoy mismo.`,
+                 `¡Hola! ¡En la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita a la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) de ${ptname} o vengan al centro de atención hoy mismo. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `${ptname} fue visto/a para un control en salud en la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) el ${lastcheckupdate} y tiene que hacerse el control en salud de los ${age} años. Por favor, llame al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar el control en salud de ${ptname} de los ${age} años en la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) o vengan al centro de atención hoy mismo. ¡Mantengan los controles al día!`,
+                 `${ptname} fue visto/a para un control en salud en la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) el ${lastcheckupdate}  y tiene que hacerse el control en salud de los ${age} años. Por favor, llame al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar una cita para ${ptname} para el control de los ${age} años en la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) o vengan al centro de atención hoy mismo. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`,
+                 `¡Hola! ¡En la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control en salud. Por favor, llamen al 513-517-4652 para programar una visita o vengan al centro de atención hoy mismo. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar el próximo control en salud en la Clínica de Atención Primaria Pediátrica (Pediatric Primary Care, PPC) de ${ptname} o vengan al centro de atención hoy mismo. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`
+             ];
+
+	           const hopple_messages_en = [
+                 `Hi! Hopple misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible. `,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at Hopple.`,
+                 `Hi! Hopple misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible. COVID vaccine is available if interested.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at Hopple. COVID vaccine is available if interested.`,
+                 `${ptname} was seen for a checkup at Hopple on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at Hopple. Stay up to date!`,
+                 `${ptname} was seen for a checkup at Hopple on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at Hopple. We have reserved a COVID vaccine for you & ${ptname}.`,
+                 `Hi! Hopple misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at Hopple. We have reserved a COVID vaccine for you & ${ptname}.`
+             ];
+
+	           var hopple_messages_es = [
+                 `¡Hola! ¡En Hopple los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Hopple.`,
+                 `¡Hola! ¡En Hopple los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Hopple. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `${ptname} fue visto/a para un control en salud en Hopple el ${lastcheckupdate} y tiene que hacerse el control de los ${age} años. Por favor, llame al 513-517-4652.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar el control en salud de ${ptname} de los ${age}años en Hopple. ¡Mantengan los controles al día!`,
+                 `${ptname} fue visto/a para un control en salud en Hopple el ${lastcheckupdate}  y tiene que hacerse el control de los ${age} años. Por favor, llame al 513-517-4652. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar una cita para ${ptname} para el control de los ${age} años en Hopple. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`,
+                 `¡Hola! ¡En Hopple los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control en salud. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar el próximo control en salud de ${ptname} en Hopple. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`
+             ];
+
+	           const fpc_messages_en = [
+                 `Hi! Fairfield misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at Fairfield.`,
+                 `Hi! Fairfield misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible. COVID vaccine is available if interested.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming visit at Fairfield. COVID vaccine is available if interested.`,
+                 `${ptname} was seen for a checkup at Fairfield on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at Fairfield. Stay up to date!`,
+                 `${ptname} was seen for a checkup at Fairfield on ${lastcheckupdate} & is due for a ${age}-year checkup. Please call 513-517-4652. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `If you haven’t, please call 513-517-4652 to schedule ${ptname}’s ${age}-year checkup at Fairfield. We have reserved a COVID vaccine for you & ${ptname}.`,
+                 `Hi! Fairfield misses you! ${ptname} is due for a checkup. Please call 513-517-4652 to schedule a visit as soon as possible. COVID vaccine is waiting for you & ${ptname}. Claim your dose when you check in for your visit.`,
+                 `Hi! If you haven’t already, please call 513-517-4652 to schedule ${ptname}’s upcoming checkup at Fairfield. We have reserved a COVID vaccine for you & ${ptname}.`
+             ];
+
+	           var fpc_messages_es = [
+                 `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Fairfield.`,
+                 `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar la próxima visita de ${ptname} a Fairfield. La vacuna contra COVID está disponible, si tienen interés.`,
+                 `${ptname}  fue visto/a para un control en salud en Fairfield el ${lastcheckupdate} y tiene que hacerse el control de los ${age} años. Por favor, llame al 513-517-4652.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar el control en salud de ${ptname} de los ${age}años en Fairfield. ¡Mantengan los controles al día!`,
+                 `${ptname} fue visto/a para un control en salud en Fairfield el ${lastcheckupdate} y tiene que hacerse el control de los ${age} años. Por favor, llame al 513-517-4652. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `Si todavía no lo han hecho, por favor llame al 513-517-4652 para programar una cita para ${ptname} para el control de los ${age} años en Fairfield. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`,
+                 `¡Hola! ¡En Fairfield los extrañamos y queremos verlos! ${ptname} tiene que venir a una cita para control en salud. Por favor, llamen al 513-517-4652 para programar una visita lo antes posible. La vacuna contra COVID les está esperando a usted y a ${ptname}. Pregunten por su dosis cuando se registren para su visita.`,
+                 `¡Hola! Si todavía no lo han hecho, llamen al 513-517-4652 para programar el próximo control en salud de ${ptname} en Fairfield. Hemos reservado una vacuna contra COVID para usted y para ${ptname}.`
+             ];
+
+             if (age == 1) {
+                 ppc_messages_es = ppc_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+                 hopple_messages_es = hopple_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+                 fpc_messages_es = fpc_messages_es.map(function(x){return x.replace(`los ${age} años`, `${age} año`);});
+             }
+
+             message_number = message_number - 1;
+
+             if (location == "ppc"){
+			           var message = ppc_messages_es[message_number];
+			           var message_en = ppc_messages_en[message_number];
+		         } else if (location == "hopple"){
+		             var message = hopple_messages_es[message_number];
+		             var message_en = hopple_messages_en[message_number];
+		         } else if (location == "fpc"){
+		             var message = fpc_messages_es[message_number];
+		             var message_en = fpc_messages_en[message_number];
+		         } else {
+			           var message = `Error`;
+			           var message_en = `Error`;
+		         }
+		         
+             display_message.innerHTML= `<h2>Spanish Message</h2><span id="message">${message}</span><br><br> <button onclick="copyToClip(document.getElementById('message').innerHTML)">Copy Spanish Message</button><br><br><h2>English Translation</h2>${message_en}`;
+         }
+        </script>
+
+        <script>
+         function copyToClipboard(elementId) {
+
+             // Create a "hidden" input
+             var aux = document.createElement("input");
+
+             // Assign it the value of the specified element
+             aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+             // Append it to the body
+             document.body.appendChild(aux);
+
+             // Highlight its content
+             aux.select();
+
+             // Copy the highlighted text
+             document.execCommand("copy");
+
+             // Remove it from the body
+             document.body.removeChild(aux);
+
+             // Show alert
+             alert("Copied the text: " +   document.getElementById(elementId).innerHTML);
+
+         }
+		 
+		 function copyToClip(str) {
+			function listener(e) {
+				e.clipboardData.setData("text/html", str);
+				e.clipboardData.setData("text/plain", str);
+				e.preventDefault();
+				}
+			document.addEventListener("copy", listener);
+			document.execCommand("copy");
+			document.removeEventListener("copy", listener);
+			};
+        </script>
+
+
+
+    </body>
+</html>
