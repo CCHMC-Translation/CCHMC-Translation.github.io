@@ -205,31 +205,7 @@
         </script>
 
         <script>
-         function copyToClipboard(elementId) {
 
-             // Create a "hidden" input
-             var aux = document.createElement("input");
-
-             // Assign it the value of the specified element
-             aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-
-             // Append it to the body
-             document.body.appendChild(aux);
-
-             // Highlight its content
-             aux.select();
-
-             // Copy the highlighted text
-             document.execCommand("copy");
-
-             // Remove it from the body
-             document.body.removeChild(aux);
-
-             // Show alert
-             alert("Copied the text: " +   document.getElementById(elementId).innerHTML);
-
-         }
-		 
 		 function copyToClip(str) {
 			function listener(e) {
 				e.clipboardData.setData("text/html", str);
@@ -239,6 +215,7 @@
 			document.addEventListener("copy", listener);
 			document.execCommand("copy");
 			document.removeEventListener("copy", listener);
+			alert("Copied the Spanish message.");
 			};
         </script>
 
