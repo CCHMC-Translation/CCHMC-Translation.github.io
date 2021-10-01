@@ -20,17 +20,21 @@
         <form action="javascript:void(0);">
             <p><label for="ptname"  class="required-field" >Patient First Name:</label>
                 <input type="text" id="ptname" name="ptname" required="required"></p>
-                <p><div id='errorMsg2'></div><label for="lastcheckupdate">Date of Last Checkup:</label>
-                    <input type="date" id="lastcheckupdate" name="lastcheckupdate"></p>
+                <p><div id='errorMsg2'></div><label for="meetingURL">Meeting URL:</label>
+                    <input type="text" id="meetingURL" name="meetingURL"></p>
+				<p><div id='errorMsg2'></div><label for="consult">Consulting Provider:</label>
+                    <input type="text" id="consult" name="consult"></p>
+				<p><div id='errorMsg2'></div><label for="dates">Appointment dates:</label>
+                    <input type="date" id="dates" name="dates"></p>
                     <p><div id='errorMsg'></div><label for="age">Age for Checkup Needed:</label>
                         <input type="number" id="age" name="age" min="1" max="17"></p>
-                        <p class="required-field" >Location:</p>
-                        <input type="radio" id="ppc" name="location" value="ppc" required="required">
-                        <label for="ppc">PPC</label><br>
-                        <input type="radio" id="hopple" name="location" value="hopple">
-                        <label for="hopple">Hopple</label><br>
-                        <input type="radio" id="fpc" name="location" value="fpc">
-                        <label for="fpc">FPC</label><br>
+                        <p class="required-field" >Sender:</p>
+                        <input type="radio" id="emmie" name="sender" value="emmie" required="required">
+                        <label for="emmie">Emmie Meyer</label><br>
+                        <input type="radio" id="silia" name="sender" value="silia">
+                        <label for="silia">Silia Creech</label><br>
+                        <input type="radio" id="andi" name="sender" value="andi">
+                        <label for="andi">Andi Faulkner</label><br>
                         <p class="required-field" >Message:</p>
                         <input type="radio" id="1" name="message" value="1" required="required">
                         <label for="1">1 - due for checkup</label><br>
@@ -77,7 +81,7 @@
              }
 
              var message_number = document.querySelector('input[name="message"]:checked').value;
-		         var location = document.querySelector('input[name="location"]:checked').value;
+		     var sender = document.querySelector('input[name="sender"]:checked').value;
              var lastcheckupdate = document.querySelector('input[name="lastcheckupdate"]').value;
              var age = document.querySelector('input[name="age"]').value;
 
@@ -186,13 +190,13 @@
 
              message_number = message_number - 1;
 
-             if (location == "ppc"){
+             if (sender == "ppc"){
 			           var message = ppc_messages_es[message_number];
 			           var message_en = ppc_messages_en[message_number];
-		         } else if (location == "hopple"){
+		         } else if (sender == "hopple"){
 		             var message = hopple_messages_es[message_number];
 		             var message_en = hopple_messages_en[message_number];
-		         } else if (location == "fpc"){
+		         } else if (sender == "fpc"){
 		             var message = fpc_messages_es[message_number];
 		             var message_en = fpc_messages_en[message_number];
 		         } else {
