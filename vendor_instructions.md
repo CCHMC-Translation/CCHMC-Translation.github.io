@@ -20,7 +20,7 @@ All Projects
 4. Submit completed translations in Wordbee with a press-quality PDF version as the Deliverable and the native file format as an Attachment.
 
     - Secure the PDF with a unique password and the following settings:
-      - SCREENSHOT TK
+      ![prevent copying and editing](protect_pdf.png)
 
 5. If translating outside of Wordbee, use the XLIFF export/import. Do not further segment the XLIFF in your CAT tool.
 
