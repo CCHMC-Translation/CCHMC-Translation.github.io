@@ -420,7 +420,13 @@ Spanish
 
 	Breastfeeding Medicine Clinic
 	: Clínica de Medicina de Lactancia Materna
-
+	
+	COVID-19
+	: el COVID-19
+	
+	covid, Covid
+	: el COVID
+	
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
 4.	Use double (“ ”) and single (‘ ’) quotation marks only, never angular quotation marks (« »).
