@@ -76,7 +76,10 @@ All Languages
 
 15.	Only convert measurements when they are used as approximations in prose, e.g. “ten feet away,” “a couple miles,” “a few pounds,” etc.
 
-17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs to see if they are available in the target language. If yes, use the appropriate URL for the target language. If no, add *(only available in English)* after the URL. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
+17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs, QR codes, or any other link to see if they are available in the target language. If yes, use the appropriate replacement (URL, QR code or link) for the target language. If no, add *(only available in English)* after the URL or in the appropriate place in the target sentence. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
+
+	Links from QR codes can be checked at https://zxing.org/”.
+	{: .notice--info}
 
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
 
