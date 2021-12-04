@@ -78,7 +78,7 @@ All Languages
 
 17. Except the main Cincinnati Children's page *www.cincinnatichildrens.org*, check all URLs, QR codes, or any other link to see if they are available in the target language. If yes, use the appropriate replacement (URL, QR code, or link) for the target language. If no, add *(only available in English)* after the URL or in the appropriate place in the target sentence. For example, add the translation of *(only available in English)* after *www.cincinnatichildrens.org/experiencesurvey* since that page is not available in any other languages.
 
-	Note: You can get the URL from a QR code at [https://zxing.org](https://zxing.org).
+	Note: You can get the URL from a QR code at [zxing.org](https://zxing.org).
 	{: .notice--info}
 
 19. Do not translate text which is not in the source language, e.g. Arabic text in the source document of an English-to-Spanish translation.
