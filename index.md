@@ -139,7 +139,10 @@ Note: the barcode in the footer is not usually displayed in Word. Instead, somet
 
 1.  Keep the following elements of footer in English: number (e.g. *KN0123*), copyright notice (e.g. *©2016 Cincinnati Children's Hospital Medical Center*) and revision date (e.g *01/16*).
 
-2.  When the logo indicates the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
+2.  When the *Knowing Note* is for Home Care, add the title in English to the header of the translation on all pages, right justified (left justified for right-to-left languages), 8 pt. Arial, regular.
+
+    Note: This could be indicated by "Home Care" being included in the logo, or by the words "Home Instructions" appearing above the document title on page 1.
+    {: .notice--info}
 
 *Health Topics*
 ------------------
