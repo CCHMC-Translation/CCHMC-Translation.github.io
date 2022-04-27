@@ -42,7 +42,7 @@ All Projects
 
 14. If it appears that a document has already been translated (e.g. more than 85% of the document is a 95% TM match or better), ask the Translations Coordinator what should be done before proceeding.
 
-   a. Bilingual forms and documents explicitly described as updates are exceptions to this.
+    - Bilingual forms and documents explicitly described as updates are exceptions to this.
 
 15. Notify the Translations Coordinator immediately if a requested delivery date may not be feasible. We need as much time as possible to make alternate plans.
 
