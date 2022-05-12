@@ -23,6 +23,14 @@
         #errorMsg2 {
             color: red;
         }
+
+        #errorMsg3 {
+            color: red;
+        }
+
+        #errorMsg4 {
+            color: red;
+        }
     </style>
 </head>
 
@@ -39,7 +47,7 @@
         <div id='errorMsg2'></div><label for="time">Time:</label>
         <input type="time" id="time" name="time">
         </p>
-        <label for="location">Location:</label>
+        <div id='errorMsg3'></div><label for="location">Location:</label>
         <select id="location" name="location">
             <option value=""></option>
             <option value="Anderson">Anderson</option>
@@ -50,7 +58,7 @@
             <option value="Mason">Mason</option>
             <option value="Maysville">Maysville</option>
         </select>
-        <p><label for="doctor">Doctor:</label>
+        <p><div id='errorMsg4'></div><label for="doctor">Doctor:</label>
             <input type="text" id="doctor" name="doctor">
         </p>
         <p class="required-field">Message:</p>
@@ -86,10 +94,13 @@
              display_message.innerHTML= "";
              errorModal = document.getElementById("errorMsg");
              errorModal.innerHTML = "";
-             document.getElementById("time").style.borderColor = "inherit";
+             document.getElementById("date").style.borderColor = "inherit";
              errorModal = document.getElementById("errorMsg2");
              errorModal.innerHTML = "";
-             document.getElementById("date").style.borderColor = "inherit";
+             document.getElementById("time").style.borderColor = "inherit";
+             errorModal = document.getElementById("errorMsg3");
+             errorModal.innerHTML = "";
+             document.getElementById("location").style.borderColor = "inherit";
 
              var ptname = document.getElementById("ptname").value;
              switch(ptname){
@@ -115,7 +126,26 @@
                  error = true;
              }
 
+             if ((message_number < 8 | message_number == 10) & time == "") {
+                 errorModal = document.getElementById("errorMsg2");
+                 errorModal.innerHTML = "Please enter a time";
+                 document.getElementById("time").style.borderColor = "red";
+                 error = true;
+             }
 
+             if ((message_number < 8 | message_number == 10) & location == "") {
+                 errorModal = document.getElementById("errorMsg3");
+                 errorModal.innerHTML = "Please select a location";
+                 document.getElementById("location").style.borderColor = "red";
+                 error = true;
+             }
+
+             if (message_number < 8 & doctor == "") {
+                 errorModal = document.getElementById("errorMsg4");
+                 errorModal.innerHTML = "Please enter a doctor";
+                 document.getElementById("doctor").style.borderColor = "red";
+                 error = true;
+             }
 
              if (error == true){
                  return;
