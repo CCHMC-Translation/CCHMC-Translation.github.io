@@ -32,11 +32,11 @@
             <input type="text" id="ptname" name="ptname" required="required">
         </p>
         <p>
-        <div id='errorMsg2'></div><label for="date">Date:</label>
+        <div id='errorMsg'></div><label for="date">Date:</label>
         <input type="date" id="date" name="date">
         </p>
         <p>
-        <div id='errorMsg'></div><label for="time">Time:</label>
+        <div id='errorMsg2'></div><label for="time">Time:</label>
         <input type="time" id="time" name="time">
         </p>
         <label for="location">Location:</label>
@@ -108,6 +108,14 @@
 
              var error = false;
              
+             if ((message_number < 8 | message_number == 10) & date == "") {
+                 errorModal = document.getElementById("errorMsg");
+                 errorModal.innerHTML = "Please enter a date";
+                 document.getElementById("date").style.borderColor = "red";
+                 error = true;
+             }
+
+
 
              if (error == true){
                  return;
