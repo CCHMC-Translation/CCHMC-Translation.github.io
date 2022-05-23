@@ -50,13 +50,13 @@
         <div id='errorMsg3'></div><label for="location">Location:</label>
         <select id="location" name="location">
             <option value=""></option>
-            <option value="Anderson">Anderson</option>
-            <option value="Burnet">Burnet</option>
-            <option value="Green">Green</option>
-            <option value="Kentucky">Kentucky</option>
-            <option value="Liberty">Liberty</option>
-            <option value="Mason">Mason</option>
-            <option value="Maysville">Maysville</option>
+            <option value="Cincinnati Children's Anderson">Anderson</option>
+            <option value="Cincinnati Children's Burnet Campus">Burnet</option>
+            <option value="Cincinnati Children's Green Township">Green</option>
+            <option value="Cincinnati Children's Northern Kentucky">Kentucky</option>
+            <option value="Cincinnati Children's Liberty Campus">Liberty</option>
+            <option value="Cincinnati Children's Mason">Mason</option>
+            <option value="Cincinnati Children's Maysville">Maysville</option>
         </select>
         <p><div id='errorMsg4'></div><label for="doctor">Doctor:</label>
             <input type="text" id="doctor" name="doctor">
@@ -170,6 +170,16 @@
              var time_options = { timeStyle: 'short', timeZone: 'UTC' };
              var datetime = new Date('1970-01-01T' + time + 'Z')
              var time_es = new Intl.DateTimeFormat('es-US', time_options).format(datetime);
+
+             
+             if (location == "Cincinnati Children's Burnet Campus"){
+                location = "el Campus Burnet de Cincinnati Children's";
+            }
+
+            if (location == "Cincinnati Children's Liberty Campus"){
+                location = "el Campus Liberty de Cincinnati Children's";
+            }
+
 
 	           var messages_es = [
              `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 10 horas antes de la visita para hacer análisis. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
