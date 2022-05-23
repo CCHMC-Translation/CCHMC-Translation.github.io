@@ -47,7 +47,7 @@
         <div id='errorMsg2'></div><label for="time">Time:</label>
         <input type="time" id="time" name="time">
         </p>
-        <div id='errorMsg3'></div><label for="location">Location:</label>
+        <p><div id='errorMsg3'></div><label for="location">Location:</label>
         <select id="location" name="location">
             <option value=""></option>
             <option value="Cincinnati Children's Anderson">Anderson</option>
@@ -57,10 +57,15 @@
             <option value="Cincinnati Children's Liberty Campus">Liberty</option>
             <option value="Cincinnati Children's Mason">Mason</option>
             <option value="Cincinnati Children's Maysville">Maysville</option>
-        </select>
+        </select></p>
         <p><div id='errorMsg4'></div><label for="doctor">Doctor:</label>
-            <input type="text" id="doctor" name="doctor">
-        </p>
+            <select id="doctor" name="doctor">
+                <option value=""></option>
+                <option value="Xanthakos">Xanthakos</option>
+                <option value="Mouzaki">Mouzaki</option>
+                <option value="Bramlage">Bramlage</option>
+                <option value="Arce">Arce</option>
+            </select></p>
         <p class="required-field">Message:</p>
         <input type="radio" id="1" name="message" value="1" required="required">
         <label for="1">1 - Nash New Visit Come fasting labs and fibroscan</label><br>
@@ -112,7 +117,9 @@
              var select = document.getElementById('location');
              var location = select.options[select.selectedIndex].value;
 
-             var doctor = document.getElementById("doctor").value;
+             var select = document.getElementById('doctor');
+             var doctor = select.options[select.selectedIndex].value;
+
              var message_number = document.querySelector('input[name="message"]:checked').value;
 		     var date = document.querySelector('input[name="date"]').value;
              var time = document.querySelector('input[name="time"]').value;
@@ -142,7 +149,7 @@
 
              if (message_number < 8 & doctor == "") {
                  errorModal = document.getElementById("errorMsg4");
-                 errorModal.innerHTML = "Please enter a doctor";
+                 errorModal.innerHTML = "Please select a doctor";
                  document.getElementById("doctor").style.borderColor = "red";
                  error = true;
              }
@@ -152,13 +159,13 @@
              }
 
              const messages_en = [
-             `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. Nothing to eat or drink but water for 10 hours before the visit for testing. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. Nothing to eat or drink but water for 10 hours before the blood tests and fibroscan on the day of the clinic visit. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. Nothing to eat or drink but water for 10 hours before the blood tests. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. You CAN eat and drink before getting the blood tests. Nothing to eat or drink but water for 3 hours before the clinic visit for fibroscan. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. You CAN eat and drink before getting the blood tests. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. No blood testing needed before this visit. Please call 513-803-7740 to cancel or reschedule.`,
-            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with ${doctor} at ${location}. No eating or drinking but water for 3 hours before clinic visit for fibroscan. No blood testing is needed. Please call 513-803-7740 to cancel or reschedule.`,
+             `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. Nothing to eat or drink but water for 10 hours before the visit for testing. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. Nothing to eat or drink but water for 10 hours before the blood tests and fibroscan on the day of the clinic visit. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. Nothing to eat or drink but water for 10 hours before the blood tests. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. You CAN eat and drink before getting the blood tests. Nothing to eat or drink but water for 3 hours before the clinic visit for fibroscan. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. Please go to any Cincinnati Children's lab for blood testing 7-10 days before the visit. You CAN eat and drink before getting the blood tests. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. No blood testing needed before this visit. Please call 513-803-7740 to cancel or reschedule.`,
+            `Hi! ${ptname} is scheduled for a NASH visit on ${date} at ${time} with Dr. ${doctor} at ${location}. No eating or drinking but water for 3 hours before clinic visit for fibroscan. No blood testing is needed. Please call 513-803-7740 to cancel or reschedule.`,
             `The Nash clinic misses you! ${ptname} is due for a checkup. Please call 513-803-7740 to schedule an appointment.`,
             `Hi! We are trying to reach ${ptname} for a research visit. Please call 513-636-8867`,
             `Hi! We are trying to reach ${ptname} about your research visit on ${date} at ${time} at ${location}. Please call 513-636-8867.`
@@ -182,13 +189,13 @@
 
 
 	           var messages_es = [
-             `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 10 horas antes de la visita para hacer análisis. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 10 horas antes de los análisis de sangre y el examen Fibroscan el día de la visita clínica. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. No puede comer ni beber nada, excepto agua, durante 10 horas antes de los análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. Usted PUEDE comer y beber antes de hacer los análisis de sangre. No puede comer ni beber nada, excepto agua, durante 3 horas antes de la visita clínica para el examen Fibroscan. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. Usted PUEDE comer y beber antes de hacer los análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. No es necesario hacer análisis de sangre antes de esta visita. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
-            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 3 horas antes de la visita clínica para el examen Fibroscan. No es necesario hacer análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+             `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 10 horas antes de la visita para hacer análisis. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 10 horas antes de los análisis de sangre y el examen Fibroscan el día de la visita clínica. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. No puede comer ni beber nada, excepto agua, durante 10 horas antes de los análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. Usted PUEDE comer y beber antes de hacer los análisis de sangre. No puede comer ni beber nada, excepto agua, durante 3 horas antes de la visita clínica para el examen Fibroscan. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. Por favor, vaya a cualquier laboratorio de Cincinnati Children's para hacer el análisis de sangre 7-10 días antes de la visita. Usted PUEDE comer y beber antes de hacer los análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. No es necesario hacer análisis de sangre antes de esta visita. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
+            `Hola, ${ptname} tiene programada una cita en NASH el ${date_es} a las ${time_es} con Dra. ${doctor} en ${location}. No puede comer ni beber nada, excepto agua, durante 3 horas antes de la visita clínica para el examen Fibroscan. No es necesario hacer análisis de sangre. Por favor, llame al 513-803-7740 para cancelar o reprogramar.`,
             `¡Le extrañamos en la clínica Nash! ${ptname} tiene que hacerse un control. Por favor, llamen al 513-803-7740 para programar una cita.`,
             `¡Hola! Estamos intentando comunicarnos con ${ptname} para hacer una visita de investigación. Por favor, llamen al 513-636-8867`,
             `¡Hola! Estamos intentando comunicarnos con ${ptname} sobre su visita de investigación el ${date_es} a las ${time_es} en ${location}. Por favor, llamen al 513-636-8867.`
