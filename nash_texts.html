@@ -171,7 +171,7 @@
             `Hi! We are trying to reach ${ptname} about your research visit on ${date} at ${time} at ${location}. Please call our research coordinator at 513-636-8867.`
              ];
 
-             var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+             var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' , timeZone: 'UTC'};
              var date_es = new Date(date).toLocaleDateString('es-US', options);
 
              var time_options = { timeStyle: 'short', timeZone: 'UTC' };
