@@ -96,6 +96,9 @@ Formatting
 
 7.  Always translate text embedded in images. This may be done by overlaying text boxes or editing the image in Photoshop. When this cannot be done cleanly, contact the project manager for further instructions.
 
+    Exception: Do not translate maps of Cincinnati Children's locations that are embedded images.
+    {: .notice--warning}
+
 18. Do not translate Cincinnati Children's letterhead.
 
 21. Use the same fonts as the source file. If a source font does not support the target characters, use Noto Sans (except for Arabic (use *Frutiger Arabic*) and Burmese (use *Zawgyi-One*)).
