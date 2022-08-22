@@ -63,7 +63,7 @@ All Projects
 22. Translate all non-editable text in source files. If there are more than 70 words of non-editable text in a source file, send it to the Translations Coordinator for addition to the Wordbee project as an additional source document so that it can be included in the TM.
      - For screenshots, ask if the user will be accessing the content in English or another language. Recreate screenshot in the other language if necessary.
      
-23. 
+
 
 Special Projects
 ================
