@@ -49,6 +49,9 @@ td.Introduction {
 <body>
 <div class="widget">
     <div class="rowElem noborder">
+        <button onclick="copyToClip(document.getElementById('AcessPlan').innerHTML)">
+            Copy the table below
+            </button>
 		<div class="formRight">Patient Name: <input type="text" name="inPatient" id="inPatient" /></div>
         <div class="formRight"><label><input type="checkbox" class="show" value="JeanLuchini"  />Jean Luchini</label></div>
         <div class="formRight"><label><input type="checkbox" class="show" value="DebbieHafley"  />Debbie Hafley</label></div>
@@ -97,7 +100,7 @@ td.Introduction {
 </div>
 
 
-
+<div id="AcessPlan">
 <table class="Introduction"><tr><td class="Introduction">
 <h1>Access Plan for <span class="outPatient"></span></h1>
 <p><strong>For life threatening emergencies dial 1-877-205-7721 to be connected to an interpreter and Cincinnati's Emergency Line (911 Dispatch) or go to the nearest emergency room.</strong></p>
@@ -1099,7 +1102,7 @@ td.Introduction {
 </tr>
 </tbody>
 </table>
-    
+</div>
     <script>
 
 $('input[type = checkbox]').change(function () {
@@ -1179,6 +1182,17 @@ document.addEventListener("DOMContentLoaded", function(){
 		       }
 	       }	
      })
+  /* from https://stackoverflow.com/questions/23934656/how-can-i-copy-rich-text-contents-to-the-clipboard-with-javascript */   
+  function copyToClip(str) {
+    function listener(e) {
+        e.clipboardData.setData("text/html", str);
+        e.clipboardData.setData("text/plain", str);
+        e.preventDefault();
+    }
+    document.addEventListener("copy", listener);
+    document.execCommand("copy");
+    document.removeEventListener("copy", listener);
+    };
     </script>
 </body>
 </html>
