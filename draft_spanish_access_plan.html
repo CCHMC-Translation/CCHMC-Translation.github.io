@@ -32,6 +32,9 @@
             .widget {
                 display: none !important;
             }
+            .button {
+                display: none !important;
+            }
 
         }
 
@@ -65,121 +68,51 @@
 <body>
     <div class="widget">
         <div class="rowElem noborder">
-            <button onclick="copyToClip(document.getElementById('AcessPlan').innerHTML)">
-                Copy the table below
-            </button>
+            
             <div class="formRight">Patient Name: <input type="text" name="inPatient" id="inPatient" /></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="JeanLuchini" />Jean Luchini</label>
-            </div>
+            <div class="formRight">Patient DOB: <input type="date" name="inDOB" id="inDOB" /></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="DebbieHafley" />Debbie
                     Hafley</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="LibbyCox" />Libby Cox</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="JulieWestbrook" />Julie
-                    Westbrook</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="DESW" />DE Social Worker</label>
+            <div class="formRight"><label><input type="checkbox" class="show" value="Hopple" />Hopple Street Clinic</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="OutpatientPharmacy" />Outpatient Pharmacy</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="HomeCare" />Home Care</label>
             </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="SW" />Social Worker</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="CCSN" />Complex Care Special Needs
-                    Clinic (CCSN)</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="PPC" />PPC (Dr. Zeina) General
-                    Health Care Concerns</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="GeneralIllness" />General
-                    illness</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="NorhanGomaa" />Norhan Gomaa</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="JoannaCasey" />Joanna Casey</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="ItenElyassaki" />Iten
-                    Elyassaki</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="MonaEljouzi" />Mona Eljouzi</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="SamTawfik" />Sam Tawfik</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="MuzietShata" />Muziet Shata</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="HCPharm" />CCHMC Home Care
-                    Pharmacy</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="DME" />CCHMC Medical Equipment
-                    Company</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Aerodigestive" />Aerodigestive Team
-                    Scheduling and General information</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="RadiologyScheduling" />RadiologyScheduling</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="Aero" />Aerodigestive</label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="ENT" />ENT Dr. <input type="text"
                         name="inENT" id="inENT" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Pulmonary" />Pulmonary Dr. <input
-                        type="text" name="inPulmonary" id="inPulmonary" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="HMC" />HemoVascular Malformation
-                    Clinic (Dr. Hammil)</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Cardiology" />Cardiology Dr. <input
-                        type="text" name="inCardiology" id="inCardiology" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="CardioThoracic" />Cardio Thoracic
-                    Surgery Dr. <input type="text" name="inCardioThoracic" id="inCardioThoracic" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="DDBP" />Developmental Department
-                    and Behavioral Pediatrics (DDBP) Dr. <input type="text" name="inDDBP" id="inDDBP" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Ortho" />Orthopedic Clinic</label>
-            </div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Pain" />Pain Management Dr. <input
-                        type="text" name="inPain" id="inPain" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Ophthalmology" />Ophthalmology Dr.
-                    <input type="text" name="inOphth" id="inOphth" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Endocrinology" />Endocrinology Dr.
-                    <input type="text" name="inEndo" id="inEndo" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Allergy" />Allergy Dr. <input
-                        type="text" name="inAllergy" id="inAllergy" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Colorectal" />Colorectal Dr. <input
-                        type="text" name="inColorectal" id="inColorectal" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Urology" />Urology Dr. <input
-                        type="text" name="inUrology" id="inUrology" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Rheumatology" />Rheumatology Dr.
-                    <input type="text" name="inRheumatology" id="inRheumatology" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="PlasticSx" />Plastic Surgery Dr.
-                    <input type="text" name="inPlasticSx" id="inPlasticSx" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="OTPT" />Occupational/Physical
-                    Therapy</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Neurology" />Neurology Dr. <input
-                        type="text" name="inNeurology" id="inNeurology" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Neurosurgery" />Neurosurgery Dr.
-                    <input type="text" name="inNeurosurgery" id="inNeurosurgery" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Nephrology" />Nephrology Dr. <input
-                        type="text" name="inNephrology" id="inNephrology" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="InfectiousDisease" />Infectious
-                    Disease</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="GI" />Gastroenterology (GI) Dr.
-                    <input type="text" name="inGI" id="inGI" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Gynecology" />Gynecology Dr. <input
-                        type="text" name="inGynecology" id="inGynecology" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Sx" />Surgery Dr. <input
-                        type="text" name="inSx" id="inSx" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Dermatology" />Dermatology Dr.
-                    <input type="text" name="inDermatology" id="inDermatology" /> </label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Genetics" />Human Genetics</label>
-            </div>
+            
         </div>
+        
     </div>
-
+    <br />
+    <button class="button" onclick="copyToClip(document.getElementById('AcessPlan').innerHTML)">
+        Copy the table below
+    </button>
 
     <div id="AcessPlan">
         <table class="Introduction">
             <tr>
                 <td>
                     
-                        <h1>Plan de acceso para</h1>
+                        <h1>Plan de acceso para <span class="outPatient"></span></h1>
                     
                 </td>
                 <td>
                     
-                        <h1>Access Plan for</h1>
+                        <h1>Access Plan for <span class="outPatient"></span></h1>
                     
                 </td>
             </tr>
             <tr>
                 <td>
                     
-                        Fecha de nacimiento:
+                        Fecha de nacimiento: <span class="outDOB"></span>
                     
                 </td>
                 <td>
                     
-                        Date of Birth:
+                        Date of Birth: <span class="outDOB"></span>
                     
                 </td>
             </tr>
@@ -264,994 +197,2355 @@
             <thead>
                 <tr>
                     <td>
-                        <strong>Department and Why</strong></p>
+                        <p>
+                            <strong>Departamento y por qué</strong>
+                        </p>
                     </td>
                     <td>
-                        <p><strong>Hours of operation</strong></p>
+                        <p>
+                            <strong>Cuándo/Horario de funcionamiento</strong>
+                        </p>
                     </td>
                     <td>
-                        <p><strong>How/contact information</strong></p>
+                        <p>
+                            <strong>Cómo/Información de contacto</strong>
+                        </p>
                     </td>
                     <td>
-                        <p><strong>Department and Why</strong></p>
+                        <p>
+                            <strong>Department and Why</strong>
+                        </p>
                     </td>
                     <td>
-                        <p><strong>Hours of operation</strong></p>
+                        <p>
+                            <strong>When/Hours of operation</strong>
+                        </p>
                     </td>
                     <td>
-                        <p><strong>How/contact information</strong></p>
+                        <p>
+                            <strong>How/contact information</strong>
+                        </p>
                     </td>
                 </tr>
             </thead>
             <tbody>
-                <tr class="JeanLuchini">
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Jean Luchini, RN 513-803-7663 or email: jeanluchini@cchmc.org</p>
-                    </td>
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Jean Luchini, RN 513-803-7663 or email: jeanluchini@cchmc.org</p>
-                    </td>
-                </tr>
+            
+            
                 <tr class="DebbieHafley">
                     <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Debbie Hafley, RN 513-803-7662 or email: Deborah.hafley@cchmc.org</p>
-                    </td>
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Debbie Hafley, RN 513-803-7662 or email: Deborah.hafley@cchmc.org</p>
-                    </td>
-                </tr>
-                <tr class="LibbyCox">
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Libby Cox, RN 513-636-4961 or email: libby.cox@cchmc.org</p>
-                    </td>
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Libby Cox, RN 513-636-4961 or email: libby.cox@cchmc.org</p>
-                    </td>
-                </tr>
-                <tr class="JulieWestbrook">
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Julie Westbrook, RN 513-636-6201or email: Julie.westbrook@cchmc.org</p>
-                    </td>
-                    <td>
-                        <p>DE Care Manager-when you are unsure who to call</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Julie Westbrook, RN 513-636-6201or email: Julie.westbrook@cchmc.org</p>
-                    </td>
-                </tr>
-                <tr class="DESW">
-                    <td>
-                        <p>DE Social Worker</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Rosanne Cahill 513-8037665 or email: Rosanne.cahill@cchmc.org</p>
-                    </td>
-                    <td>
-                        <p>DE Social Worker</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>Rosanne Cahill 513-8037665 or email: Rosanne.cahill@cchmc.org</p>
-                    </td>
-                </tr>
-                <tr class="SW">
-                    <td>
-                        <p>Social Worker</p>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <p>Social Worker</p>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                <tr class="CCSN">
-                    <td>
-                        <p>Complex Care Special Needs Clinic (CCSN)</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3000</p>
-                        <p>513-636-3000 and ask for the on call provider for Complex Care</p>
-                    </td>
-                    <td>
-                        <p>Complex Care Special Needs Clinic (CCSN)</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3000</p>
-                        <p>513-636-3000 and ask for the on call provider for Complex Care</p>
-                    </td>
-                </tr>
-                <tr class="PPC">
-                    <td>
-                        <p>PPC (Dr. Zeina) General Health Care Concerns</p>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <p>513-636-7722</p>
-                    </td>
-                    <td>
-                        <p>PPC (Dr. Zeina) General Health Care Concerns</p>
-                    </td>
-                    <td>
-                    </td>
-                    <td>
-                        <p>513-636-7722</p>
-                    </td>
-                </tr>
-                <tr class="GeneralIllness">
-                    <td>
-                        <p>General illness</p>
-                    </td>
-                    <td>
-                        <p>Urgent and after hours</p>
-                        <p>24 hours/7 days</p>
-                    </td>
-                    <td>
-                        <p>Nurse line 513-7722 option 3</p>
-                    </td>
-                    <td>
-                        <p>General illness</p>
-                    </td>
-                    <td>
-                        <p>Urgent and after hours</p>
-                        <p>24 hours/7 days</p>
-                    </td>
-                    <td>
-                        <p>Nurse line 513-7722 option 3</p>
-                    </td>
-                </tr>
-                <tr class="NorhanGomaa">
-                    <td>
-                        <p>DE International Coordinator (embassy correspondent)</p>
-                        <p>Norhan Gomaa</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-835-4431</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (embassy correspondent)</p>
-                        <p>Norhan Gomaa</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-835-4431</p>
-                    </td>
-                </tr>
-                <tr class="JoannaCasey">
-                    <td>
-                        <p>DE International Coordinator (embassy correspondent)</p>
-                        <p>Joanna Casey</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-2207</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (embassy correspondent)</p>
-                        <p>Joanna Casey</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-2207</p>
-                    </td>
-                </tr>
-                <tr class="ItenElyassaki">
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Iten Elyassaki</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-4618</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Iten Elyassaki</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-4618</p>
-                    </td>
-                </tr>
-                <tr class="MonaEljouzi">
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Mona Eljouzi</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-0513</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Mona Eljouzi</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-0513</p>
-                    </td>
-                </tr>
-                <tr class="SamTawfik">
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Sam Tawfik</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-7608</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Sam Tawfik</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-7608</p>
-                    </td>
-                </tr>
-                <tr class="MuzietShata">
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Muziet Shata</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-9645</p>
-                    </td>
-                    <td>
-                        <p>DE International Coordinator (non-clinical concerns) Muziet Shata</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 9:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-9645</p>
-                    </td>
-                </tr>
-                <tr class="HCPharm">
-                    <td>
-                        <p>CCHMC Home Care Pharmacy</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-5:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3582: Family needs to call each month to reorder supplies. Supplies are NOT
-                            automatically shipped</p>
-                        <p>Ask for on call provider for Home Care Pharmacy</p>
-                    </td>
-                    <td>
-                        <p>CCHMC Home Care Pharmacy</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-5:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3582: Family needs to call each month to reorder supplies. Supplies are NOT
-                            automatically shipped</p>
-                        <p>Ask for on call provider for Home Care Pharmacy</p>
-                    </td>
-                </tr>
-                <tr class="DME">
-                    <td>
-                        <p>CCHMC Medical Equipment Company</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-5:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4663: Families need to call each month to reorder supplies. Supplies are NOT
-                            automatically shipped</p>
-                        <p>Ask for the on call provider for Home Care Equipment Company</p>
-                    </td>
-                    <td>
-                        <p>CCHMC Medical Equipment Company</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:30am-5:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4663: Families need to call each month to reorder supplies. Supplies are NOT
-                            automatically shipped</p>
-                        <p>Ask for the on call provider for Home Care Equipment Company</p>
-                    </td>
-                </tr>
-                <tr class="Aerodigestive">
-                    <td>
-                        <p>Aerodigestive Team Scheduling and General information</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-4983</p>
-                    </td>
-                    <td>
-                        <p>Aerodigestive Team Scheduling and General information</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                    </td>
-                    <td>
-                        <p>513-803-4983</p>
-                    </td>
-                </tr>
-                <tr class="ENT">
-                    <td>
-                        <p>ENT Dr. <span class="outENT"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4355</p>
-                        <p>Ask for on call provider for ENT</p>
-                    </td>
-                    <td>
-                        <p>ENT Dr. <span class="outENT"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4355</p>
-                        <p>Ask for on call provider for ENT</p>
-                    </td>
-                </tr>
-                <tr class="Pulmonary">
-                    <td>
-                        <p>Pulmonary Dr. <span class="outPulmonary"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4432</p>
-                        <p>Ask for on call provider for Pulmonary</p>
-                    </td>
-                    <td>
-                        <p>Pulmonary Dr. <span class="outPulmonary"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4432</p>
-                        <p>Ask for on call provider for Pulmonary</p>
-                    </td>
-                </tr>
-                <tr class="HMC">
-                    <td>
-                        <p>HemoVascular Malformation Clinic (Dr. Hammil)</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-7742</p>
-                        <p>Ask for on call provider for Hemangioma and Vascular Malformations</p>
-                    </td>
-                    <td>
-                        <p>HemoVascular Malformation Clinic (Dr. Hammil)</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-7742</p>
-                        <p>Ask for on call provider for Hemangioma and Vascular Malformations</p>
-                    </td>
-                </tr>
-                <tr class="Cardiology">
-                    <td>
-                        <p>Cardiology Dr. <span class="outCardiology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4432</p>
-                        <p>Ask for on call provider for Cardiology</p>
-                    </td>
-                    <td>
-                        <p>Cardiology Dr. <span class="outCardiology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4432</p>
-                        <p>Ask for on call provider for Cardiology</p>
-                    </td>
-                </tr>
-                <tr class="CardioThoracic">
-                    <td>
-                        <p>Cardio Thoracic Surgery Dr. <span class="outCardioThoracic"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours or weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4770</p>
-                        <p>Ask for on call provider for Cardio-thoracic surgery</p>
-                    </td>
-                    <td>
-                        <p>Cardio Thoracic Surgery Dr. <span class="outCardioThoracic"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours or weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4770</p>
-                        <p>Ask for on call provider for Cardio-thoracic surgery</p>
-                    </td>
-                </tr>
-                <tr class="DDBP">
-                    <td>
-                        <p>Developmental Department and Behavioral Pediatrics (DDBP) Dr. <span class="outDDBP"></span>
+                        <p>
+                            Coordinadora de cuidados médicos
+                        </p>
+                        <p>
+                            cuando no sabe a quién llamar
                         </p>
                     </td>
                     <td>
-                        <p>Monday 8:00am-6:45pm</p>
-                        <p>Tuesday-Friday 8:00am-4:45pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4611-Dr. Manning</p>
-                        <p>513-636-4336-Dr. Chaves</p>
-                        <p>Ask for on call provider for the Pediatric Specialist in DDBP</p>
-                    </td>
-                    <td>
-                        <p>Developmental Department and Behavioral Pediatrics (DDBP) Dr. <span class="outDDBP"></span>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
                         </p>
                     </td>
                     <td>
-                        <p>Monday 8:00am-6:45pm</p>
-                        <p>Tuesday-Friday 8:00am-4:45pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Debbie Hafley, RN
+                        </p>
+                        <p>
+                            Llame al: 513-517-2013
+                        </p>
+                        <p>
+                            Mensaje de texto: 513-285-8399 o
+                        </p>
+                        <p>
+                            correo electrónico: debbie.hafley@cchmc.org
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4611-Dr. Manning</p>
-                        <p>513-636-4336-Dr. Chaves</p>
-                        <p>Ask for on call provider for the Pediatric Specialist in DDBP</p>
-                    </td>
-                </tr>
-                <tr class="Ortho">
-                    <td>
-                        <p>Orthopedic Clinic</p>
+                        <p>
+                            Care Manager
+                        </p>
+                        <p>
+                            when you are unsure who to call
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4454</p>
-                        <p>Spine Nurse education:513-803-2750</p>
-                        <p>Dr. Jain&rsquo;s Nurse Line: 513-636-3652</p>
-                        <p>Ask for on call provider for Orthopedic surgery</p>
-                    </td>
-                    <td>
-                        <p>Orthopedic Clinic</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4454</p>
-                        <p>Spine Nurse education:513-803-2750</p>
-                        <p>Dr. Jain&rsquo;s Nurse Line: 513-636-3652</p>
-                        <p>Ask for on call provider for Orthopedic surgery</p>
-                    </td>
-                </tr>
-                <tr class="Pain">
-                    <td>
-                        <p>Pain Management Dr. <span class="outPain"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-7768</p>
-                    </td>
-                    <td>
-                        <p>Pain Management Dr. <span class="outPain"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-5:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-7768</p>
+                        <p>
+                            Debbie Hafley, RN
+                        </p>
+                        <p>
+                            Call: 513-517-2013
+                        </p>
+                        <p>
+                            Text: 513-285-8399 or
+                        </p>
+                        <p>
+                            email: debbie.hafley@cchmc.org
+                        </p>
                     </td>
                 </tr>
-                <tr class="Ophthalmology">
+                <tr class="Hopple">
                     <td>
-                        <p>Ophthalmology Dr. <span class="outOphth"></span></p>
+                        <p>
+                            <strong>Clínica de Hopple Street</strong>
+                        </p>
+                        <p>
+                            Inquietudes generales de atención médica y enfermedades
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Lunes a viernes
+                        </p>
+                        <p>
+                            8:30 a. m. - 5:00 p. m.
+                        </p>
+                        <p>
+                            Sábados:
+                        </p>
+                        <p>
+                            8 a. m. - 12:30 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4751</p>
-                        <p>Ask for on call provider for Ophthalmology</p>
+                        <p>
+                            513-517-2000 -
+                        </p>
+                        <p>
+                            opción 1 por citas
+                        </p>
+                        <p>
+                            opción 3 Línea de enfermería
+                        </p>
+                        <p>
+                            Urgencias y después del horario de atención
+                        </p>
+                        <p>
+                            las 24 horas, los 7 días de la semana
+                        </p>
                     </td>
                     <td>
-                        <p>Ophthalmology Dr. <span class="outOphth"></span></p>
+                        <p>
+                            <strong>Hopple Street Clinic</strong>
+                        </p>
+                        <p>
+                            General Health Care Concerns and Illness
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Mon - Fri
+                        </p>
+                        <p>
+                            8:30 AM - 5:00 PM
+                        </p>
+                        <p>
+                            Saturday:
+                        </p>
+                        <p>
+                            8:30 AM - 12:30 PM
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4751</p>
-                        <p>Ask for on call provider for Ophthalmology</p>
-                    </td>
-                </tr>
-                <tr class="Endocrinology">
-                    <td>
-                        <p>Endocrinology Dr. <span class="outEndo"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4744</p>
-                        <p>Ask for on call provider for Endocrinology</p>
-                    </td>
-                    <td>
-                        <p>Endocrinology Dr. <span class="outEndo"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4744</p>
-                        <p>Ask for on call provider for Endocrinology</p>
-                    </td>
-                </tr>
-                <tr class="Allergy">
-                    <td>
-                        <p>Allergy Dr. <span class="outAllergy"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-6771</p>
-                        <p>Ask for on call provider for Allergy</p>
-                    </td>
-                    <td>
-                        <p>Allergy Dr. <span class="outAllergy"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-6771</p>
-                        <p>Ask for on call provider for Allergy</p>
-                    </td>
-                </tr>
-                <tr class="Colorectal">
-                    <td>
-                        <p>Colorectal Dr. <span class="outColorectal"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3240</p>
-                        <p>Ask for on call provider for Colorectal</p>
-                    </td>
-                    <td>
-                        <p>Colorectal Dr. <span class="outColorectal"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-3240</p>
-                        <p>Ask for on call provider for Colorectal</p>
+                        <p>
+                            513-517-2000 -
+                        </p>
+                        <p>
+                            option 1 appointments
+                        </p>
+                        <p>
+                            option 3 Nurse Line
+                        </p>
+                        <p>
+                            Urgent and after hours
+                        </p>
+                        <p>
+                            24 hours/7 days
+                        </p>
                     </td>
                 </tr>
-                <tr class="Urology">
+                <tr class="OutpatientPharmacy">
                     <td>
-                        <p>Urology Dr. <span class="outUrology"></span></p>
+                        <p>
+                            Farmacia para pacientes ambulatorios (Outpatient Pharmacy)
+                            de Cincinnati Children's
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Lunes a viernes, 9:00 a. m. a 8:00 p. m.
+                        </p>
+                        <p>
+                            Sábados y domingos, 10:00 a. m. a 2:00 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4975</p>
-                        <p>Ask for on call provider for Urology</p>
+                        <p>
+                            513-636-8808
+                        </p>
                     </td>
                     <td>
-                        <p>Urology Dr. <span class="outUrology"></span></p>
+                        <p>
+                            CCHMC Outpatient Pharmacy
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Monday-Friday 9:00am-8:00pm
+                        </p>
+                        <p>
+                            Saturday-Sunday 10:00am-2:00pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4975</p>
-                        <p>Ask for on call provider for Urology</p>
-                    </td>
-                </tr>
-                <tr class="Rheumatology">
-                    <td>
-                        <p>Rheumatology Dr. <span class="outRheumatology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4676</p>
-                        <p>Ask for on call provider for Rheumatology</p>
-                    </td>
-                    <td>
-                        <p>Rheumatology Dr. <span class="outRheumatology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4676</p>
-                        <p>Ask for on call provider for Rheumatology</p>
+                        <p>
+                            513-636-8808
+                        </p>
                     </td>
                 </tr>
-                <tr class="PlasticSx">
+                <tr class="HomeCare">
                     <td>
-                        <p>Plastic Surgery Dr. <span class="outPlasticSx"></span></p>
+                        <p>
+                            Atención en el Hogar (Home Care) de Cincinnati Children's
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Lunes a viernes, 8:30 a. m. a 5:00 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-7181</p>
-                        <p>Ask for on call provider for Plastic surgery</p>
+                        <p>
+                            513-636-4663
+                        </p>
+                        <p>
+                            La familia debe llamar cada mes para volver a pedir el
+                            suministro de materiales. Los materiales NO se envían
+                            automáticamente.
+                        </p>
+                        <p>
+                            <strong>
+                                En casos de emergencia después del horario de atención
+                                y los fines de semana -
+                            </strong>
+                            Pida para hablar con el proveedor de la Farmacia de
+                            Atención en el Hogar (Home Care Pharmacy)
+                        </p>
                     </td>
                     <td>
-                        <p>Plastic Surgery Dr. <span class="outPlasticSx"></span></p>
+                        <p>
+                            CCHMC Home Care
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Monday-Friday 8:30am-5:00pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-7181</p>
-                        <p>Ask for on call provider for Plastic surgery</p>
-                    </td>
-                </tr>
-                <tr class="OTPT">
-                    <td>
-                        <p>Occupational/Physical Therapy</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-4651</p>
-                    </td>
-                    <td>
-                        <p>Occupational/Physical Therapy</p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-4651</p>
-                    </td>
-                </tr>
-                <tr class="Neurology">
-                    <td>
-                        <p>Neurology Dr. <span class="outNeurology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4222</p>
-                        <p>Ask for on call provider for Neurology</p>
-                    </td>
-                    <td>
-                        <p>Neurology Dr. <span class="outNeurology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4222</p>
-                        <p>Ask for on call provider for Neurology</p>
+                        <p>
+                            513-636-HOME (4663):
+                        </p>
+                        <p>
+                            Family needs to call each month to reorder supplies.
+                            Supplies are NOT automatically shipped
+                        </p>
+                        <p>
+                            <strong>
+                                For Emergencies After hours and weekends -
+                            </strong>
+                            Ask for on call provider for Home Care Pharmacy
+                        </p>
                     </td>
                 </tr>
-                <tr class="Neurosurgery">
+                <tr class="RadiologyScheduling">
                     <td>
-                        <p>Neurosurgery Dr. <span class="outNeurosurgery"></span></p>
+                        <p>
+                            Programación de citas de Radiología (Radiology) e Imágenes
+                            (Imaging)
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
                     </td>
                     <td>
-                        <p>513-636-4726</p>
-                        <p>Ask for on call provider for Neurosurgery</p>
+                        <p>
+                            513-636-4251
+                        </p>
                     </td>
                     <td>
-                        <p>Neurosurgery Dr. <span class="outNeurosurgery"></span></p>
+                        <p>
+                            Radiology/Imaging Scheduling
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
                     </td>
                     <td>
-                        <p>513-636-4726</p>
-                        <p>Ask for on call provider for Neurosurgery</p>
-                    </td>
-                </tr>
-                <tr class="Nephrology">
-                    <td>
-                        <p>Nephrology Dr. <span class="outNephrology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4531</p>
-                        <p>Ask for on call provider for Nephrology</p>
-                    </td>
-                    <td>
-                        <p>Nephrology Dr. <span class="outNephrology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4531</p>
-                        <p>Ask for on call provider for Nephrology</p>
+                        <p>
+                            513-636-4251
+                        </p>
                     </td>
                 </tr>
-                <tr class="InfectiousDisease">
+                <tr class="Aero">
                     <td>
-                        <p>Infectious Disease</p>
+                        <p>
+                            Coordinación de citas e información general del Equipo
+                            Aerodigestivo (Aerodigestive Team)
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4578</p>
-                        <p>Ask for on call provider for Infectious disease</p>
+                        <p>
+                            513-636-2828
+                        </p>
                     </td>
                     <td>
-                        <p>Infectious Disease</p>
+                        <p>
+                            Aerodigestive Team Scheduling and General information
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4578</p>
-                        <p>Ask for on call provider for Infectious disease</p>
-                    </td>
-                </tr>
-                <tr class="GI">
-                    <td>
-                        <p>Gastroenterology (GI) Dr. <span class="outGI"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4415</p>
-                        <p>Ask for on call provider for GI</p>
-                    </td>
-                    <td>
-                        <p>Gastroenterology (GI) Dr. <span class="outGI"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-636-4415</p>
-                        <p>Ask for on call provider for GI</p>
+                        <p>
+                            513-636-2828
+                        </p>
                     </td>
                 </tr>
-                <tr class="Gynecology">
+                <tr>
                     <td>
-                        <p>Gynecology Dr. <span class="outGynecology"></span></p>
+                        <p>
+                            Otorrinolaringología (ENT)
+                        </p>
+                        <p>
+                            Dr. <span class="outENT"></span>
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4681</p>
-                        <p>Ask for on call provider for Gynecology</p>
+                        <p>
+                            513-636-4355
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Otorrinolaringología
+                        </p>
                     </td>
                     <td>
-                        <p>Gynecology Dr. <span class="outGynecology"></span></p>
+                        <p>
+                            ENT
+                        </p>
+                        <p>
+                            Dr. <span class="outENT"></span>
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                        <p>After hours and weekends</p>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4681</p>
-                        <p>Ask for on call provider for Gynecology</p>
-                    </td>
-                </tr>
-                <tr class="Sx">
-                    <td>
-                        <p>Surgery Dr. <span class="outSx"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-6364371</p>
-                        <p>Ask for on call provider for Surgery</p>
-                    </td>
-                    <td>
-                        <p>Surgery Dr. <span class="outSx"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:30pm</p>
-                        <p>After hours and weekends</p>
-                    </td>
-                    <td>
-                        <p>513-6364371</p>
-                        <p>Ask for on call provider for Surgery</p>
-                    </td>
-                </tr>
-                <tr class="Dermatology">
-                    <td>
-                        <p>Dermatology Dr. <span class="outDermatology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-4215</p>
-                    </td>
-                    <td>
-                        <p>Dermatology Dr. <span class="outDermatology"></span></p>
-                    </td>
-                    <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
-                    </td>
-                    <td>
-                        <p>513-636-4215</p>
+                        <p>
+                            513-636-4355
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for ENT
+                        </p>
                     </td>
                 </tr>
-                <tr class="Genetics">
+                <tr>
                     <td>
-                        <p>Human Genetics</p>
+                        <p>
+                            Pulmonar
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            Inquietudes pulmonares o respiratorias
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4760</p>
+                        <p>
+                            513-636-6771
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Pulmonar
+                        </p>
                     </td>
                     <td>
-                        <p>Human Genetics</p>
+                        <p>
+                            Pulmonary
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            Lung or breathing concerns.
+                        </p>
                     </td>
                     <td>
-                        <p>Monday-Friday 8:00am-4:00pm</p>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
                     </td>
                     <td>
-                        <p>513-636-4760</p>
+                        <p>
+                            513-636-6771
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Pulmonary
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Clínica de Hemangioma y Malformaciones Vasculares
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7742
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Hemangioma y Malformaciones Vasculares
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            HemoVascular Malformation Clinic
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7742
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Hemangioma and Vascular Malformations
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Cardiología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            Inquietudes cardíacas
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4432
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Cardiología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Cardiology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            Heart Concerns
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4432
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Cardiology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Cirugía Cardiotorácica
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4770
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Cirugía Cardiotorácica
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Cardio Thoracic Surgery
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4770
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider
+                            Cardio-thoracic surgery
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            DDBP
+                        </p>
+                        <p>
+                            Pediatría del Desarrollo y Comportamiento
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes 8:00 a. m. a 6:45 p. m.
+                        </p>
+                        <p>
+                            Martes a viernes 8:00 a. m. a 4:45 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4611
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el especialista
+                            pediátrico de guardia de la División de Pediatría del
+                            Desarrollo y Comportamiento
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            DDBP
+                        </p>
+                        <p>
+                            Developmental Department and Behavioral Pediatrics
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday 8:00am-6:45pm
+                        </p>
+                        <p>
+                            Tuesday-Friday 8:00am-4:45pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4611
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for the
+                            Pediatric Specialist in DDBP
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Clínica de Ortopedia
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4454
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Cirugía Ortopédica
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Orthopedic Clinic
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4454
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Orthopedic surgery
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Manejo del dolor
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 5:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7768
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Manejo del dolor
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Pain Management
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-5:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7768
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Pain
+                            Management
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Oftalmología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4751
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Oftalmología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Ophthalmology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4751
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Ophthalmology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Endocrinología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4744
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Endocrinología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Endocrinology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4744
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Endocrinology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Audiología (Audición)
+                        </p>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4236
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Audiology (Hearing)
+                        </p>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4236
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Alergología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-6771
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Alergología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Allergy
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-6771
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Allergy
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Colorrectal
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-3240
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Colorrectal
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Colorectal
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-3240
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Colorectal
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Urología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4975
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Urología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Urology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4975
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Urology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Reumatología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4676
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Reumatología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Rheumatology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4676
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Rheumatology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Cirugía Plástica
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7181
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Cirugía Plástica
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Plastic Surgery
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7181
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Plastic
+                            surgery
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Terapia del habla
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 6:00 p. m.
+                        </p>
+                        <p>
+                            Sábados: de 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4341
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Speech Therapy
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-6:00pm
+                        </p>
+                        <p>
+                            Saturday: 8am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4341
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Fisioterapia/Terapia Ocupacional
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 6:00 p. m.
+                        </p>
+                        <p>
+                            Sábados: de 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4651
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Occupational/Physical Therapy
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-6:00pm
+                        </p>
+                        <p>
+                            Saturday: 8am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4651
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Neonatología
+                        </p>
+                        <p>
+                            Clínica de Seguimiento de la Unidad de Cuidados Intensivos
+                            Neonatales
+                        </p>
+                        <p>
+                            Clínica de Alto Riesgo
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-3882
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el médico de guardia
+                            de la Clínica de Seguimiento de la Unidad de Cuidados
+                            Intensivos Neonatales
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Neonatology
+                        </p>
+                        <p>
+                            NICU follow up Clinic
+                        </p>
+                        <p>
+                            High Risk Clinic
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-3882
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for NICU
+                            follow up clinic
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Neurología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4222
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Neurología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Neurology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4222
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Neurology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Neurocirugía
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4726
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Neurocirugía
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Neurosurgery
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4726
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Neurosurgery
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Nefrología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4531
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Nefrología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Nephrology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4531
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Nephrology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Enfermedades Infecciosas
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4578
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Enfermedades Infecciosas
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Infectious Disease
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4578
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Infectious disease
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Gastroenterología (GI)
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4415
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Gastroenterología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Gastroenterology (GI)
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4415
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for GI
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Ginecología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-9400
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Ginecología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Gynecology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-9400
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Gynecology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Cirugía Pediátrica
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4371
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Cirugía Pediátrica
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Pediatric Surgery
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4371
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Pediatric Surgery
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Dermatología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4215
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Dermatología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Dermatology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4215
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Dermatology
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Genética Humana
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:00 a. m. a 4:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4760
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Genética
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Human Genetics
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:00am-4:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4760
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Genetics
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Dental
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes:
+                        </p>
+                        <p>
+                            8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4641
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana
+                            </strong>
+                            :
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Dental
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Dental
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday:
+                        </p>
+                        <p>
+                            8:00am - 4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4641
+                        </p>
+                        <p>
+                            <strong>After hours and weekends</strong>
+                            :
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Dental.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Psiquiatría General
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes:
+                        </p>
+                        <p>
+                            8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4788
+                        </p>
+                        <p>
+                            <strong>
+                                Emergencias o después del horario de atención y los
+                                fines de semana
+                            </strong>
+                            :
+                        </p>
+                        <p>
+                            513-636-4124
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Psychiatry (General)
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday:
+                        </p>
+                        <p>
+                            8:00am - 4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4788
+                        </p>
+                        <p>
+                            <strong>Emergent or After hours and weekends</strong>
+                            :
+                        </p>
+                        <p>
+                            513-636-4124
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Psiquiatría Neuroconductual
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes:
+                        </p>
+                        <p>
+                            8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-6553
+                        </p>
+                        <p>
+                            <strong>
+                                Emergencias o después del horario de atención y los
+                                fines de semana
+                            </strong>
+                            :
+                        </p>
+                        <p>
+                            513-636-4124
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Neurobehavioral Psychiatry
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday:
+                        </p>
+                        <p>
+                            8:00am - 4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-6553
+                        </p>
+                        <p>
+                            <strong>Emergent or After hours and weekends</strong>
+                            :
+                        </p>
+                        <p>
+                            513-636-4124
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Hematología/Oncología
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes:
+                        </p>
+                        <p>
+                            8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-8790
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana
+                            </strong>
+                            :
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pregunte por el proveedor de
+                            guardia de Hematología/Oncología
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Hematology/Oncology
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday:
+                        </p>
+                        <p>
+                            8:00am - 4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-8790
+                        </p>
+                        <p>
+                            <strong>After hours and weekends</strong>
+                            :
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for
+                            Hematology/Oncology.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Rehabilitación Pediátrica
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:30 a. m. a 5:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7480
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pida para hablar con el proveedor
+                            de guardia de Rehabilitación Física
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Pediatric Rehab
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:30am-5:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7480
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Physical
+                            Rehab
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Clínica de Parálisis Cerebral
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            (Subespecialidad en el Departamento de Rehabilitación
+                            Física)
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Lunes a viernes, 8:30 a. m. a 5:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7480
+                        </p>
+                        <p>
+                            Línea de Coordinación de Atención (Care Coordinator)
+                            513-803-4627
+                        </p>
+                        <p>
+                            <strong>
+                                Después del horario de atención y los fines de semana:
+                            </strong>
+                        </p>
+                        <p>
+                            Llame al 513-636-4200 y pida para hablar con el proveedor
+                            de guardia de Rehabilitación Física
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Cerebral Palsy Clinic
+                        </p>
+                        <p>
+                            Dr.
+                        </p>
+                        <p>
+                            (A subspecialty in the Physical Rehab Department)
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday-Friday 8:30am-5:00pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-7480
+                        </p>
+                        <p>
+                            Care Coordinator Line: 513-803-4627
+                        </p>
+                        <p>
+                            <strong>After hours and weekends:</strong>
+                        </p>
+                        <p>
+                            Call 513-636-4200 and ask for on call provider for Physical
+                            Rehab
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Centro Perlman
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes:
+                        </p>
+                        <p>
+                            8:00 a. m. a 4:30 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4601
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Perlman Center
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday:
+                        </p>
+                        <p>
+                            8:00am - 4:30pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            513-636-4601
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            Enfermedad general
+                        </p>
+                        <p>
+                            <strong>
+                                CareSource24, la línea de Asesoramiento de Enfermería
+                            </strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Urgente y después del horario de atención - 24 horas/7 días
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-866-206-0554
+                        </p>
+                        <p>
+                            TTY: 1-800-750-0750 o 711
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            General Illness
+                        </p>
+                        <p>
+                            <strong>CareSource24 Nurse Advice Line</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Urgent and after hours - 24hours/7days
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-866-206-0554
+                        </p>
+                        <p>
+                            TTY: 1-800-750-0750 or 711
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>Servicios para miembros de CareSource</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes de 7:00 a. m. a 7:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <strong>CareSource Member Services</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday 7:00 am - 7:00 pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>Servicios de interpretación por CareSource</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes de 7:00 a. m. a 7:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134
+                        </p>
+                        <p>
+                            Portal de autoservicio de Vocalink
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <strong>Interpreter Services via CareSource</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday 7:00 am - 7:00 pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134
+                        </p>
+                        <p>
+                            Vocalink Self-service Portal
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>Transporte por CareSource</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            De lunes a viernes de 7:00 a. m. a 7:00 p. m.
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134 o
+                        </p>
+                        <p>
+                            TTY: 1-800-750-0750 o 711
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <strong>Transportation via CareSource</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            Monday - Friday 7:00 am - 7:00 pm
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            1-800-488-0134 or
+                        </p>
+                        <p>
+                            TTY: 1-800-750-0750 or 711
+                        </p>
                     </td>
                 </tr>
             </tbody>
@@ -1264,6 +2558,9 @@
         });
         $("#inPatient").on("change keyup paste click", function () {
             $('.outPatient').text($(this).val());
+        })
+        $("#inDOB").on("change keyup paste click", function () {
+            $('.outDOB').text($(this).val());
         })
         $("#inENT").on("change keyup paste click", function () {
             $('.outENT').text($(this).val());
