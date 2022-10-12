@@ -1,8 +1,76 @@
-<hmtl><body>
-<table border="1" cellspacing="0" cellpadding="0">
+<hmtl>
+    <head>
+        <style>
+            table{
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+    <button onclick="copyToClip(document.getElementById('AAP').innerHTML)">
+        Copy the table below
+    </button>
+    <form action="javascript:void(0);">
+        <p><label for="ptname" class="required-field">Patient First Name:</label>
+            <input type="text" id="ptname" name="ptname" required="required">
+        </p>
+        <p>
+        <div id='errorMsg'></div><label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        </p>
+        <p><div id='errorMsg3'></div><label for="green">Green Zone Medication(s):</label>
+            <select id="green" name="green" multiple>
+                <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
+                    <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning and evening)</option>
+                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning</option>
+                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the morning</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the morning</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the morning</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
+                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
+                                <option>Aerospan (Flunisolide)  80 - 1 puff, once daily in the morning</option>
+                                <option>Aerospan (Flunisolide)  80 - 1 puff, three times a day (in the morning, afternoon and evening)</option>
+                                <option>Aerospan (Flunisolide)  80 - 1 puff, twice daily (in the morning and evening)</option>
+                                <option>Aerospan (Flunisolide)  80 - 2 puffs, once daily in the morning</option>
+                                <option>Aerospan (Flunisolide)  80 - 2 puffs, three times a day (in the morning, afternoon and evening)</option>
+                                <option>Aerospan (Flunisolide)  80 - 2 puffs, twice daily (in the morning and evening)</option>
+            </select></p>
+            <input type="button" onclick="showAAP()" value="Show AAP" class="submitbutton" />
+    </form>
+<span id="AAP">
+</span>
+<script type="text/JavaScript">
+/* from https://stackoverflow.com/questions/23934656/how-can-i-copy-rich-text-contents-to-the-clipboard-with-javascript */
+function copyToClip(str) {
+    function listener(e) {
+        e.clipboardData.setData("text/html", str);
+        e.clipboardData.setData("text/plain", str);
+        e.preventDefault();
+    }
+    document.addEventListener("copy", listener);
+    document.execCommand("copy");
+    document.removeEventListener("copy", listener);
+};
+
+function showAAP(){
+    const selected = document.querySelectorAll('#green option:checked');
+    const greenMeds = Array.from(selected.selectedOptions).map(v=>v.value);
+    
+    AAP.innerHTML=`
+    <table>
     <tbody>
         <tr>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong>Plan de acción para el asma para: NAME</strong>
                     <strong></strong>
@@ -12,7 +80,7 @@
 :DATE <strong>Nombre de la médica:</strong> DOCTOR                    <strong>Teléfono</strong>: Departamento: PHONE
                 </p>
             </td>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong><em>Asthma Action Plan for: </em></strong>
                     <strong>NAME</strong>
@@ -27,7 +95,7 @@
             </td>
         </tr>
         <tr>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong>¡ADELANTE! (VERDE)</strong>
                     <strong></strong>
@@ -39,7 +107,7 @@
                     </strong>
                 </p>
             </td>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong><em>GO! (GREEN)</em></strong>
                     <strong><em></em></strong>
@@ -56,20 +124,20 @@
             </td>
         </tr>
         <tr>
-            <td width="168" valign="top">
+            <td>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p>
                     <strong>Medicamentos, cuánto tomar y cuándo tomar</strong>
                     <strong></strong>
                 </p>
             </td>
-            <td width="182" valign="top">
+            <td>
                 <p>
                     <em></em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p>
                     <strong>
                         <em>
@@ -81,7 +149,7 @@
             </td>
         </tr>
         <tr>
-            <td width="168" valign="top">
+            <td>
                 <p>
                     <strong><u>Usted tiene TODO esto:</u></strong>
                     <strong><u></u></strong>
@@ -99,12 +167,12 @@
                     • Puede trabajar o jugar
                 </p>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p>
-                    GREEN
+                    ${greenMeds}
                 </p>
             </td>
-            <td width="182" valign="top">
+            <td>
                 <p>
                     <strong><em><u>You have ALL of these:</u></em></strong>
                 </p>
@@ -121,14 +189,14 @@
                     • <em>Can work or play</em><em></em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p>
                     <em>GREEN</em>
                 </p>
             </td>
         </tr>
         <tr>
-            <td width="168" valign="top">
+            <td>
                 <p>
                     <strong>
                         Antes de hacer ejercicio físico, si es necesario
@@ -136,7 +204,7 @@
                     <strong></strong>
                 </p>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p>
                     2 disparos de inhalador de albuterol con espaciador o 1
                     tratamiento de nebulizador,
@@ -145,13 +213,13 @@
                     <strong>15 minutos antes de hacer ejercicio</strong>
                 </p>
             </td>
-            <td width="182" valign="top">
+            <td>
                 <p>
                     <strong><em>Before exercise, if needed</em></strong>
                     <em></em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p>
                     <em>
                         2 puffs of Albuterol inhaler with spacer or 1 neb
@@ -165,7 +233,7 @@
             </td>
         </tr>
         <tr>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong>PRECAUCIÓN (Amarillo)</strong>
                     <strong></strong>
@@ -177,7 +245,7 @@
                     </strong>
                 </p>
             </td>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong><em>CAUTION (Yellow)</em></strong>
                     <strong><em></em></strong>
@@ -194,7 +262,7 @@
             </td>
         </tr>
         <tr>
-            <td width="168" rowspan="3" valign="top">
+            <td>
                 <p>
                     <strong>
                         <u>
@@ -221,13 +289,13 @@
                     respirar
                 </p>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p>
                     <strong>Medicamentos, cuánto tomar y cuándo tomar</strong>
                     <strong></strong>
                 </p>
             </td>
-            <td width="182" rowspan="3" valign="top">
+            <td>
                 <p>
                     <strong><em><u></u></em></strong>
                 </p>
@@ -253,7 +321,7 @@
 •                    <em>Waking at night due to cough or trouble breathing</em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p>
                     <strong>
                         <em>
@@ -265,19 +333,19 @@
             </td>
         </tr>
         <tr>
-            <td width="264" valign="top">
+            <td>
                 <p>
                     YELLOW
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p>
                     <em>YELLOW</em>
                 </p>
             </td>
         </tr>
         <tr>
-            <td width="264" valign="top">
+            <td>
                 <p align="center">
                     Inhalador de albuterol, 4 disparos cada 4 horas
                 </p>
@@ -296,7 +364,7 @@
                     Departamento: 513-636-6771
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p align="center">
                     <em>Albuterol inhaler, 4 puffs every 4 hours</em>
                     <em></em>
@@ -321,7 +389,7 @@
             </td>
         </tr>
         <tr>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong>¡PELIGRO! (Rojo)</strong>
                     <strong></strong>
@@ -332,7 +400,7 @@
                     </strong>
                 </p>
             </td>
-            <td width="432" colspan="2" valign="top">
+            <td>
                 <p>
                     <strong><em>DANGER!! (Red)</em></strong>
                     <strong><em></em></strong>
@@ -346,7 +414,7 @@
             </td>
         </tr>
         <tr>
-            <td width="168" valign="top">
+            <td>
                 <p>
                     <strong>
                         <u>Su asma está empeorando rápidamente:</u>
@@ -366,7 +434,7 @@
                     • No puede dormir o jugar debido a la tos o silbidos
                 </p>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p align="center">
                     RED
                 </p>
@@ -393,7 +461,7 @@
                     la Sala de Emergencia o estadía en el hospital
                 </p>
             </td>
-            <td width="182" valign="top">
+            <td>
                 <p>
                     <strong>
                         <em><u>Your asthma is getting worse quickly:</u></em>
@@ -412,7 +480,7 @@
                     • <em>Can't sleep or play because of cough or wheeze</em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p align="center">
                     <em>RED</em>
                 </p>
@@ -451,13 +519,13 @@
             </td>
         </tr>
         <tr>
-            <td width="168" valign="top">
+            <td>
                 <p>
                     <strong>Síntomas de que la vida está en peligro</strong>
                     <strong></strong>
                 </p>
             </td>
-            <td width="264" valign="top">
+            <td>
                 <p align="center">
                     <strong>
                         <u>
@@ -497,13 +565,13 @@
                     <strong></strong>
                 </p>
             </td>
-            <td width="182" valign="top">
+            <td>
                 <p>
                     <strong><em>Life Threatening Symptoms</em></strong>
                     <em></em>
                 </p>
             </td>
-            <td width="249" valign="top">
+            <td>
                 <p align="center">
                     <strong>
                         <em>
@@ -552,4 +620,9 @@
         </tr>
     </tbody>
 </table>
+
+    `;
+}
+
+</script>
 </body></hmtl>
