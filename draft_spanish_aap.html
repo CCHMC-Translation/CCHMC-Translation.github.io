@@ -1,55 +1,81 @@
 <hmtl>
+
     <head>
         <style>
-            table{
-                width:100%;
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td {
+                border: 1px solid black;  
             }
         </style>
     </head>
+
     <body>
-    <button onclick="copyToClip(document.getElementById('AAP').innerHTML)">
-        Copy the table below
-    </button>
-    <form action="javascript:void(0);">
-        <p><label for="ptname" class="required-field">Patient First Name:</label>
-            <input type="text" id="ptname" name="ptname" required="required">
-        </p>
-        <p>
-        <div id='errorMsg'></div><label for="date">Date:</label>
-        <input type="date" id="date" name="date">
-        </p>
-        <p><div id='errorMsg3'></div><label for="green">Green Zone Medication(s):</label>
+
+        <form action="javascript:void(0);">
+            <p><label for="ptname" class="required-field">Patient First Name:</label>
+                <input type="text" id="ptname" name="ptname" required="required">
+            </p>
+            <p>
+            <div id='errorMsg'></div><label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            </p>
+            <p>
+            <div id='errorMsg3'></div><label for="green">Green Zone Medication(s):</label>
             <select id="green" name="green" multiple>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
-                <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
-                    <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning</option>
-                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning</option>
-                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the morning, afternoon and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the morning</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the morning</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the morning</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day (in the morning, afternoon and evening)</option>
-                                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the morning and evening)</option>
-                                <option>Aerospan (Flunisolide)  80 - 1 puff, once daily in the morning</option>
-                                <option>Aerospan (Flunisolide)  80 - 1 puff, three times a day (in the morning, afternoon and evening)</option>
-                                <option>Aerospan (Flunisolide)  80 - 1 puff, twice daily (in the morning and evening)</option>
-                                <option>Aerospan (Flunisolide)  80 - 2 puffs, once daily in the morning</option>
-                                <option>Aerospan (Flunisolide)  80 - 2 puffs, three times a day (in the morning, afternoon and evening)</option>
-                                <option>Aerospan (Flunisolide)  80 - 2 puffs, twice daily (in the morning and evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
+                    afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning and
+                    evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the morning,
+                    afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning and
+                    evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the morning,
+                    afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning and
+                    evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the morning
+                </option>
+                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day (in the
+                    morning, afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in the
+                    morning and evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the morning
+                </option>
+                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day (in the
+                    morning, afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in the
+                    morning and evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the morning
+                </option>
+                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day (in the
+                    morning, afternoon and evening)</option>
+                <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the morning
+                    and evening)</option>
+                <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and evening)
+                </option>
+                <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
+                <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and evening)
+                </option>
+                <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
             </select></p>
             <input type="button" onclick="showAAP()" value="Show AAP" class="submitbutton" />
-    </form>
-<span id="AAP">
-</span>
-<script type="text/JavaScript">
+        </form>
+        <button onclick="copyToClip(document.getElementById('AAP').innerHTML)">
+            Copy the table below
+        </button>
+        <p>&nbsp;</p>
+        <span id="AAP">
+        </span>
+        <script type="text/JavaScript">
 /* from https://stackoverflow.com/questions/23934656/how-can-i-copy-rich-text-contents-to-the-clipboard-with-javascript */
 function copyToClip(str) {
     function listener(e) {
@@ -63,39 +89,46 @@ function copyToClip(str) {
 };
 
 function showAAP(){
-    const selected = document.querySelectorAll('#green option:checked');
-    const greenMeds = Array.from(selected.selectedOptions).map(v=>v.value);
+    const selected = document.querySelectorAll('#green');
+    const greenMeds = Array.from(selected);
     
+    var ptname = document.getElementById("ptname").value;
+             switch(ptname){
+                 case null:
+                 case "":
+                     return;
+             }
+    
+    var date = document.querySelector('input[name="date"]').value;
+
     AAP.innerHTML=`
     <table>
     <tbody>
         <tr>
-            <td>
+            <td colspan="2">
                 <p>
-                    <strong>Plan de acción para el asma para: NAME</strong>
+                    <strong>Plan de acción para el asma para: ${ptname}</strong>
                     <strong></strong>
                 </p>
                 <p>
                     <strong>Fecha de hoy</strong>
-:DATE <strong>Nombre de la médica:</strong> DOCTOR                    <strong>Teléfono</strong>: Departamento: PHONE
+:${date} <strong>Nombre de la médica:</strong> DOCTOR                    <strong>Teléfono</strong>: Departamento: PHONE
                 </p>
             </td>
-            <td>
+            <td colspan="2" style="border-left: 5px solid black;">
                 <p>
-                    <strong><em>Asthma Action Plan for: </em></strong>
-                    <strong>NAME</strong>
-                    <strong><em></em></strong>
+                    <strong><em>Asthma Action Plan for: ${ptname}</em></strong>
                 </p>
                 <p>
                     <strong><em>Today's date</em></strong>
                     <em>
-: DATE <strong>Dr.'s name</strong>: DOCTOR.                        <strong>Phone number</strong>: Dept: PHONE
+: ${date} <strong>Dr.'s name</strong>: DOCTOR.                        <strong>Phone number</strong>: Dept: PHONE
                     </em>
                 </p>
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr style="background-color: lime;">
+            <td colspan="2">
                 <p>
                     <strong>¡ADELANTE! (VERDE)</strong>
                     <strong></strong>
@@ -107,7 +140,7 @@ function showAAP(){
                     </strong>
                 </p>
             </td>
-            <td>
+            <td colspan="2" style="border-left: 5px solid black;">
                 <p>
                     <strong><em>GO! (GREEN)</em></strong>
                     <strong><em></em></strong>
@@ -132,7 +165,7 @@ function showAAP(){
                     <strong></strong>
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <em></em>
                 </p>
@@ -172,7 +205,7 @@ function showAAP(){
                     ${greenMeds}
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <strong><em><u>You have ALL of these:</u></em></strong>
                 </p>
@@ -213,7 +246,7 @@ function showAAP(){
                     <strong>15 minutos antes de hacer ejercicio</strong>
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <strong><em>Before exercise, if needed</em></strong>
                     <em></em>
@@ -232,8 +265,8 @@ function showAAP(){
                 </p>
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr style="background-color: yellow;">
+            <td colspan="2">
                 <p>
                     <strong>PRECAUCIÓN (Amarillo)</strong>
                     <strong></strong>
@@ -245,7 +278,7 @@ function showAAP(){
                     </strong>
                 </p>
             </td>
-            <td>
+            <td colspan="2" style="border-left: 5px solid black;">
                 <p>
                     <strong><em>CAUTION (Yellow)</em></strong>
                     <strong><em></em></strong>
@@ -255,6 +288,31 @@ function showAAP(){
                         <em>
                             Keep taking daily medicines but change the dose as
                             follows:
+                        </em>
+                    </strong>
+                    <em></em>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <p>
+                    <strong>Medicamentos, cuánto tomar y cuándo tomar</strong>
+                    <strong></strong>
+                </p>
+            </td>
+            <td style="border-left: 5px solid black;">
+                <p>
+                    <em></em>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <strong>
+                        <em>
+                            Medicines, how much to take, and when to take it
                         </em>
                     </strong>
                     <em></em>
@@ -291,11 +349,27 @@ function showAAP(){
             </td>
             <td>
                 <p>
-                    <strong>Medicamentos, cuánto tomar y cuándo tomar</strong>
-                    <strong></strong>
+                    YELLOW
+                </p>
+                <p align="center">
+                    Inhalador de albuterol, 4 disparos cada 4 horas
+                </p>
+                <p align="center">
+                    Si necesita el albuterol cada menos de 4 horas O si tiene
+                    síntomas después de 2 días, O
+                </p>
+                <p align="center">
+                    si el albuterol no está ayudando en ningún momento,
+                </p>
+                <p align="center">
+                    <strong><u>¡LLAME AL MÉDICO!</u></strong>
+                    <strong><u></u></strong>
+                </p>
+                <p align="center">
+                    Departamento: 513-636-6771
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <strong><em><u></u></em></strong>
                 </p>
@@ -323,48 +397,8 @@ function showAAP(){
             </td>
             <td>
                 <p>
-                    <strong>
-                        <em>
-                            Medicines, how much to take, and when to take it
-                        </em>
-                    </strong>
-                    <em></em>
-                </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>
-                    YELLOW
-                </p>
-            </td>
-            <td>
-                <p>
                     <em>YELLOW</em>
                 </p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p align="center">
-                    Inhalador de albuterol, 4 disparos cada 4 horas
-                </p>
-                <p align="center">
-                    Si necesita el albuterol cada menos de 4 horas O si tiene
-                    síntomas después de 2 días, O
-                </p>
-                <p align="center">
-                    si el albuterol no está ayudando en ningún momento,
-                </p>
-                <p align="center">
-                    <strong><u>¡LLAME AL MÉDICO!</u></strong>
-                    <strong><u></u></strong>
-                </p>
-                <p align="center">
-                    Departamento: 513-636-6771
-                </p>
-            </td>
-            <td>
                 <p align="center">
                     <em>Albuterol inhaler, 4 puffs every 4 hours</em>
                     <em></em>
@@ -388,8 +422,8 @@ function showAAP(){
                 </p>
             </td>
         </tr>
-        <tr>
-            <td>
+        <tr style="background-color: red;">
+            <td colspan="2">
                 <p>
                     <strong>¡PELIGRO! (Rojo)</strong>
                     <strong></strong>
@@ -400,7 +434,7 @@ function showAAP(){
                     </strong>
                 </p>
             </td>
-            <td>
+            <td colspan="2" style="border-left: 5px solid black;">
                 <p>
                     <strong><em>DANGER!! (Red)</em></strong>
                     <strong><em></em></strong>
@@ -461,7 +495,7 @@ function showAAP(){
                     la Sala de Emergencia o estadía en el hospital
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <strong>
                         <em><u>Your asthma is getting worse quickly:</u></em>
@@ -565,7 +599,7 @@ function showAAP(){
                     <strong></strong>
                 </p>
             </td>
-            <td>
+            <td style="border-left: 5px solid black;">
                 <p>
                     <strong><em>Life Threatening Symptoms</em></strong>
                     <em></em>
@@ -625,4 +659,5 @@ function showAAP(){
 }
 
 </script>
-</body></hmtl>
+    </body>
+</hmtl>
