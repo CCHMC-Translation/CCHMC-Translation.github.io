@@ -18,13 +18,19 @@
             <p><label for="ptname" class="required-field">Patient First Name:</label>
                 <input type="text" id="ptname" name="ptname" required="required">
             </p>
+            <p><label for="doctor" class="required-field">Doctor Name:</label>
+                <input type="text" id="doctor" name="doctor" required="required">
+            </p>
+            <p><label for="phone" class="required-field">Doctor Phone Number:</label>
+                <input type="text" id="phone" name="phone" required="required">
+            </p>
             <p>
             <div id='errorMsg'></div><label for="date">Date:</label>
             <input type="date" id="date" name="date">
             </p>
             <p>
             <div id='errorMsg3'></div><label for="green">Green Zone Medication(s):</label>
-            <select id="green" name="green" multiple>
+            <select id="green" name="green">
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -89,11 +95,53 @@ function copyToClip(str) {
 };
 
 function showAAP(){
-    const selected = document.querySelectorAll('#green');
-    const greenMeds = Array.from(selected);
+    
+    const greenMedsESoptions = ["Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 100/50 - 1 inhalación, una vez al día por la mañana",
+    "Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 100/50 - 1 inhalación, tres veces al día (por la mañana, por la tarde y por la noche)",
+    "Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 100/50 - 1 inhalación, dos veces al día (por la mañana y por la noche)",
+    "Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 250/50 - 1 inhalación, una vez al día por la mañana",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 250/50 - 1 inhalación, tres veces al día (por la mañana, por la tarde y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 250/50 - 1 inhalación, dos veces al día (por la mañana y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 500/50 - 1 inhalación, una vez al día por la mañana",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 500/50 - 1 inhalación, tres veces al día (por la mañana, por la tarde y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 500/50 - 1 inhalación, dos veces al día (por la mañana y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 115/21 inhalador de dosis medida, 2 disparos (usar con espaciador), una vez al día por la mañana",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 115/21 inhalador de dosis medida, 2 disparos (usar con espaciador), tres veces al día (por la mañana, por la tarde y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 115/21 inhalador de dosis medida, 2 disparos (usar con espaciador), dos veces al día (por la mañana y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 230/21 inhalador de dosis medida, 2 disparos (usar con espaciador), una vez al día por la mañana",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 230/21 inhalador de dosis medida, 2 disparos (usar con espaciador), tres veces al día (por la mañana, por la tarde y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 230/21 inhalador de dosis medida, 2 disparos (usar con espaciador), dos veces al día (por la mañana y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 45/21 inhalador de dosis medida, 2 disparos (usar con espaciador), una vez al día por la mañana",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 45/21 inhalador de dosis medida, 2 disparos (usar con espaciador), tres veces al día (por la mañana, por la tarde y por la noche)",
+"Advair - fluticasona/salmeterol (fluticasone/salmeterol) 45/21 inhalador de dosis medida, 2 disparos (usar con espaciador), dos veces al día (por la mañana y por la noche)",
+"Aerospan - flunisolida (flunisolide) 80 - 1 disparo, una vez al día por la mañana",
+"Aerospan - flunisolida (flunisolide) 80 - 1 disparo, tres veces al día (por la mañana, por la tarde y por la noche)",
+"Aerospan - flunisolida (flunisolide) 80 - 1 disparo, dos veces al día (por la mañana y por la noche)",
+"Aerospan - flunisolida (flunisolide) 80 - 2 disparos, una vez al día por la mañana",
+"Aerospan - flunisolida (flunisolide) 80 - 2 disparos, tres veces al día (por la mañana, por la tarde y por la noche)",
+"Aerospan - flunisolida (flunisolide) 80 - 2 disparos, dos veces al día (por la mañana y por la noche)"
+];
+    
+    const selected = document.getElementById('green');
+    const greenMeds = selected.options[selected.selectedIndex].value;
+    var greenMedsES = greenMedsESoptions[selected.selectedIndex];
     
     var ptname = document.getElementById("ptname").value;
              switch(ptname){
+                 case null:
+                 case "":
+                     return;
+             }
+
+             var doctor = document.getElementById("doctor").value;
+             switch(doctor){
+                 case null:
+                 case "":
+                     return;
+             }
+
+             var phone = document.getElementById("phone").value;
+             switch(phone){
                  case null:
                  case "":
                      return;
@@ -111,8 +159,8 @@ function showAAP(){
                     <strong></strong>
                 </p>
                 <p>
-                    <strong>Fecha de hoy</strong>
-:${date} <strong>Nombre de la médica:</strong> DOCTOR                    <strong>Teléfono</strong>: Departamento: PHONE
+                    <strong>Fecha de hoy:</strong>
+${date} <strong>Nombre del médico:</strong> ${doctor}                    <strong>Teléfono</strong>: ${phone}
                 </p>
             </td>
             <td colspan="2" style="border-left: 5px solid black;">
@@ -120,9 +168,7 @@ function showAAP(){
                     <strong><em>Asthma Action Plan for: ${ptname}</em></strong>
                 </p>
                 <p>
-                    <strong><em>Today's date</em></strong>
-                    <em>
-: ${date} <strong>Dr.'s name</strong>: DOCTOR.                        <strong>Phone number</strong>: Dept: PHONE
+                    <strong><em>Today's date:</em></strong><em> ${date} <strong>Dr.'s name</strong>: ${doctor}.                        <strong>Phone number</strong>: ${phone}
                     </em>
                 </p>
             </td>
@@ -202,7 +248,7 @@ function showAAP(){
             </td>
             <td>
                 <p>
-                    ${greenMeds}
+                    ${greenMedsES}
                 </p>
             </td>
             <td style="border-left: 5px solid black;">
@@ -224,7 +270,7 @@ function showAAP(){
             </td>
             <td>
                 <p>
-                    <em>GREEN</em>
+                    ${greenMeds}
                 </p>
             </td>
         </tr>
