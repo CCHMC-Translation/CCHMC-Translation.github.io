@@ -442,6 +442,8 @@ Spanish
 
 5.  When times are written in the 12-hour format, use the abbreviations "a. m." and "p. m." 
 
+6.  Translate "nurse" as "enfermero(a)" and "nurses" as "enfermeros" unless the gender is known.
+
 Tigrinya
 ----------
 
