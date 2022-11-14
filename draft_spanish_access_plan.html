@@ -71,8 +71,11 @@
             
             <div class="formRight">Patient Name: <input type="text" name="inPatient" id="inPatient" /></div>
             <div class="formRight">Patient DOB: <input type="date" name="inDOB" id="inDOB" /></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="DebbieHafley" />Debbie
-                    Hafley</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="CM" />Care Manager <input type="text"
+                name="inCM" id="inCM" /></label><br />
+Care Manager phone <input type="text" name="inCMp" id="inCMp" /><br />
+Care Manager cell <input type="text" name="inCMc" id="inCMc" /><br />
+Care Manager email <input type="text" name="inCMe" id="inCMe" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="Hopple" />Hopple Street Clinic</label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="OutpatientPharmacy" />Outpatient Pharmacy</label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="HomeCare" />Home Care</label></div>
@@ -294,7 +297,7 @@
             <tbody>
             
             
-                <tr class="DebbieHafley">
+                <tr class="CM">
                     <td>
                         <p>
                             Coordinadora de cuidados médicos
@@ -310,16 +313,16 @@
                     </td>
                     <td>
                         <p>
-                            Debbie Hafley, RN
+                            <span class="outCM"></span>
                         </p>
-                        <p>
-                            Llame al: 513-517-2013
+                        <p class="CMp">
+                            Llame al: <span class="outCMp"></span>
                         </p>
-                        <p>
-                            Mensaje de texto: 513-285-8399 o
+                        <p class="CMc">
+                            Mensaje de texto: <span class="outCMc"></span> o
                         </p>
-                        <p>
-                            correo electrónico: debbie.hafley@cchmc.org
+                        <p class="CMe">
+                            correo electrónico: <span class="outCMe"></span>
                         </p>
                     </td>
                     <td>
@@ -337,16 +340,16 @@
                     </td>
                     <td>
                         <p>
-                            Debbie Hafley, RN
+                            <span class="outCM"></span>
                         </p>
                         <p>
-                            Call: 513-517-2013
+                            Call: <span class="outCMp"></span>
                         </p>
                         <p>
-                            Text: 513-285-8399 or
+                            Text: <span class="outCMc"></span> or
                         </p>
                         <p>
-                            email: debbie.hafley@cchmc.org
+                            email: <span class="outCMe"></span>
                         </p>
                     </td>
                 </tr>
@@ -2624,6 +2627,18 @@
         })
         $("#inDOB").on("change keyup paste click", function () {
             $('.outDOB').text($(this).val());
+        })
+        $("#inCM").on("change keyup paste click", function () {
+            $('.outCM').text($(this).val());
+        })
+        $("#inCMp").on("change keyup paste click", function () {
+            $('.outCMp').text($(this).val());
+        })
+        $("#inCMc").on("change keyup paste click", function () {
+            $('.outCMc').text($(this).val());
+        })
+        $("#inCMe").on("change keyup paste click", function () {
+            $('.outCMe').text($(this).val());
         })
         $("#inENT").on("change keyup paste click", function () {
             $('.outENT').text($(this).val());
