@@ -31,6 +31,7 @@
             <p>
             <div id='errorMsg3'></div><label for="green1">Green Zone Medication 1:</label>
             <select id="green1" name="green1">
+                <option></option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -75,6 +76,7 @@
             </select></p>
             <div id='errorMsg3'></div><label for="green2">Green Zone Medication 2:</label>
             <select id="green2" name="green2">
+                <option></option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -119,6 +121,7 @@
             </select></p>
             <div id='errorMsg3'></div><label for="green3">Green Zone Medication 3:</label>
             <select id="green3" name="green3">
+                <option></option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -163,6 +166,7 @@
             </select></p>
             <div id='errorMsg3'></div><label for="green4">Green Zone Medication 4:</label>
             <select id="green4" name="green4">
+                <option></option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -207,6 +211,7 @@
             </select></p>
             <div id='errorMsg3'></div><label for="green5">Green Zone Medication 5:</label>
             <select id="green5" name="green5">
+                <option></option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning</option>
                 <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the morning,
                     afternoon and evening)</option>
@@ -304,9 +309,32 @@ function showAAP(){
 
     selected = document.getElementById('green2');
     var greenMedTemp = selected.options[selected.selectedIndex].value;
+    if (greenMedTemp) {
     var greenMedsESTemp = greenMedsESoptions[selected.selectedIndex];
     greenMeds = greenMeds.concat("</p><p>",greenMedTemp);
-    greenMedsES = greenMedsES.concat("</p><p>",greenMedsESTemp);
+    greenMedsES = greenMedsES.concat("</p><p>",greenMedsESTemp);}
+
+    selected = document.getElementById('green3');
+    greenMedTemp = selected.options[selected.selectedIndex].value;
+    if (greenMedTemp) {
+    greenMedsESTemp = greenMedsESoptions[selected.selectedIndex];
+    greenMeds = greenMeds.concat("</p><p>",greenMedTemp);
+    greenMedsES = greenMedsES.concat("</p><p>",greenMedsESTemp);}
+
+
+    selected = document.getElementById('green4');
+    greenMedTemp = selected.options[selected.selectedIndex].value;
+    if (greenMedTemp) {
+    greenMedsESTemp = greenMedsESoptions[selected.selectedIndex];
+    greenMeds = greenMeds.concat("</p><p>",greenMedTemp);
+    greenMedsES = greenMedsES.concat("</p><p>",greenMedsESTemp);}
+
+    selected = document.getElementById('green5');
+    greenMedTemp = selected.options[selected.selectedIndex].value;
+    if (greenMedTemp) {
+    greenMedsESTemp = greenMedsESoptions[selected.selectedIndex];
+    greenMeds = greenMeds.concat("</p><p>",greenMedTemp);
+    greenMedsES = greenMedsES.concat("</p><p>",greenMedsESTemp);}
     
     var ptname = document.getElementById("ptname").value;
              switch(ptname){
