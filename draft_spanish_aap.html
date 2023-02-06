@@ -21,96 +21,138 @@
                 }
 
             }
+
+            #errorMsg1 {
+                color: red;
+            }
+
+            #errorMsg2 {
+                color: red;
+            }
+
+            #errorMsg3 {
+                color: red;
+            }
+
+            #errorMsg4 {
+                color: red;
+            }
         </style>
     </head>
 
     <body>
         <div class="widget">
             <form action="javascript:void(0);">
-                <p><label for="ptname" class="required-field">Patient First Name:</label>
-                    <input type="text" id="ptname" name="ptname" required="required">
-                </p>
-                <p><label for="doctor" class="required-field">Doctor Name:</label>
-                    <input type="text" id="doctor" name="doctor" required="required">
-                </p>
-                <p><label for="phone" class="required-field">Doctor Phone Number:</label>
-                    <input type="text" id="phone" name="phone" required="required">
+                <p>
+                <div id='errorMsg1'></div><label for="ptname" class="required-field">Patient First Name:</label>
+                <input type="text" id="ptname" name="ptname" required="required">
                 </p>
                 <p>
+                <div id='errorMsg2'></div><label for="doctor" class="required-field">Doctor Name:</label>
+                <input type="text" id="doctor" name="doctor" required="required">
+                </p>
+                <p>
+                <div id='errorMsg3'></div><label for="phone" class="required-field">Doctor Phone Number:</label>
+                <input type="text" id="phone" name="phone" required="required">
+                </p>
+                <p>
+                <div id='errorMsg4'></div>
                 <div id='errorMsg'></div><label for="date">Date:</label>
                 <input type="date" id="date" name="date">
                 </p>
                 <div style="background-color: lime;">
                     <p>
-                    <div id='errorMsg3'></div><label for="green1">Green Zone Medication 1:</label>
-                    <select id="green1" name="green1">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
-                    <div id='errorMsg3'></div><label for="green2">Green Zone Medication 2:</label>
+                        <label for="green1">Green Zone Medication 1:</label>
+                        <select id="green1" name="green1">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
+                    <label for="green2">Green Zone Medication 2:</label>
                     <select id="green2" name="green2">
                         <option></option>
                         <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
@@ -178,7 +220,7 @@
                         </option>
                         <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
                     </select></p>
-                    <div id='errorMsg3'></div><label for="green3">Green Zone Medication 3:</label>
+                    <label for="green3">Green Zone Medication 3:</label>
                     <select id="green3" name="green3">
                         <option></option>
                         <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
@@ -246,7 +288,7 @@
                         </option>
                         <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
                     </select></p>
-                    <div id='errorMsg3'></div><label for="green4">Green Zone Medication 4:</label>
+                    <label for="green4">Green Zone Medication 4:</label>
                     <select id="green4" name="green4">
                         <option></option>
                         <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
@@ -314,7 +356,7 @@
                         </option>
                         <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
                     </select></p>
-                    <div id='errorMsg3'></div><label for="green5">Green Zone Medication 5:</label>
+                    <label for="green5">Green Zone Medication 5:</label>
                     <select id="green5" name="green5">
                         <option></option>
                         <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
@@ -385,421 +427,553 @@
                 </div>
                 <div style="background-color: yellow;">
                     <p>
-                    <div id='errorMsg3'></div><label for="yellow1">Yellow Zone Medication 1:</label>
-                    <select id="yellow1" name="yellow1">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="yellow1">Yellow Zone Medication 1:</label>
+                        <select id="yellow1" name="yellow1">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                     <p>
-                    <div id='errorMsg3'></div><label for="yellow2">Yellow Zone Medication 2:</label>
-                    <select id="yellow2" name="yellow2">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="yellow2">Yellow Zone Medication 2:</label>
+                        <select id="yellow2" name="yellow2">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                     <p>
-                    <div id='errorMsg3'></div><label for="yellow3">Yellow Zone Medication 3:</label>
-                    <select id="yellow3" name="yellow3">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="yellow3">Yellow Zone Medication 3:</label>
+                        <select id="yellow3" name="yellow3">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                 </div>
                 <div style="background-color: red;">
                     <p>
-                    <div id='errorMsg3'></div><label for="red1">Red Zone Medication 1:</label>
-                    <select id="red1" name="red1">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="red1">Red Zone Medication 1:</label>
+                        <select id="red1" name="red1">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                     <p>
-                    <div id='errorMsg3'></div><label for="red2">Red Zone Medication 2:</label>
-                    <select id="red2" name="red2">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="red2">Red Zone Medication 2:</label>
+                        <select id="red2" name="red2">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                     <p>
-                    <div id='errorMsg3'></div><label for="red3">Red Zone Medication 3:</label>
-                    <select id="red3" name="red3">
-                        <option></option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in the
-                            morning,
-                            afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the morning
-                            and
-                            evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily (in
-                            the
-                            morning and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in the
-                            morning
-                        </option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a day
-                            (in
-                            the
-                            morning, afternoon and evening)</option>
-                        <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in the
-                            morning
-                            and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon and
-                            evening)
-                        </option>
-                        <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)</option>
-                    </select></p>
+                        <label for="red3">Red Zone Medication 3:</label>
+                        <select id="red3" name="red3">
+                            <option></option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 100/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 250/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, once daily in the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, three times a day (in
+                                the
+                                morning,
+                                afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) Diskus 500/50 1 inhalation, twice daily (in the
+                                morning
+                                and
+                                evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 115/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 230/21 2 puffs (use with spacer), twice daily
+                                (in
+                                the
+                                morning and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), once daily in
+                                the
+                                morning
+                            </option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), three times a
+                                day
+                                (in
+                                the
+                                morning, afternoon and evening)</option>
+                            <option>Advair (fluticasone/salmeterol) MDI 45/21 2 puffs (use with spacer), twice daily (in
+                                the
+                                morning
+                                and evening)</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, three times a day (in the morning, afternoon and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 1 puff, twice daily (in the morning and evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, once daily in the morning</option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, three times a day (in the morning, afternoon
+                                and
+                                evening)
+                            </option>
+                            <option>Aerospan (Flunisolide) 80 - 2 puffs, twice daily (in the morning and evening)
+                            </option>
+                        </select>
+                    </p>
                 </div>
                 <input type="button" onclick="showAAP()" value="Show AAP" class="submitbutton" />
             </form>
@@ -824,6 +998,67 @@ function copyToClip(str) {
 };
 
 function showAAP(){
+
+
+    errorModal = document.getElementById("errorMsg1");
+    errorModal.innerHTML = "";
+    document.getElementById("ptname").style.borderColor = "inherit";
+    errorModal = document.getElementById("errorMsg2");
+    errorModal.innerHTML = "";
+    document.getElementById("doctor").style.borderColor = "inherit";
+    errorModal = document.getElementById("errorMsg3");
+    errorModal.innerHTML = "";
+    document.getElementById("phone").style.borderColor = "inherit";
+    errorModal = document.getElementById("errorMsg4");
+    errorModal.innerHTML = "";
+    document.getElementById("date").style.borderColor = "inherit";
+
+    var error = false;
+
+    var ptname = document.getElementById("ptname").value;
+             switch(ptname){
+                 case null:
+                 case "":
+                    errorModal = document.getElementById("errorMsg1");
+                    errorModal.innerHTML = "Please enter a patient name";
+                    document.getElementById("ptname").style.borderColor = "red";
+                    error = true;
+             }
+
+             var doctor = document.getElementById("doctor").value;
+             switch(doctor){
+                 case null:
+                 case "":
+                    errorModal = document.getElementById("errorMsg2");
+                    errorModal.innerHTML = "Please enter a doctor name";
+                    document.getElementById("doctor").style.borderColor = "red";
+                    error = true;
+             }
+
+             var phone = document.getElementById("phone").value;
+             switch(phone){
+                 case null:
+                 case "":
+                    errorModal = document.getElementById("errorMsg3");
+                    errorModal.innerHTML = "Please enter a phone number";
+                    document.getElementById("phone").style.borderColor = "red";
+                    error = true;
+             }
+    
+    var date = document.querySelector('input[name="date"]').value;
+    switch(date){
+                 case null:
+                 case "":
+                    errorModal = document.getElementById("errorMsg4");
+                    errorModal.innerHTML = "Please enter a date";
+                    document.getElementById("date").style.borderColor = "red";
+                    error = true;
+             }
+
+    if (error == true){
+                 return;
+             }
+
     
     const greenMedsESoptions = ["Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 100/50 - 1 inhalación, una vez al día por la mañana",
     "Advair - fluticasona/salmeterol (fluticasone/salmeterol) Diskus 100/50 - 1 inhalación, tres veces al día (por la mañana, por la tarde y por la noche)",
@@ -932,28 +1167,7 @@ const redMedsESoptions =greenMedsESoptions;
     redMeds = redMeds.concat("</p><p>",medTemp);
     redMedsES = redMedsES.concat("</p><p>",medTempES);}
     
-    var ptname = document.getElementById("ptname").value;
-             switch(ptname){
-                 case null:
-                 case "":
-                     return;
-             }
 
-             var doctor = document.getElementById("doctor").value;
-             switch(doctor){
-                 case null:
-                 case "":
-                     return;
-             }
-
-             var phone = document.getElementById("phone").value;
-             switch(phone){
-                 case null:
-                 case "":
-                     return;
-             }
-    
-    var date = document.querySelector('input[name="date"]').value;
 
     AAP.innerHTML=`
     <table>
