@@ -37,6 +37,11 @@
             #errorMsg4 {
                 color: red;
             }
+
+            .required-field::after {
+                content: "*";
+                color: red;
+            }
         </style>
     </head>
 
@@ -58,7 +63,7 @@
                 <p>
                 <div id='errorMsg4'></div>
                 <div id='errorMsg'></div><label for="date">Date:</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" class="required-field">
                 </p>
                 <div style="background-color: lime;">
                     <p>
