@@ -114,11 +114,14 @@ Formatting
 
      2. All linked art/photos
 
-     3. "High-Quality Print" PDF without crops/bleeds for our visual reference
+     3. An unsecured "High-Quality Print" PDF without crops/bleeds for our visual reference
 
-     4. An IDML conversion file (InDesign only)
+     4. A "High-Quality Print" PDF without crops/bleeds for our visual reference secured with a unique password and the following settings:
+        ![prevent copying and editing](protect_pdf.png)
 
-     5. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
+     5. An IDML conversion file (InDesign only)
+
+     6. If your design team has any notes, please have them fill out their contact information and anything of note in the "Instructions" file that normally gets generated when the file is packaged out of InDesign.
 
 Specific Document Types
 ============================
