@@ -96,7 +96,8 @@
             <div class="formRight"><label><input type="checkbox" class="show" value="HomeCare" />Home Care</label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="RadiologyScheduling" />Radiology
                     Scheduling</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Aero" />Aerodigestive</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="Aero" />Aerodigestive Dr. <input
+                type="text" name="inAero" id="inAero" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="ENT" />ENT Dr. <input type="text"
                         name="inENT" id="inENT" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="Pulmonary" />Pulmonary Dr. <input
@@ -107,7 +108,8 @@
                         type="text" name="inCardiology" id="inCardiology" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="CTS" />Cardio Thoracic Surgery Dr.
                     <input type="text" name="inCardioThoracic" id="inCardioThoracic" /></label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="DDBP" />DDBP</label></div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="DDBP" />DDBP Dr. <input
+                type="text" name="inDDBP" id="inDDBP" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="Ortho" />Orthopedic Clinic Dr.
                     <input type="text" name="inOrtho" id="inOrtho" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="Pain" />Pain Management Dr. <input
@@ -131,8 +133,8 @@
             <div class="formRight"><label><input type="checkbox" class="show" value="Speech" />Speech Therapy</label>
             </div>
             <div class="formRight"><label><input type="checkbox" class="show" value="OTPT" />OT/PT</label></div>
-            <div class="formRight"><label><input type="checkbox" class="show" value="Neonatology" />Neonatology</label>
-            </div>
+            <div class="formRight"><label><input type="checkbox" class="show" value="Neonatology" />Neonatology Dr. <input
+                type="text" name="inNeonatology" id="inNeonatology" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="Neuro" />Neurology Dr. <input
                         type="text" name="inNeurology" id="inNeurology" /></label></div>
             <div class="formRight"><label><input type="checkbox" class="show" value="NeuroSx" />Neurosurgery Dr. <input
@@ -1023,6 +1025,9 @@
                             Coordinación de citas e información general del Equipo
                             Aerodigestivo (Aerodigestive Team)
                         </p>
+                        <p>
+                            Dr. <span class="outAero"></span>
+                        </p>
                     </td>
                     <td>
                         <p>
@@ -1037,6 +1042,9 @@
                     <td>
                         <p>
                             Aerodigestive Team Scheduling and General information
+                        </p>
+                        <p>
+                            Dr. <span class="outAero"></span>
                         </p>
                     </td>
                     <td>
@@ -1339,6 +1347,9 @@
                         <p>
                             Pediatría del Desarrollo y Comportamiento
                         </p>
+                        <p>
+                            Dr. <span class="outDDBP"></span>
+                        </p>
                     </td>
                     <td>
                         <p>
@@ -1369,6 +1380,9 @@
                         </p>
                         <p>
                             Developmental Department and Behavioral Pediatrics
+                        </p>
+                        <p>
+                            Dr. <span class="outDDBP"></span>
                         </p>
                     </td>
                     <td>
@@ -1990,6 +2004,9 @@
                         <p>
                             Clínica de Alto Riesgo
                         </p>
+                        <p>
+                            Dr. <span class="outNeonatology"></span>
+                        </p>
                     </td>
                     <td>
                         <p>
@@ -2020,6 +2037,9 @@
                         </p>
                         <p>
                             High Risk Clinic
+                        </p>
+                        <p>
+                            Dr. <span class="outNeonatology"></span>
                         </p>
                     </td>
                     <td>
@@ -3223,6 +3243,15 @@
         })
         $("#inCP").on("change keyup paste click", function () {
             $('.outCP').text($(this).val());
+        })
+        $("#inAero").on("change keyup paste click", function () {
+            $('.outAero').text($(this).val());
+        })
+        $("#inDDBP").on("change keyup paste click", function () {
+            $('.outDDBP').text($(this).val());
+        })
+        $("#inNeonatology").on("change keyup paste click", function () {
+            $('.outNeonatology').text($(this).val());
         })
 
         document.addEventListener("DOMContentLoaded", function () {
