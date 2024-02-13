@@ -285,6 +285,10 @@ Arabic
     Day Hospital
     : المستشفى النهاري
 
+    Spiritual and Grief Care Center
+    : مركز الخدمات الدينية والمواساة
+
+
 2.  For times, rather than using only AM (ﺻﺑﺎﺣﺎ) and PM (ًء ﻣﺳﺎ), use ظﮭراً, ﻟﯾﻼً and ﻋﺻرا when appropriate.
 
 3.  Unless instructed otherwise, use Western Arabic (European) numerals instead of Arabic-Indic (Eastern Arabic/Indian) numerals in translations.
@@ -441,6 +445,9 @@ Spanish
 
     Concierge Services
     : Servicios de Concierge
+
+    Urgent Care
+    : Urgencias menores
 	
 3.	Use *usted* except where the text is clearly addressed to a child. If you think *tú* would be more appropriate, for example in marketing materials, ask if we’d like to make an exception.
 
