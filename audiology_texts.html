@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <style>
+        .submitbutton {
+            display: block;
+        }
+
+        .required-field::after {
+            content: "*";
+            color: red;
+        }
+
+        #errorMsg {
+            color: red;
+        }
+
+        #errorMsg2 {
+            color: red;
+        }
+
+        #errorMsg3 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="javascript:void(0);">
+        <p><label for="ptname" class="required-field">Patient First Name:</label>
+            <input type="text" id="ptname" name="ptname" required="required">
+        </p>
+        <p>
+        <div id='errorMsg'></div><label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        </p>
+        <p>
+        <div id='errorMsg2'></div><label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        </p>
+        <p><div id='errorMsg3'></div><label for="location">Location:</label>
+        <select id="location" name="location">
+            <option value=""></option>
+            <option value="Anderson">Anderson</option>
+            <option value="Burnet Campus">Burnet Campus</option>
+            <option value="Centerville">Centerville</option>
+            <option value="Northern Kentucky">Northern Kentucky</option>
+            <option value="Green Township">Green Township</option>
+            <option value="Liberty Campus">Liberty Campus</option>
+        </select></p>
+        <p class="required-field">Message:</p>
+        <input type="radio" id="1" name="message" value="1" required="required">
+        <label for="1">1 - Scheduled Appointment for ABR</label><br>
+        <input type="radio" id="2" name="message" value="2">
+        <label for="2">2 - Scheduled Appointment for Hearing Test</label><br>
+        <input type="radio" id="3" name="message" value="3">
+        <label for="3">3 - Failed Newborn Screening - Needs to Schedule ABR</label><br>
+        <input type="radio" id="4" name="message" value="4">
+        <label for="4">4 - Missed ABR Appointment</label><br>
+        <input type="radio" id="5" name="message" value="5">
+        <label for="5">5 - No Newborn Screening Performed at Birth Hospital</label><br>
+        <input type="radio" id="6" name="message" value="6">
+        <label for="6">6 - When Family Tries to Have Conversation Over Text</label><br>
+        <input type="radio" id="7" name="message" value="7">
+        <label for="7">7 - ABR Instructions</label><br>
+        <input type="radio" id="8" name="message" value="8">
+        <label for="8">8 - We Will Be Contacting You</label><br><br>
+        <input type="button" onclick="showMessage()" value="Show Message" class="submitbutton" />
+    </form>
+
+    <p><span id="display_message"></span></p>
+
+    <script type="text/JavaScript">
+         function showMessage(){
+
+             display_message.innerHTML= "";
+             errorModal = document.getElementById("errorMsg");
+             errorModal.innerHTML = "";
+             document.getElementById("date").style.borderColor = "inherit";
+             errorModal = document.getElementById("errorMsg2");
+             errorModal.innerHTML = "";
+             document.getElementById("time").style.borderColor = "inherit";
+             errorModal = document.getElementById("errorMsg3");
+             errorModal.innerHTML = "";
+             document.getElementById("location").style.borderColor = "inherit";
+
+             var ptname = document.getElementById("ptname").value;
+             switch(ptname){
+                 case null:
+                 case "":
+                     return;
+             }
+
+             var select = document.getElementById('location');
+             var location = select.options[select.selectedIndex].value;
+
+             var message_number = document.querySelector('input[name="message"]:checked').value;
+		     var date = document.querySelector('input[name="date"]').value;
+             var time = document.querySelector('input[name="time"]').value;
+
+             var error = false;
+
+             // Messages 1-2 require date, time, and location
+             if ((message_number == 1 || message_number == 2) && date == "") {
+                 errorModal = document.getElementById("errorMsg");
+                 errorModal.innerHTML = "Please enter a date";
+                 document.getElementById("date").style.borderColor = "red";
+                 error = true;
+             }
+
+             if ((message_number == 1 || message_number == 2) && time == "") {
+                 errorModal = document.getElementById("errorMsg2");
+                 errorModal.innerHTML = "Please enter a time";
+                 document.getElementById("time").style.borderColor = "red";
+                 error = true;
+             }
+
+             if ((message_number == 1 || message_number == 2) && location == "") {
+                 errorModal = document.getElementById("errorMsg3");
+                 errorModal.innerHTML = "Please select a location";
+                 document.getElementById("location").style.borderColor = "red";
+                 error = true;
+             }
+
+             if (error == true){
+                 return;
+             }
+
+             // Get location address
+             var address = "";
+             switch(location) {
+                 case "Anderson":
+                     address = "7495 State Road\nCincinnati, OH 45255";
+                     break;
+                 case "Burnet Campus":
+                     address = "3333 Burnet Avenue\nBldg C, 2nd Floor\nCincinnati, OH 45229";
+                     break;
+                 case "Centerville":
+                     address = "6555 Clyo Road\nCenterville, OH 45459";
+                     break;
+                 case "Northern Kentucky":
+                     address = "2765 Chapel Place Drive\nCrestview Hills, KY 41017";
+                     break;
+                 case "Green Township":
+                     address = "5899 Harrison Avenue\n3rd Floor\nCincinnati, OH 45248";
+                     break;
+                 case "Liberty Campus":
+                     address = "7777 Yankee Road\n3rd Floor\nLiberty Twp, OH 45044";
+                     break;
+             }
+
+             // Format date and time for Spanish
+             var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'};
+             var date_es = date ? new Date(date).toLocaleDateString('es-US', options) : "";
+
+             var time_options = { timeStyle: 'short', timeZone: 'UTC' };
+             var time_es = "";
+             if (time) {
+                 var datetime = new Date('1970-01-01T' + time + 'Z');
+                 time_es = new Intl.DateTimeFormat('es-US', time_options).format(datetime);
+             }
+
+             const messages_en = [
+                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}. Please arrive 15 minutes early to complete registration. Important instructions: Please bring your child tired and hungry. Your child needs to sleep for the hearing test. If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
+                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}. Please arrive 15 minutes early to complete registration. If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
+                 `Hello, this is Cincinnati Children's Hospital. Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
+                 `Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. You are receiving this message because of a missed or canceled appointment for a follow-up hearing test. Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to reschedule your appointment.`,
+                 `Hello, this is Cincinnati Children's Hospital. Our records show that a hearing screening was unable to be performed at the birth hospital and a hearing test was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
+                 `If you have any questions, please call (513) 517-4652. You will be connected with a Spanish interpreter. Ask to speak with someone in Audiology.`,
+                 `Here is some helpful information for you to know about your child's visit: Due to the small room size, only one adult may be allowed into the testing room with your baby. Please do not bring any other children to the appointment, unless there is another adult who can be with them in the waiting room. Do not apply lotion or gel on the child's head prior to this appointment. Your baby will need to sleep for the hearing test. It is best if you do not allow your baby to sleep for one hour before the appointment. If your baby falls asleep right after eating, it may be helpful to wait until you arrive at Children's to feed your baby.`,
+                 `Hello, this is Cincinnati Children's Hospital. Someone from the Audiology department will be contacting you about your child's hearing test in the next 10-15 minutes.`
+             ];
+
+	         var messages_es = [
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}. Lleguen 15 minutos antes para completar el proceso de registro. Instrucciones importantes: Traiga a su hijo(a) cansado(a) y con hambre, ya que debe permanecer dormido(a) durante la prueba de audición. Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}. Lleguen 15 minutos antes para completar el proceso de registro. Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
+                 `Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Está recibiendo este mensaje porque perdió o canceló una cita para una prueba de audición de seguimiento. Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, no se pudo realizar un examen de audición en el hospital donde nació su hijo(a), y se recomendó hacer una prueba de audición. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
+                 `Si tiene alguna pregunta, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología.`,
+                 `Le compartimos información útil sobre la visita de su hijo(a): Como la sala es pequeña, permitiremos que solo un adulto esté en la sala de pruebas con su bebé. No traiga a otros niños a la cita, a menos que haya otro adulto que pueda quedarse con ellos en la sala de espera. No le ponga loción ni gel en la cabeza de su hijo(a) antes de esta cita. Su bebé debe permanecer dormido(a) durante la prueba de audición. Lo ideal es que su bebé no duerma en la hora previa a la cita. Si su bebé suele quedarse dormido(a) apenas termina de comer, puede ser útil esperar hasta llegar a Cincinnati Children's para alimentarlo(a).`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. En los próximos 10 a 15 minutos, un miembro del personal del departamento de Audiología (Audiology) se comunicará con usted acerca de la prueba de audición de su hijo(a).`
+             ];
+
+             message_number = message_number - 1;
+
+             var message = messages_es[message_number];
+             var message_en = messages_en[message_number];
+
+             display_message.innerHTML= `<h2>Spanish Message</h2><span id="message">${message}</span><br><br> <button onclick="copyToClipboard('message')">Copy Spanish Message</button><br><br><h2>English Translation</h2>${message_en}`;
+         }
+        </script>
+
+    <script>
+        function copyToClipboard(elementId) {
+            // Create a "hidden" input
+            var aux = document.createElement("input");
+
+            // Assign it the value of the specified element
+            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+            // Append it to the body
+            document.body.appendChild(aux);
+
+            // Highlight its content
+            aux.select();
+
+            // Copy the highlighted text
+            document.execCommand("copy");
+
+            // Remove it from the body
+            document.body.removeChild(aux);
+
+            // Show alert
+            alert("Copied the text: " + document.getElementById(elementId).innerHTML);
+        }
+    </script>
+
+</body>
+
+</html>
