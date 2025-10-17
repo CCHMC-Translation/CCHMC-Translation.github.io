@@ -165,24 +165,56 @@
              }
 
              const messages_en = [
-                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}. Please arrive 15 minutes early to complete registration. Important instructions: Please bring your child tired and hungry. Your child needs to sleep for the hearing test. If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
-                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}. Please arrive 15 minutes early to complete registration. If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
+                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}.
+
+Please arrive 15 minutes early to complete registration.
+
+Important instructions: Please bring your child tired and hungry. Your child needs to sleep for the hearing test.
+
+If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
+                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing test on ${date} at ${time} at ${address}.
+
+Please arrive 15 minutes early to complete registration.
+
+If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
                  `Hello, this is Cincinnati Children's Hospital. Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
                  `Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. You are receiving this message because of a missed or canceled appointment for a follow-up hearing test. Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to reschedule your appointment.`,
                  `Hello, this is Cincinnati Children's Hospital. Our records show that a hearing screening was unable to be performed at the birth hospital and a hearing test was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
                  `If you have any questions, please call (513) 517-4652. You will be connected with a Spanish interpreter. Ask to speak with someone in Audiology.`,
-                 `Here is some helpful information for you to know about your child's visit: Due to the small room size, only one adult may be allowed into the testing room with your baby. Please do not bring any other children to the appointment, unless there is another adult who can be with them in the waiting room. Do not apply lotion or gel on the child's head prior to this appointment. Your baby will need to sleep for the hearing test. It is best if you do not allow your baby to sleep for one hour before the appointment. If your baby falls asleep right after eating, it may be helpful to wait until you arrive at Children's to feed your baby.`,
+                 `Here is some helpful information for you to know about your child's visit:
+
+Due to the small room size, only one adult may be allowed into the testing room with your baby. Please do not bring any other children to the appointment, unless there is another adult who can be with them in the waiting room.
+
+Do not apply lotion or gel on the child's head prior to this appointment.
+
+Your baby will need to sleep for the hearing test. It is best if you do not allow your baby to sleep for one hour before the appointment. If your baby falls asleep right after eating, it may be helpful to wait until you arrive at Children's to feed your baby.`,
                  `Hello, this is Cincinnati Children's Hospital. Someone from the Audiology department will be contacting you about your child's hearing test in the next 10-15 minutes.`
              ];
 
 	         var messages_es = [
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}. Lleguen 15 minutos antes para completar el proceso de registro. Instrucciones importantes: Traiga a su hijo(a) cansado(a) y con hambre, ya que debe permanecer dormido(a) durante la prueba de audición. Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}. Lleguen 15 minutos antes para completar el proceso de registro. Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+
+Lleguen 15 minutos antes para completar el proceso de registro.
+
+Instrucciones importantes: Traiga a su hijo(a) cansado(a) y con hambre, ya que debe permanecer dormido(a) durante la prueba de audición.
+
+Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+
+Lleguen 15 minutos antes para completar el proceso de registro.
+
+Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
                  `Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Está recibiendo este mensaje porque perdió o canceló una cita para una prueba de audición de seguimiento. Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, no se pudo realizar un examen de audición en el hospital donde nació su hijo(a), y se recomendó hacer una prueba de audición. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
                  `Si tiene alguna pregunta, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología.`,
-                 `Le compartimos información útil sobre la visita de su hijo(a): Como la sala es pequeña, permitiremos que solo un adulto esté en la sala de pruebas con su bebé. No traiga a otros niños a la cita, a menos que haya otro adulto que pueda quedarse con ellos en la sala de espera. No le ponga loción ni gel en la cabeza de su hijo(a) antes de esta cita. Su bebé debe permanecer dormido(a) durante la prueba de audición. Lo ideal es que su bebé no duerma en la hora previa a la cita. Si su bebé suele quedarse dormido(a) apenas termina de comer, puede ser útil esperar hasta llegar a Cincinnati Children's para alimentarlo(a).`,
+                 `Le compartimos información útil sobre la visita de su hijo(a):
+
+Como la sala es pequeña, permitiremos que solo un adulto esté en la sala de pruebas con su bebé. No traiga a otros niños a la cita, a menos que haya otro adulto que pueda quedarse con ellos en la sala de espera.
+
+No le ponga loción ni gel en la cabeza de su hijo(a) antes de esta cita.
+
+Su bebé debe permanecer dormido(a) durante la prueba de audición. Lo ideal es que su bebé no duerma en la hora previa a la cita. Si su bebé suele quedarse dormido(a) apenas termina de comer, puede ser útil esperar hasta llegar a Cincinnati Children's para alimentarlo(a).`,
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. En los próximos 10 a 15 minutos, un miembro del personal del departamento de Audiología (Audiology) se comunicará con usted acerca de la prueba de audición de su hijo(a).`
              ];
 
@@ -191,17 +223,21 @@
              var message = messages_es[message_number];
              var message_en = messages_en[message_number];
 
-             display_message.innerHTML= `<h2>Spanish Message</h2><span id="message">${message}</span><br><br> <button onclick="copyToClipboard('message')">Copy Spanish Message</button><br><br><h2>English Translation</h2>${message_en}`;
+             // Replace newlines with <br> for HTML display
+             var message_display = message.replace(/\n/g, '<br>');
+             var message_en_display = message_en.replace(/\n/g, '<br>');
+
+             display_message.innerHTML= `<h2>Spanish Message</h2><span id="message" style="display:none;">${message}</span><span id="message_display">${message_display}</span><br><br> <button onclick="copyToClipboard('message')">Copy Spanish Message</button><br><br><h2>English Translation</h2>${message_en_display}`;
          }
         </script>
 
     <script>
         function copyToClipboard(elementId) {
-            // Create a "hidden" input
-            var aux = document.createElement("input");
+            // Create a "hidden" textarea
+            var aux = document.createElement("textarea");
 
-            // Assign it the value of the specified element
-            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+            // Assign it the text content of the specified element
+            aux.value = document.getElementById(elementId).textContent;
 
             // Append it to the body
             document.body.appendChild(aux);
@@ -216,7 +252,7 @@
             document.body.removeChild(aux);
 
             // Show alert
-            alert("Copied the text: " + document.getElementById(elementId).innerHTML);
+            alert("Copied the text: " + document.getElementById(elementId).textContent);
         }
     </script>
 
