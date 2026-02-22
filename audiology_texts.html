@@ -45,12 +45,12 @@
         <p><div id='errorMsg3'></div><label for="location">Location:</label>
         <select id="location" name="location">
             <option value=""></option>
-            <option value="Anderson">Anderson</option>
             <option value="Burnet Campus">Burnet Campus</option>
             <option value="Centerville">Centerville</option>
-            <option value="Northern Kentucky">Northern Kentucky</option>
+            <option value="Eastgate">Eastgate</option>
             <option value="Green Township">Green Township</option>
             <option value="Liberty Campus">Liberty Campus</option>
+            <option value="Northern Kentucky">Northern Kentucky</option>
         </select></p>
         <p class="required-field">Message:</p>
         <input type="radio" id="1" name="message" value="1" required="required">
@@ -133,23 +133,23 @@
              // Get location address
              var address = "";
              switch(location) {
-                 case "Anderson":
-                     address = "7495 State Road\nCincinnati, OH 45255";
+                 case "Eastgate":
+                     address = "\n4315 Ivy Pointe Blvd\nSuite 2B-Audiology\nCincinnati, OH 45245";
                      break;
                  case "Burnet Campus":
-                     address = "3333 Burnet Avenue\nBldg C, 2nd Floor\nCincinnati, OH 45229";
+                     address = "\n3333 Burnet Avenue\nBldg C, 2nd Floor\nCincinnati, OH 45229";
                      break;
                  case "Centerville":
-                     address = "6555 Clyo Road\nCenterville, OH 45459";
+                     address = "\n6555 Clyo Road\nCenterville, OH 45459";
                      break;
                  case "Northern Kentucky":
-                     address = "2765 Chapel Place Drive\nCrestview Hills, KY 41017";
+                     address = "\n2765 Chapel Place Drive\nCrestview Hills, KY 41017";
                      break;
                  case "Green Township":
-                     address = "5899 Harrison Avenue\n3rd Floor\nCincinnati, OH 45248";
+                     address = "\n5899 Harrison Avenue\n3rd Floor\nCincinnati, OH 45248";
                      break;
                  case "Liberty Campus":
-                     address = "7777 Yankee Road\n3rd Floor\nLiberty Twp, OH 45044";
+                     address = "\n7777 Yankee Road\n3rd Floor\nLiberty Twp, OH 45044";
                      break;
              }
 
@@ -178,7 +178,7 @@ Please arrive 15 minutes early to complete registration.
 
 If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
                  `Hello, this is Cincinnati Children's Hospital. Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
-                 `Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. You are receiving this message because of a missed or canceled appointment for a follow-up hearing test. Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to reschedule your appointment.`,
+                 `Hello, this is Cincinnati Children's Hospital. Our records show that your child did not pass the hearing screening after birth and follow up testing was recommended. You are receiving this message because of a missed or canceled appointment for a follow-up hearing test. Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to reschedule your appointment.`,
                  `Hello, this is Cincinnati Children's Hospital. Our records show that a hearing screening was unable to be performed at the birth hospital and a hearing test was recommended. Please call (513) 517-4652 to schedule an appointment. You will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department to schedule your appointment.`,
                  `If you have any questions, please call (513) 517-4652. You will be connected with a Spanish interpreter. Ask to speak with someone in Audiology.`,
                  `Here is some helpful information for you to know about your child's visit:
@@ -205,7 +205,7 @@ Lleguen 15 minutos antes para completar el proceso de registro.
 
 Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
-                 `Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Está recibiendo este mensaje porque perdió o canceló una cita para una prueba de audición de seguimiento. Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, su hijo(a) no pasó el examen de audición para recién nacidos, y se recomendó realizar estudios de seguimiento. Está recibiendo este mensaje porque perdió o canceló una cita para una prueba de audición de seguimiento. Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. Según nuestros registros, no se pudo realizar un examen de audición en el hospital donde nació su hijo(a), y se recomendó hacer una prueba de audición. Llame al (513) 517-4652 para programar una cita. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para programar la cita.`,
                  `Si tiene alguna pregunta, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología.`,
                  `Le compartimos información útil sobre la visita de su hijo(a):
