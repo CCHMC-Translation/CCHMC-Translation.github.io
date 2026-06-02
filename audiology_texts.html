@@ -50,6 +50,8 @@
             <option value="Eastgate">Eastgate</option>
             <option value="Green Township">Green Township</option>
             <option value="Liberty Campus">Liberty Campus</option>
+            <option value="Mason">Mason</option>
+            <option value="MOB (3430 Burnet)">MOB (3430 Burnet)</option>
             <option value="Northern Kentucky">Northern Kentucky</option>
         </select></p>
         <p class="required-field">Message:</p>
@@ -68,7 +70,15 @@
         <input type="radio" id="7" name="message" value="7">
         <label for="7">7 - ABR Instructions</label><br>
         <input type="radio" id="8" name="message" value="8">
-        <label for="8">8 - We Will Be Contacting You</label><br><br>
+        <label for="8">8 - We Will Be Contacting You</label><br>
+        <input type="radio" id="9" name="message" value="9">
+        <label for="9">9 - ENT Appointment</label><br>
+        <input type="radio" id="10" name="message" value="10">
+        <label for="10">10 - Missed Device Check Appointment</label><br>
+        <input type="radio" id="11" name="message" value="11">
+        <label for="11">11 - Scheduled Appointment for Device Check</label><br>
+        <input type="radio" id="12" name="message" value="12">
+        <label for="12">12 - Repeat Audiology Evaluation</label><br><br>
         <input type="button" onclick="showMessage()" value="Show Message" class="submitbutton" />
     </form>
 
@@ -105,21 +115,21 @@
              var error = false;
 
              // Messages 1-2 require date, time, and location
-             if ((message_number == 1 || message_number == 2) && date == "") {
+             if ((message_number == 1 || message_number == 2 || message_number == 11) && date == "") {
                  errorModal = document.getElementById("errorMsg");
                  errorModal.innerHTML = "Please enter a date";
                  document.getElementById("date").style.borderColor = "red";
                  error = true;
              }
 
-             if ((message_number == 1 || message_number == 2) && time == "") {
+             if ((message_number == 1 || message_number == 2 || message_number == 11) && time == "") {
                  errorModal = document.getElementById("errorMsg2");
                  errorModal.innerHTML = "Please enter a time";
                  document.getElementById("time").style.borderColor = "red";
                  error = true;
              }
 
-             if ((message_number == 1 || message_number == 2) && location == "") {
+             if ((message_number == 1 || message_number == 2 || message_number == 11) && location == "") {
                  errorModal = document.getElementById("errorMsg3");
                  errorModal.innerHTML = "Please select a location";
                  document.getElementById("location").style.borderColor = "red";
@@ -150,6 +160,41 @@
                      break;
                  case "Liberty Campus":
                      address = "\n7777 Yankee Road\n3rd Floor\nLiberty Twp, OH 45044";
+                     break;
+                 case "Mason":
+                     address = "\n9560 Children's Drive\nBuilding A, Back Registration Area\nMason, OH 45040";
+                     break;
+                 case "MOB (3430 Burnet)":
+                     address = "\n3430 Burnet Avenue\nMedical Office Building\nAudiology, 5th Floor\nCincinnati, OH 45229";
+                     break;
+             }
+
+             // Get localized Spanish location address
+             var address_es = "";
+             switch(location) {
+                 case "Eastgate":
+                     address_es = "\n4315 Ivy Pointe Blvd\nSuite 2B - Audiología (Audiology)\nCincinnati, OH 45245";
+                     break;
+                 case "Burnet Campus":
+                     address_es = "\n3333 Burnet Avenue\nÁrea C, piso 2\nCincinnati, OH 45229";
+                     break;
+                 case "Centerville":
+                     address_es = "\n6555 Clyo Road\nCenterville, OH 45459";
+                     break;
+                 case "Northern Kentucky":
+                     address_es = "\n2765 Chapel Place Drive\nCrestview Hills, KY 41017";
+                     break;
+                 case "Green Township":
+                     address_es = "\n5899 Harrison Avenue\nPiso 3\nCincinnati, OH 45248";
+                     break;
+                 case "Liberty Campus":
+                     address_es = "\n7777 Yankee Road\nPiso 3\nLiberty Twp, OH 45044";
+                     break;
+                 case "Mason":
+                     address_es = "\n9560 Children's Drive\nEdificio A, recepción (parte trasera)\nMason, OH 45040";
+                     break;
+                 case "MOB (3430 Burnet)":
+                     address_es = "\n3430 Burnet Avenue\nEdificio de Consultorios Médicos (Medical Office Building), Audiología (Audiology), piso 5\nCincinnati, OH 45229";
                      break;
              }
 
@@ -188,18 +233,32 @@ Due to the small room size, only one adult may be allowed into the testing room 
 Do not apply lotion or gel on the child's head prior to this appointment.
 
 Your baby will need to sleep for the hearing test. It is best if you do not allow your baby to sleep for one hour before the appointment. If your baby falls asleep right after eating, it may be helpful to wait until you arrive at Children's to feed your baby.`,
-                 `Hello, this is Cincinnati Children's Hospital. Someone from the Audiology department will be contacting you about your child's hearing test in the next 10-15 minutes.`
+                 `Hello, this is Cincinnati Children's Hospital. Someone from the Audiology department will be contacting you about your child's hearing test in the next 10-15 minutes.`,
+                 `Hello, this is Cincinnati Children's Hospital. Hearing is important for learning language and overall development. We want to be sure your child gets the care they need. We recommend that you have your child's ears checked by a doctor to see if the hearing loss can be treated.
+
+Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Ear Nose and Throat (ENT) department to schedule an appointment.`,
+                 `Hello, this is Cincinnati Children's Hospital. It is important to have your child's hearing devices checked to make sure they are working well and to have your child's hearing retested. You are receiving this message because of a missed or canceled appointment for a device check.
+
+Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to reschedule your appointment.`,
+                 `Hello, this is Cincinnati Children's Hospital. Your child has an important appointment for a hearing device check on ${date} at ${time} at ${address}.
+
+Please arrive 15 minutes early to complete registration.
+
+If you need to reschedule this appointment or have questions, please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone from the Audiology department for help.`,
+                 `Hello, this is Cincinnati Children's Hospital. Your child was previously seen in Audiology and it is important to return for another hearing test. We want to make sure your child is hearing well because it is critical for learning language and overall development.
+
+Please call (513) 517-4652 and you will be connected with a Spanish interpreter. Ask to speak with someone in Audiology to schedule an appointment for a repeat hearing test.`
              ];
 
 	         var messages_es = [
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address_es}.
 
 Lleguen 15 minutos antes para completar el proceso de registro.
 
 Instrucciones importantes: Traiga a su hijo(a) cansado(a) y con hambre, ya que debe permanecer dormido(a) durante la prueba de audición.
 
 Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address_es}.
 
 Lleguen 15 minutos antes para completar el proceso de registro.
 
@@ -215,7 +274,21 @@ Como la sala es pequeña, permitiremos que solo un adulto esté en la sala de pr
 No le ponga loción ni gel en la cabeza de su hijo(a) antes de esta cita.
 
 Su bebé debe permanecer dormido(a) durante la prueba de audición. Lo ideal es que su bebé no duerma en la hora previa a la cita. Si su bebé suele quedarse dormido(a) apenas termina de comer, puede ser útil esperar hasta llegar a Cincinnati Children's para alimentarlo(a).`,
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. En los próximos 10 a 15 minutos, un miembro del personal del departamento de Audiología (Audiology) se comunicará con usted acerca de la prueba de audición de su hijo(a).`
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. En los próximos 10 a 15 minutos, un miembro del personal del departamento de Audiología (Audiology) se comunicará con usted acerca de la prueba de audición de su hijo(a).`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. La audición es importante para el aprendizaje del lenguaje y el desarrollo general. Queremos asegurarnos de que su hijo(a) reciba la atención que necesita. Recomendamos que un médico controle los oídos de su hijo(a) para saber si la pérdida de audición se puede tratar.
+
+Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del Departamento de Otorrinolaringología (ENT) para programar una cita.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Es importante que se controlen los audífonos de su hijo(a) para verificar que funcionen bien, y que se vuelvan hacer pruebas de la audición. Está recibiendo este mensaje porque faltó a una cita para un control de dispositivo o canceló una.
+
+Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para que se controlen sus audífonos el ${date_es} a la(s) ${time_es} en: ${address_es}.
+
+Lleguen 15 minutos antes para completar el proceso de registro.
+
+Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) recibió atención en Audiología (Audiology) y es importante que regrese para que se le haga otra prueba de la audición. Queremos asegurarnos de que oiga bien, ya que es fundamental para el aprendizaje del lenguaje y el desarrollo general.
+
+Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología para programar una cita para repetir la prueba de la audición.`
              ];
 
              message_number = message_number - 1;
