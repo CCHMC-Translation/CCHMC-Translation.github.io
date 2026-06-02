@@ -169,6 +169,35 @@
                      break;
              }
 
+             // Get localized Spanish location address
+             var address_es = "";
+             switch(location) {
+                 case "Eastgate":
+                     address_es = "\n4315 Ivy Pointe Blvd\nSuite 2B - Audiología (Audiology)\nCincinnati, OH 45245";
+                     break;
+                 case "Burnet Campus":
+                     address_es = "\n3333 Burnet Avenue\nÁrea C, piso 2\nCincinnati, OH 45229";
+                     break;
+                 case "Centerville":
+                     address_es = "\n6555 Clyo Road\nCenterville, OH 45459";
+                     break;
+                 case "Northern Kentucky":
+                     address_es = "\n2765 Chapel Place Drive\nCrestview Hills, KY 41017";
+                     break;
+                 case "Green Township":
+                     address_es = "\n5899 Harrison Avenue\nPiso 3\nCincinnati, OH 45248";
+                     break;
+                 case "Liberty Campus":
+                     address_es = "\n7777 Yankee Road\nPiso 3\nLiberty Twp, OH 45044";
+                     break;
+                 case "Mason":
+                     address_es = "\n9560 Children's Drive\nEdificio A, recepción (parte trasera)\nMason, OH 45040";
+                     break;
+                 case "MOB (3430 Burnet)":
+                     address_es = "\n3430 Burnet Avenue\nEdificio de Consultorios Médicos (Medical Office Building), Audiología (Audiology), piso 5\nCincinnati, OH 45229";
+                     break;
+             }
+
              // Format date and time for Spanish
              var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC'};
              var date_es = date ? new Date(date).toLocaleDateString('es-US', options) : "";
@@ -222,14 +251,14 @@ Please call (513) 517-4652 and you will be connected with a Spanish interpreter.
              ];
 
 	         var messages_es = [
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address_es}.
 
 Lleguen 15 minutos antes para completar el proceso de registro.
 
 Instrucciones importantes: Traiga a su hijo(a) cansado(a) y con hambre, ya que debe permanecer dormido(a) durante la prueba de audición.
 
 Si necesita reprogramar esta cita o tiene preguntas, llame al (513) 517-4652. Lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal del departamento de Audiología (Audiology) para recibir asistencia.`,
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address}.
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para una prueba de audición el ${date_es} a la(s) ${time_es} en: ${address_es}.
 
 Lleguen 15 minutos antes para completar el proceso de registro.
 
@@ -252,7 +281,7 @@ Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español
                  `¡Hola! Le escribimos de Cincinnati Children's Hospital. Es importante que se controlen los audífonos de su hijo(a) para verificar que funcionen bien, y que se vuelvan hacer pruebas de la audición. Está recibiendo este mensaje porque faltó a una cita para un control de dispositivo o canceló una.
 
 Llame al (513) 517-4652 y lo pondrán en contacto con un intérprete de español. Pida hablar con un miembro del personal de Audiología (Audiology) para reprogramar la cita.`,
-                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. El ${date_es} a la(s) ${time_es} en ${address}, su hijo(a) tiene una cita importante para que se controlen sus audífonos.
+                 `¡Hola! Le escribimos de Cincinnati Children's Hospital. Su hijo(a) tiene una cita importante para que se controlen sus audífonos el ${date_es} a la(s) ${time_es} en: ${address_es}.
 
 Lleguen 15 minutos antes para completar el proceso de registro.
 
